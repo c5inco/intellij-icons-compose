@@ -1,5 +1,3 @@
-import AnnotationIcon
-import androidx.compose.desktop.AppManager
 import androidx.compose.desktop.Window
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -7,30 +5,21 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
-import androidx.compose.foundation.text.selection.LocalTextSelectionColors
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.MailOutline
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Color.*
 import androidx.compose.ui.res.svgResource
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 
 fun main() {
     Window {
-        // var (text, setText) = remember { mutableStateOf("Hello, World!") }
-        // var count = mutableStateOf(0)
         var isDarkTheme by remember { mutableStateOf(false) }
 
         DisposableEffect(Unit) {
@@ -117,7 +106,8 @@ private fun ThemeToggleButton(active: Boolean = false, darkTheme: Boolean = fals
             .border(
                 width = 1.dp,
                 color = if (darkTheme) Color(0xff3c3f41) else Color(0xffaaaaaa),
-                shape = CircleShape)
+                shape = CircleShape
+            )
             .background(color = if (darkTheme) Color(0xff3c3f41) else Color.White)
             .size(36.dp),
         contentAlignment = Alignment.Center
