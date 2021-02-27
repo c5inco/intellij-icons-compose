@@ -18,6 +18,7 @@ repositories {
 
 dependencies {
     implementation(compose.desktop.currentOs)
+    implementation("com.beust:klaxon:5.0.1")
 }
 
 tasks.withType<KotlinCompile>() {

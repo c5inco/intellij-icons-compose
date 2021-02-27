@@ -4,6 +4,8 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material.*
@@ -12,20 +14,50 @@ import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.svgResource
 import androidx.compose.ui.unit.dp
+import com.beust.klaxon.Klaxon
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.withContext
+import java.io.File
+import javax.xml.crypto.Data
+
+class DataIconSet (
+    val set: String,
+    val areas: List<String>,
+    val sections: List<String>,
+    val icons: List<DataIcon>
+)
+
+class DataIcon (
+    val name: String,
+    val area: String,
+    val section: String,
+    val variants: Int,
+    val dark: Boolean,
+    val hiDPI: Boolean,
+    val sizes: List<List<Int>>,
+    val kind: String,
+    val java: String
+)
 
 fun main() {
     Window {
         var isDarkTheme by remember { mutableStateOf(false) }
+        var iconsData = remember { mutableStateListOf<DataIconSet>() }
 
-        DisposableEffect(Unit) {
-            // stuff
-            onDispose {
-                // stuff
+        LaunchedEffect(iconsData) {
+            withContext(Dispatchers.IO) {
+                val jsonData = File("src/main/resources/data.json").readText(Charsets.UTF_8)
+                val result = Klaxon().parseArray<DataIconSet>(jsonData)
+                //assert(result?.get(2)?.set == "AngularJSIcons")
+                result?.let { iconsData.addAll(it) }
             }
         }
 
@@ -37,9 +69,17 @@ fun main() {
                 ) {
                     SearchBox(isDarkActive = isDarkTheme, onThemeChange = { isDarkTheme = it })
                     Spacer(modifier = Modifier.height(64.dp))
-                    Text(text = "Hello there $isDarkTheme")
+                    Text(text = "Hello there ${iconsData.size}")
                     Spacer(modifier = Modifier.height(64.dp))
-                    AnnotationIcon()
+                    if (iconsData.size > 0) {
+                        LazyColumn {
+                            items(iconsData) { iconSet ->
+                                Text(iconSet.set)
+                            }
+                        }
+                    } else {
+                        CircularProgressIndicator(modifier = Modifier.size(64.dp))
+                    }
                 }
             }
         }
@@ -102,14 +142,15 @@ fun SearchBox(isDarkActive: Boolean, onThemeChange: (Boolean) -> Unit) {
 private fun ThemeToggleButton(active: Boolean = false, darkTheme: Boolean = false, onClick: () -> Unit) {
     Box(
         modifier = Modifier
-            .clickable { onClick() }
+            .size(36.dp)
+            .clip(CircleShape)
+            .background(color = if (darkTheme) Color(0xff3c3f41) else Color.White)
             .border(
                 width = 1.dp,
                 color = if (darkTheme) Color(0xff3c3f41) else Color(0xffaaaaaa),
                 shape = CircleShape
             )
-            .background(color = if (darkTheme) Color(0xff3c3f41) else Color.White)
-            .size(36.dp),
+            .clickable { onClick() },
         contentAlignment = Alignment.Center
     ) {
         if (active) {
@@ -125,7 +166,7 @@ private fun ThemeToggleButton(active: Boolean = false, darkTheme: Boolean = fals
 @Composable
 fun AnnotationIcon() {
     Image(
-        painter = svgResource("actions/annotate.svg"),
+        painter = svgResource("icons/AllIcons/actions/annotate.svg"),
         contentDescription = "Annotate icon",
         modifier = Modifier.size(128.dp)
     )
