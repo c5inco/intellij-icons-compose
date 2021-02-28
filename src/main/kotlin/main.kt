@@ -18,12 +18,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.svgResource
 import androidx.compose.ui.unit.dp
 import com.beust.klaxon.Klaxon
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
+import java.lang.Exception
 
 data class DataIconSet (
     val set: String,
@@ -100,8 +102,20 @@ fun main() {
                     Spacer(modifier = Modifier.height(64.dp))
                     if (allGroups.size > 0) {
                         LazyColumn {
-                            items(allGroups) { iconSet ->
-                                Text("${iconSet.set}, ${iconSet.section}, ${iconSet.icons.size}")
+                            items(allGroups) { group ->
+                                val chunkSize = 6
+                                val sortedIcons = group.icons.sortedBy { icon -> icon.name }
+
+                                Column {
+                                    Spacer(modifier = Modifier.height(32.dp))
+                                    Text("${group.set}, ${group.section}, ${sortedIcons.size}")
+                                    Spacer(modifier = Modifier.height(16.dp))
+                                    for (i in 0..sortedIcons.size step chunkSize) {
+                                        IconRow(i, chunkSize, sortedIcons, group)
+                                    }
+                                    Spacer(modifier = Modifier.height(32.dp))
+                                    Divider(thickness = 1.dp)
+                                }
                             }
                         }
                     } else {
@@ -110,6 +124,54 @@ fun main() {
                 }
             }
         }
+    }
+}
+
+@Composable
+private fun IconRow(
+    i: Int,
+    chunkSize: Int,
+    sortedIcons: List<DataIcon>,
+    group: DataIconGroup
+) {
+    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        var chunkIndex = i + chunkSize
+        if (chunkIndex <= sortedIcons.size - 1) {
+            sortedIcons.slice(i..chunkIndex).forEach {
+                Column(
+                    modifier = Modifier.weight(1f),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                )
+                {
+                    IconTile(set = group.set, icon = it)
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun IconTile(set: String, icon: DataIcon) {
+    val iconSize = 64.dp
+    val sectionPath = if(icon.section.isNotBlank()) "${icon.section}/" else ""
+
+    Text(icon.name)
+    Spacer(modifier = Modifier.height(8.dp))
+
+    if (icon.kind == "png") {
+        val dpiSuffix = if (icon.sizes.getOrNull(1) != null) "@2x" else ""
+
+        Image(
+            bitmap = imageResource("icons/$set/${sectionPath}${icon.name}$dpiSuffix.png"),
+            contentDescription = icon.name,
+            modifier = Modifier.size(iconSize)
+        )
+    } else {
+        Image(
+            painter = svgResource("icons/$set/${sectionPath}${icon.name}.svg"),
+            contentDescription = icon.name,
+            modifier = Modifier.size(iconSize)
+        )
     }
 }
 
