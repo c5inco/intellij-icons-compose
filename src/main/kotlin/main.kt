@@ -14,7 +14,6 @@ import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -23,19 +22,23 @@ import androidx.compose.ui.res.svgResource
 import androidx.compose.ui.unit.dp
 import com.beust.klaxon.Klaxon
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 import java.io.File
-import javax.xml.crypto.Data
 
-class DataIconSet (
+data class DataIconSet (
     val set: String,
     val areas: List<String>,
     val sections: List<String>,
     val icons: List<DataIcon>
 )
 
-class DataIcon (
+data class DataIconGroup (
+    val set: String,
+    val section: String,
+    val icons: List<DataIcon>
+)
+
+data class DataIcon (
     val name: String,
     val area: String,
     val section: String,
@@ -50,14 +53,38 @@ class DataIcon (
 fun main() {
     Window {
         var isDarkTheme by remember { mutableStateOf(false) }
-        var iconsData = remember { mutableStateListOf<DataIconSet>() }
+        val allGroups = remember { mutableStateListOf<DataIconGroup>() }
 
-        LaunchedEffect(iconsData) {
+        LaunchedEffect(allGroups) {
             withContext(Dispatchers.IO) {
                 val jsonData = File("src/main/resources/data.json").readText(Charsets.UTF_8)
                 val result = Klaxon().parseArray<DataIconSet>(jsonData)
                 //assert(result?.get(2)?.set == "AngularJSIcons")
-                result?.let { iconsData.addAll(it) }
+
+                //val allGroups = mutableListOf<DataIconGroup>()
+
+                result?.forEach {
+                    val (set, area, sections, icons) = it
+                    if (icons.isEmpty()) println("$set, icons empty")
+                    //assert(icons.isNotEmpty())
+
+                    val g = sections.map { section ->
+                        icons.filter { icon ->
+                            icon.section == section
+                        }
+                    }
+                    if (g.isEmpty()) {
+                        println("$set, group empty")
+                    }
+                    //assert(g.isNotEmpty())
+
+                    g.forEachIndexed { index, list ->
+                        if (list.isNotEmpty()) allGroups.add(DataIconGroup(set = set, section = sections[index], icons = list))
+                    }
+                }
+                assert(allGroups.isNotEmpty())
+
+                //result?.let { iconsData.addAll(it) }
             }
         }
 
@@ -69,12 +96,12 @@ fun main() {
                 ) {
                     SearchBox(isDarkActive = isDarkTheme, onThemeChange = { isDarkTheme = it })
                     Spacer(modifier = Modifier.height(64.dp))
-                    Text(text = "Hello there ${iconsData.size}")
+                    Text(text = "Total groups: ${allGroups.size}")
                     Spacer(modifier = Modifier.height(64.dp))
-                    if (iconsData.size > 0) {
+                    if (allGroups.size > 0) {
                         LazyColumn {
-                            items(iconsData) { iconSet ->
-                                Text(iconSet.set)
+                            items(allGroups) { iconSet ->
+                                Text("${iconSet.set}, ${iconSet.section}, ${iconSet.icons.size}")
                             }
                         }
                     } else {
