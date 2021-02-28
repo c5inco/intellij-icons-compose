@@ -139,26 +139,6 @@ private fun IconGroup(
     }
 }
 
-private fun filterAndSortIcons(group: DataIconGroup, searchFilter: String): List<DataIcon> {
-    var filteredIcons = group.icons.toList()
-    if (searchFilter.isNotBlank()) {
-        filteredIcons = group.icons.filter { icon ->
-            matchSearchFilter(icon, group.set, searchFilter)
-        }
-    }
-    return filteredIcons.sortedBy { icon -> icon.name }
-}
-
-private fun matchSearchFilter(icon: DataIcon, set: String, searchFilter: String): Boolean {
-    val s = set.toLowerCase()
-    val sec = icon.section.toLowerCase()
-    val sf = searchFilter.toLowerCase()
-    var n = icon.name.toLowerCase()
-    n = removeDash(n)
-
-    return s.contains(sf) || sec.contains(sf) || n.contains(sf)
-}
-
 @Composable
 private fun IconRow(
     i: Int,
