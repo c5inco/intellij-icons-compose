@@ -25,7 +25,6 @@ import com.beust.klaxon.Klaxon
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
-import java.lang.Exception
 
 data class DataIconSet (
     val set: String,
@@ -97,9 +96,9 @@ fun main() {
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     SearchBox(isDarkActive = isDarkTheme, onThemeChange = { isDarkTheme = it })
-                    Spacer(modifier = Modifier.height(64.dp))
+                    Spacer(modifier = Modifier.height(16.dp))
                     Text(text = "Total groups: ${allGroups.size}")
-                    Spacer(modifier = Modifier.height(64.dp))
+                    Spacer(modifier = Modifier.height(16.dp))
                     if (allGroups.size > 0) {
                         LazyColumn {
                             items(allGroups) { group ->
@@ -108,10 +107,13 @@ fun main() {
 
                                 Column {
                                     Spacer(modifier = Modifier.height(32.dp))
-                                    Text("${group.set}, ${group.section}, ${sortedIcons.size}")
+                                    Text(
+                                        text = "${group.set} / ${group.section} — ${sortedIcons.size}",
+                                        style = MaterialTheme.typography.subtitle2
+                                    )
                                     Spacer(modifier = Modifier.height(16.dp))
                                     for (i in 0..sortedIcons.size step chunkSize) {
-                                        IconRow(i, chunkSize, sortedIcons, group)
+                                        IconRow(i, chunkSize, sortedIcons, group, isDarkTheme)
                                     }
                                     Spacer(modifier = Modifier.height(32.dp))
                                     Divider(thickness = 1.dp)
@@ -132,47 +134,61 @@ private fun IconRow(
     i: Int,
     chunkSize: Int,
     sortedIcons: List<DataIcon>,
-    group: DataIconGroup
+    group: DataIconGroup,
+    darkTheme: Boolean
 ) {
-    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+    Row(
+        modifier = Modifier.padding(vertical = 16.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
         var chunkIndex = i + chunkSize
-        if (chunkIndex <= sortedIcons.size - 1) {
-            sortedIcons.slice(i..chunkIndex).forEach {
-                Column(
-                    modifier = Modifier.weight(1f),
-                    horizontalAlignment = Alignment.CenterHorizontally
-                )
-                {
-                    IconTile(set = group.set, icon = it)
-                }
+        if (chunkIndex > sortedIcons.size) {
+            chunkIndex = i + (sortedIcons.size % chunkSize)
+        }
+
+        sortedIcons.slice(i until chunkIndex).forEach {
+            // Need to check if icon only has a dark variant, which can happen
+            var iconDark = if (darkTheme) it.dark else darkTheme
+            if (it.variants == 1 && it.dark) iconDark = true
+
+            Column(
+                modifier = Modifier.weight(1f),
+                horizontalAlignment = Alignment.CenterHorizontally
+            )
+            {
+                IconTile(set = group.set, icon = it, dark = iconDark)
             }
         }
     }
 }
 
 @Composable
-private fun IconTile(set: String, icon: DataIcon) {
+private fun IconTile(set: String, icon: DataIcon, dark: Boolean = false) {
     val iconSize = 64.dp
     val sectionPath = if(icon.section.isNotBlank()) "${icon.section}/" else ""
-
-    Text(icon.name)
-    Spacer(modifier = Modifier.height(8.dp))
+    val darkStr = if (dark) "_dark" else ""
 
     if (icon.kind == "png") {
         val dpiSuffix = if (icon.sizes.getOrNull(1) != null) "@2x" else ""
 
         Image(
-            bitmap = imageResource("icons/$set/${sectionPath}${icon.name}$dpiSuffix.png"),
+            bitmap = imageResource("icons/$set/${sectionPath}${icon.name}$darkStr$dpiSuffix.png"),
             contentDescription = icon.name,
             modifier = Modifier.size(iconSize)
         )
     } else {
         Image(
-            painter = svgResource("icons/$set/${sectionPath}${icon.name}.svg"),
+            painter = svgResource("icons/$set/${sectionPath}${icon.name}$darkStr.svg"),
             contentDescription = icon.name,
             modifier = Modifier.size(iconSize)
         )
     }
+
+    Text(
+        text = icon.name,
+        style = MaterialTheme.typography.caption,
+        modifier = Modifier.padding(vertical = 16.dp)
+    )
 }
 
 @Composable
@@ -253,7 +269,7 @@ private fun ThemeToggleButton(active: Boolean = false, darkTheme: Boolean = fals
 }
 
 @Composable
-fun AnnotationIcon() {
+fun PlaceholderIcon() {
     Image(
         painter = svgResource("icons/AllIcons/actions/annotate.svg"),
         contentDescription = "Annotate icon",
