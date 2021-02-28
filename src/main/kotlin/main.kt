@@ -1,3 +1,5 @@
+package intellijicons
+
 import androidx.compose.desktop.Window
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -13,7 +15,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.*
-import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -22,38 +23,16 @@ import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.svgResource
 import androidx.compose.ui.unit.dp
 import com.beust.klaxon.Klaxon
+import intellijicons.models.*
+import intellijicons.utils.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
 
-data class DataIconSet (
-    val set: String,
-    val areas: List<String>,
-    val sections: List<String>,
-    val icons: List<DataIcon>
-)
-
-data class DataIconGroup (
-    val set: String,
-    val section: String,
-    val icons: List<DataIcon>
-)
-
-data class DataIcon (
-    val name: String,
-    val area: String,
-    val section: String,
-    val variants: Int,
-    val dark: Boolean,
-    val hiDPI: Boolean,
-    val sizes: List<List<Int>>,
-    val kind: String,
-    val java: String
-)
-
 fun main() {
     Window {
         var isDarkTheme by remember { mutableStateOf(false) }
+        var searchFilter by remember { mutableStateOf("")}
         val allGroups = remember { mutableStateListOf<DataIconGroup>() }
 
         LaunchedEffect(allGroups) {
@@ -95,7 +74,12 @@ fun main() {
                     modifier = Modifier.fillMaxSize(),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    SearchBox(isDarkActive = isDarkTheme, onThemeChange = { isDarkTheme = it })
+                    SearchBox(
+                        isDarkActive = isDarkTheme,
+                        filter = searchFilter,
+                        onFilterChange = { searchFilter = it },
+                        onThemeChange = { isDarkTheme = it }
+                    )
                     Spacer(modifier = Modifier.height(16.dp))
                     Text(text = "Total groups: ${allGroups.size}")
                     Spacer(modifier = Modifier.height(16.dp))
@@ -103,20 +87,22 @@ fun main() {
                         LazyColumn {
                             items(allGroups) { group ->
                                 val chunkSize = 6
-                                val sortedIcons = group.icons.sortedBy { icon -> icon.name }
+                                val sortedIcons = filterAndSortIcons(group, searchFilter)
 
-                                Column {
-                                    Spacer(modifier = Modifier.height(32.dp))
-                                    Text(
-                                        text = "${group.set} / ${group.section} — ${sortedIcons.size}",
-                                        style = MaterialTheme.typography.subtitle2
-                                    )
-                                    Spacer(modifier = Modifier.height(16.dp))
-                                    for (i in 0..sortedIcons.size step chunkSize) {
-                                        IconRow(i, chunkSize, sortedIcons, group, isDarkTheme)
+                                if (sortedIcons.isNotEmpty()) {
+                                    Column {
+                                        Spacer(modifier = Modifier.height(32.dp))
+                                        Text(
+                                            text = removeDash("${group.set} / ${group.section} — ${sortedIcons.size}"),
+                                            style = MaterialTheme.typography.subtitle2
+                                        )
+                                        Spacer(modifier = Modifier.height(16.dp))
+                                        for (i in 0..sortedIcons.size step chunkSize) {
+                                            IconRow(i, chunkSize, sortedIcons, group, isDarkTheme)
+                                        }
+                                        Spacer(modifier = Modifier.height(32.dp))
+                                        Divider(thickness = 1.dp)
                                     }
-                                    Spacer(modifier = Modifier.height(32.dp))
-                                    Divider(thickness = 1.dp)
                                 }
                             }
                         }
@@ -127,6 +113,26 @@ fun main() {
             }
         }
     }
+}
+
+private fun filterAndSortIcons(group: DataIconGroup, searchFilter: String): List<DataIcon> {
+    var filteredIcons = group.icons.toList()
+    if (searchFilter.isNotBlank()) {
+        filteredIcons = group.icons.filter { icon ->
+            matchSearchFilter(icon, group.set, searchFilter)
+        }
+    }
+    return filteredIcons.sortedBy { icon -> icon.name }
+}
+
+private fun matchSearchFilter(icon: DataIcon, set: String, searchFilter: String): Boolean {
+    val s = set.toLowerCase()
+    val sec = icon.section.toLowerCase()
+    val sf = searchFilter.toLowerCase()
+    var n = icon.name.toLowerCase()
+    n = removeDash(n)
+
+    return s.contains(sf) || sec.contains(sf) || n.contains(sf)
 }
 
 @Composable
@@ -185,20 +191,19 @@ private fun IconTile(set: String, icon: DataIcon, dark: Boolean = false) {
     }
 
     Text(
-        text = icon.name,
+        text = removeDash(icon.name),
         style = MaterialTheme.typography.caption,
         modifier = Modifier.padding(vertical = 16.dp)
     )
 }
 
 @Composable
-fun SearchBox(isDarkActive: Boolean, onThemeChange: (Boolean) -> Unit) {
+private fun SearchBox(isDarkActive: Boolean, filter: String, onFilterChange: (String) -> Unit, onThemeChange: (Boolean) -> Unit) {
     Column {
-        var value by rememberSaveable { mutableStateOf("") }
         Row(verticalAlignment = Alignment.CenterVertically) {
             BasicTextField(
-                value = value,
-                onValueChange = { value = it },
+                value = filter,
+                onValueChange = { onFilterChange(it) },
                 singleLine = true,
                 decorationBox = { innerTextField ->
                     // Because the decorationBox is used, the whole Row gets the same behaviour as the
@@ -219,7 +224,7 @@ fun SearchBox(isDarkActive: Boolean, onThemeChange: (Boolean) -> Unit) {
                         Spacer(Modifier.width(12.dp))
                         Box {
                             innerTextField()
-                            if (value.isEmpty()) {
+                            if (filter.isBlank()) {
                                 Text(
                                     text = "Search",
                                     style = MaterialTheme.typography.body1,
@@ -266,13 +271,4 @@ private fun ThemeToggleButton(active: Boolean = false, darkTheme: Boolean = fals
             )
         }
     }
-}
-
-@Composable
-fun PlaceholderIcon() {
-    Image(
-        painter = svgResource("icons/AllIcons/actions/annotate.svg"),
-        contentDescription = "Annotate icon",
-        modifier = Modifier.size(128.dp)
-    )
 }

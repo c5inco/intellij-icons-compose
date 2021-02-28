@@ -27,6 +27,6 @@ tasks.withType<KotlinCompile>() {
 
 compose.desktop {
     application {
-        mainClass = "MainKt"
+        mainClass = "intellijicons.MainKt"
     }
 }
