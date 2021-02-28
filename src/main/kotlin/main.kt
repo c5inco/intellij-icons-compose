@@ -39,12 +39,9 @@ fun main() {
             withContext(Dispatchers.IO) {
                 val jsonData = File("src/main/resources/data.json").readText(Charsets.UTF_8)
                 val result = Klaxon().parseArray<DataIconSet>(jsonData)
-                //assert(result?.get(2)?.set == "AngularJSIcons")
-
-                //val allGroups = mutableListOf<DataIconGroup>()
 
                 result?.forEach {
-                    val (set, area, sections, icons) = it
+                    val (set, _, sections, icons) = it
                     if (icons.isEmpty()) println("$set, icons empty")
                     //assert(icons.isNotEmpty())
 
@@ -63,8 +60,6 @@ fun main() {
                     }
                 }
                 assert(allGroups.isNotEmpty())
-
-                //result?.let { iconsData.addAll(it) }
             }
         }
 
@@ -86,23 +81,10 @@ fun main() {
                     if (allGroups.size > 0) {
                         LazyColumn {
                             items(allGroups) { group ->
-                                val chunkSize = 6
                                 val sortedIcons = filterAndSortIcons(group, searchFilter)
 
                                 if (sortedIcons.isNotEmpty()) {
-                                    Column {
-                                        Spacer(modifier = Modifier.height(32.dp))
-                                        Text(
-                                            text = removeDash("${group.set} / ${group.section} — ${sortedIcons.size}"),
-                                            style = MaterialTheme.typography.subtitle2
-                                        )
-                                        Spacer(modifier = Modifier.height(16.dp))
-                                        for (i in 0..sortedIcons.size step chunkSize) {
-                                            IconRow(i, chunkSize, sortedIcons, group, isDarkTheme)
-                                        }
-                                        Spacer(modifier = Modifier.height(32.dp))
-                                        Divider(thickness = 1.dp)
-                                    }
+                                    IconGroup(group = group, sortedIcons = sortedIcons, isDarkTheme = isDarkTheme)
                                 }
                             }
                         }
@@ -112,6 +94,48 @@ fun main() {
                 }
             }
         }
+    }
+}
+
+private fun filterAndSortIcons(group: DataIconGroup, searchFilter: String): List<DataIcon> {
+    var filteredIcons = group.icons.toList()
+    if (searchFilter.isNotBlank()) {
+        filteredIcons = group.icons.filter { icon ->
+            matchSearchFilter(icon, group.set, searchFilter)
+        }
+    }
+    return filteredIcons.sortedBy { icon -> icon.name }
+}
+
+private fun matchSearchFilter(icon: DataIcon, set: String, searchFilter: String): Boolean {
+    val s = set.toLowerCase()
+    val sec = icon.section.toLowerCase()
+    val sf = searchFilter.toLowerCase()
+    var n = icon.name.toLowerCase()
+    n = removeDash(n)
+
+    return s.contains(sf) || sec.contains(sf) || n.contains(sf)
+}
+
+@Composable
+private fun IconGroup(
+    group: DataIconGroup,
+    sortedIcons: List<DataIcon>,
+    chunkSize: Int = 6,
+    isDarkTheme: Boolean
+) {
+    Column {
+        Spacer(modifier = Modifier.height(32.dp))
+        Text(
+            text = removeDash("${group.set} / ${group.section} — ${sortedIcons.size}"),
+            style = MaterialTheme.typography.subtitle2
+        )
+        Spacer(modifier = Modifier.height(16.dp))
+        for (i in 0..sortedIcons.size step chunkSize) {
+            IconRow(i, chunkSize, sortedIcons, group, isDarkTheme)
+        }
+        Spacer(modifier = Modifier.height(32.dp))
+        Divider(thickness = 1.dp)
     }
 }
 
@@ -146,6 +170,7 @@ private fun IconRow(
     Row(
         modifier = Modifier.padding(vertical = 16.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp)
+
     ) {
         var chunkIndex = i + chunkSize
         if (chunkIndex > sortedIcons.size) {
@@ -157,44 +182,48 @@ private fun IconRow(
             var iconDark = if (darkTheme) it.dark else darkTheme
             if (it.variants == 1 && it.dark) iconDark = true
 
-            Column(
-                modifier = Modifier.weight(1f),
-                horizontalAlignment = Alignment.CenterHorizontally
-            )
-            {
-                IconTile(set = group.set, icon = it, dark = iconDark)
-            }
+            IconTile(modifier = Modifier.weight(1f), set = group.set, icon = it, dark = iconDark)
         }
     }
 }
 
 @Composable
-private fun IconTile(set: String, icon: DataIcon, dark: Boolean = false) {
+private fun IconTile(
+    modifier: Modifier = Modifier,
+    set: String,
+    icon: DataIcon,
+    dark: Boolean = false
+) {
     val iconSize = 64.dp
-    val sectionPath = if(icon.section.isNotBlank()) "${icon.section}/" else ""
-    val darkStr = if (dark) "_dark" else ""
+    val sectionPath = if (icon.section.isNotBlank()) "${icon.section}/" else ""
+    val darkSuffix = if (dark) "_dark" else ""
 
-    if (icon.kind == "png") {
-        val dpiSuffix = if (icon.sizes.getOrNull(1) != null) "@2x" else ""
+    Column(
+        modifier = modifier,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        if (icon.kind == "png") {
+            val dpiSuffix = if (icon.sizes.getOrNull(1) != null) "@2x" else ""
 
-        Image(
-            bitmap = imageResource("icons/$set/${sectionPath}${icon.name}$darkStr$dpiSuffix.png"),
-            contentDescription = icon.name,
-            modifier = Modifier.size(iconSize)
-        )
-    } else {
-        Image(
-            painter = svgResource("icons/$set/${sectionPath}${icon.name}$darkStr.svg"),
-            contentDescription = icon.name,
-            modifier = Modifier.size(iconSize)
+            Image(
+                bitmap = imageResource("icons/$set/${sectionPath}${icon.name}$dpiSuffix$darkSuffix.png"),
+                contentDescription = icon.name,
+                modifier = Modifier.size(iconSize)
+            )
+        } else {
+            Image(
+                painter = svgResource("icons/$set/${sectionPath}${icon.name}$darkSuffix.svg"),
+                contentDescription = icon.name,
+                modifier = Modifier.size(iconSize)
+            )
+        }
+
+        Text(
+            text = removeDash(icon.name),
+            style = MaterialTheme.typography.caption,
+            modifier = Modifier.padding(vertical = 16.dp)
         )
     }
-
-    Text(
-        text = removeDash(icon.name),
-        style = MaterialTheme.typography.caption,
-        modifier = Modifier.padding(vertical = 16.dp)
-    )
 }
 
 @Composable
