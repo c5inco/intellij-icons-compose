@@ -1,5 +1,7 @@
 package intellijicons
 
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.desktop.Window
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -18,7 +20,9 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.pointerMoveFilter
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.svgResource
 import androidx.compose.ui.unit.dp
@@ -259,8 +263,12 @@ private fun SearchBox(isDarkActive: Boolean, filter: String, onFilterChange: (St
 
 @Composable
 private fun ThemeToggleButton(active: Boolean = false, darkTheme: Boolean = false, onClick: () -> Unit) {
+    val hovered = remember { mutableStateOf(false) }
+    val buttonScale by animateFloatAsState(if (hovered.value && !active) 1.15f else 1f, tween(250))
+
     Box(
         modifier = Modifier
+            .scale(buttonScale)
             .size(36.dp)
             .clip(CircleShape)
             .background(color = if (darkTheme) Color(0xff3c3f41) else Color.White)
@@ -269,7 +277,17 @@ private fun ThemeToggleButton(active: Boolean = false, darkTheme: Boolean = fals
                 color = if (darkTheme) Color(0xff3c3f41) else Color(0xffaaaaaa),
                 shape = CircleShape
             )
-            .clickable { onClick() },
+            .clickable { onClick() }
+            .pointerMoveFilter(
+                onEnter = {
+                    hovered.value = true
+                    false
+                },
+                onExit = {
+                    hovered.value = false
+                    false
+                }
+            ),
         contentAlignment = Alignment.Center
     ) {
         if (active) {
