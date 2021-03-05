@@ -42,7 +42,6 @@ fun main() {
     Window {
         var isDarkTheme by remember { mutableStateOf(false) }
         var searchFilter by remember { mutableStateOf("")}
-        var iconsFilter by remember { mutableStateOf("")}
         val filterFlow = MutableStateFlow("")
         val allGroups = remember { mutableStateListOf<DataIconGroup>() }
 
@@ -75,7 +74,7 @@ fun main() {
             filterFlow
                 .debounce(timeoutMillis = 300L)
                 .collect {
-                    iconsFilter = it
+                    searchFilter = it
                 }
         }
 
@@ -100,7 +99,7 @@ fun main() {
                     if (allGroups.size > 0) {
                         LazyColumn {
                             items(allGroups) { group ->
-                                val sortedIcons = filterAndSortIcons(group, iconsFilter)
+                                val sortedIcons = filterAndSortIcons(group, searchFilter)
 
                                 if (sortedIcons.isNotEmpty()) {
                                     IconGroup(group = group, sortedIcons = sortedIcons, isDarkTheme = isDarkTheme)
@@ -237,12 +236,17 @@ private fun IconTile(
 }
 
 @Composable
-private fun SearchBox(isDarkActive: Boolean, filter: String, onFilterChange: (String) -> Unit, onThemeChange: (Boolean) -> Unit) {
+private fun SearchBox(isDarkActive: Boolean, onFilterChange: (String) -> Unit, onThemeChange: (Boolean) -> Unit) {
+    var filter by remember { mutableStateOf("")}
+
     Column {
         Row(verticalAlignment = Alignment.CenterVertically) {
             BasicTextField(
                 value = filter,
-                onValueChange = { onFilterChange(it) },
+                onValueChange = {
+                    filter = it
+                    onFilterChange(it)
+                },
                 singleLine = true,
                 decorationBox = { innerTextField ->
                     // Because the decorationBox is used, the whole Row gets the same behaviour as the
