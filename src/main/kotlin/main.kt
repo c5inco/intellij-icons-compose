@@ -30,6 +30,9 @@ import com.beust.klaxon.Klaxon
 import intellijicons.models.*
 import intellijicons.utils.*
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.withContext
 import java.io.File
 
@@ -37,6 +40,8 @@ fun main() {
     Window {
         var isDarkTheme by remember { mutableStateOf(false) }
         var searchFilter by remember { mutableStateOf("")}
+        var iconsFilter by remember { mutableStateOf("")}
+        val filterFlow = MutableStateFlow("")
         val allGroups = remember { mutableStateListOf<DataIconGroup>() }
 
         LaunchedEffect(allGroups) {
@@ -65,6 +70,11 @@ fun main() {
                 }
                 assert(allGroups.isNotEmpty())
             }
+            filterFlow
+                .debounce(timeoutMillis = 300L)
+                .collect {
+                    iconsFilter = it
+                }
         }
 
         MaterialTheme(colors = if (isDarkTheme) darkColors() else lightColors()) {
@@ -76,7 +86,10 @@ fun main() {
                     SearchBox(
                         isDarkActive = isDarkTheme,
                         filter = searchFilter,
-                        onFilterChange = { searchFilter = it },
+                        onFilterChange = {
+                            searchFilter = it
+                            filterFlow.value = it
+                         },
                         onThemeChange = { isDarkTheme = it }
                     )
                     Spacer(modifier = Modifier.height(16.dp))
@@ -85,7 +98,7 @@ fun main() {
                     if (allGroups.size > 0) {
                         LazyColumn {
                             items(allGroups) { group ->
-                                val sortedIcons = filterAndSortIcons(group, searchFilter)
+                                val sortedIcons = filterAndSortIcons(group, iconsFilter)
 
                                 if (sortedIcons.isNotEmpty()) {
                                     IconGroup(group = group, sortedIcons = sortedIcons, isDarkTheme = isDarkTheme)
