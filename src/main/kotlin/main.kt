@@ -188,12 +188,23 @@ private fun IconTile(
     ) {
         if (icon.kind == "png") {
             val dpiSuffix = if (icon.sizes.getOrNull(1) != null) "@2x" else ""
+            var imageExists = false
+            val imagePath = "icons/$set/${sectionPath}${icon.name}$dpiSuffix$darkSuffix.png"
 
-            Image(
-                bitmap = imageResource("icons/$set/${sectionPath}${icon.name}$dpiSuffix$darkSuffix.png"),
-                contentDescription = icon.name,
-                modifier = Modifier.size(iconSize)
-            )
+            try {
+                val img = imageFromResource(imagePath)
+                imageExists = true
+            } catch(e: Exception){
+                println(e)
+            }
+
+            if (imageExists) {
+                Image(
+                    bitmap = imageResource(imagePath),
+                    contentDescription = icon.name,
+                    modifier = Modifier.size(iconSize)
+                )
+            }
         } else {
             Image(
                 painter = svgResource("icons/$set/${sectionPath}${icon.name}$darkSuffix.svg"),
