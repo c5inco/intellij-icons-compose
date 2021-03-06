@@ -4,10 +4,7 @@ import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.desktop.DesktopMaterialTheme
 import androidx.compose.desktop.Window
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
-import androidx.compose.foundation.clickable
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -38,14 +35,16 @@ import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.withContext
 import java.io.File
 
+@ExperimentalFoundationApi
 fun main() {
     Window {
         var isDarkTheme by remember { mutableStateOf(false) }
         var searchFilter by remember { mutableStateOf("")}
         val filterFlow = MutableStateFlow("")
-        val allGroups = remember { mutableStateListOf<DataIconGroup>() }
+        //val allGroups = remember { mutableStateListOf<DataIconGroup>() }
+        val allGroupsMap = remember { mutableStateMapOf<DataIconGroup, List<DataIcon>>() }
 
-        LaunchedEffect(allGroups) {
+        LaunchedEffect(allGroupsMap) {
             withContext(Dispatchers.IO) {
                 val jsonData = File("src/main/resources/data.json").readText(Charsets.UTF_8)
                 val result = Klaxon().parseArray<DataIconSet>(jsonData)
@@ -66,10 +65,13 @@ fun main() {
                     //assert(g.isNotEmpty())
 
                     g.forEachIndexed { index, list ->
-                        if (list.isNotEmpty()) allGroups.add(DataIconGroup(set = set, section = sections[index], icons = list))
+                        if (list.isNotEmpty()) {
+                            //allGroups.add(DataIconGroup(set = set, section = sections[index]))
+                            allGroupsMap.put(DataIconGroup(set = set, section = sections[index]), list)
+                        }
                     }
                 }
-                assert(allGroups.isNotEmpty())
+                assert(allGroupsMap.isNotEmpty())
             }
             filterFlow
                 .debounce(timeoutMillis = 300L)
@@ -86,23 +88,36 @@ fun main() {
                 ) {
                     SearchBox(
                         isDarkActive = isDarkTheme,
-                        filter = searchFilter,
                         onFilterChange = {
-                            searchFilter = it
                             filterFlow.value = it
                          },
                         onThemeChange = { isDarkTheme = it }
                     )
                     Spacer(modifier = Modifier.height(16.dp))
-                    Text(text = "Total groups: ${allGroups.size}")
+                    Text(text = "Total groups: ${allGroupsMap.size}")
                     Spacer(modifier = Modifier.height(16.dp))
-                    if (allGroups.size > 0) {
+                    if (allGroupsMap.size > 0) {
                         LazyColumn {
-                            items(allGroups) { group ->
-                                val sortedIcons = filterAndSortIcons(group, searchFilter)
+                            val sortedGroupsMap = allGroupsMap.toSortedMap(compareBy<DataIconGroup> { it.set }.thenBy { it.section })
+                            sortedGroupsMap.forEach { (group, icons) ->
+                                val filteredList = filterAndSortIcons(icons, group.set, searchFilter)
 
-                                if (sortedIcons.isNotEmpty()) {
-                                    IconGroup(group = group, sortedIcons = sortedIcons, isDarkTheme = isDarkTheme)
+                                if (filteredList.isNotEmpty()) {
+                                    stickyHeader {
+                                        Text(
+                                            text = removeDash("${group.set} / ${group.section} — ${icons.size}"),
+                                            style = MaterialTheme.typography.subtitle2
+                                        )
+                                    }
+
+                                    items(chunk(filteredList, 6)) { iconsChunk ->
+                                        IconsRow(iconsChunk, isDarkTheme, group)
+                                    }
+
+                                    item(group) {
+                                        Divider(thickness = 1.dp)
+                                        Spacer(modifier = Modifier.height(32.dp))
+                                    }
                                 }
                             }
                         }
@@ -115,11 +130,39 @@ fun main() {
     }
 }
 
-private fun filterAndSortIcons(group: DataIconGroup, searchFilter: String): List<DataIcon> {
-    var filteredIcons = group.icons.toList()
+@Composable
+private fun IconsRow(
+    iconsChunk: List<DataIcon>,
+    isDarkTheme: Boolean,
+    group: DataIconGroup
+) {
+    Spacer(modifier = Modifier.height(16.dp))
+    Row(
+        modifier = Modifier.padding(vertical = 16.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp)
+
+    ) {
+        iconsChunk.forEach {
+            // Need to check if icon only has a dark variant, which can happen
+            var iconDark = if (isDarkTheme) it.dark else isDarkTheme
+            if (it.variants == 1 && it.dark) iconDark = true
+
+            IconTile(
+                modifier = Modifier.weight(1f),
+                set = group.set,
+                icon = it,
+                dark = iconDark
+            )
+        }
+    }
+    Spacer(modifier = Modifier.height(16.dp))
+}
+
+private fun filterAndSortIcons(icons: List<DataIcon>, set:String, searchFilter: String): List<DataIcon> {
+    var filteredIcons = icons.toList()
     if (searchFilter.isNotBlank()) {
-        filteredIcons = group.icons.filter { icon ->
-            matchSearchFilter(icon, group.set, searchFilter)
+        filteredIcons = icons.filter { icon ->
+            matchSearchFilter(icon, set, searchFilter)
         }
     }
     return filteredIcons.sortedBy { icon -> icon.name }
@@ -133,56 +176,6 @@ private fun matchSearchFilter(icon: DataIcon, set: String, searchFilter: String)
     n = removeDash(n)
 
     return s.contains(sf) || sec.contains(sf) || n.contains(sf)
-}
-
-@Composable
-private fun IconGroup(
-    group: DataIconGroup,
-    sortedIcons: List<DataIcon>,
-    chunkSize: Int = 6,
-    isDarkTheme: Boolean
-) {
-    Column {
-        Spacer(modifier = Modifier.height(32.dp))
-        Text(
-            text = removeDash("${group.set} / ${group.section} — ${sortedIcons.size}"),
-            style = MaterialTheme.typography.subtitle2
-        )
-        Spacer(modifier = Modifier.height(16.dp))
-        for (i in 0..sortedIcons.size step chunkSize) {
-            IconRow(i, chunkSize, sortedIcons, group, isDarkTheme)
-        }
-        Spacer(modifier = Modifier.height(32.dp))
-        Divider(thickness = 1.dp)
-    }
-}
-
-@Composable
-private fun IconRow(
-    i: Int,
-    chunkSize: Int,
-    sortedIcons: List<DataIcon>,
-    group: DataIconGroup,
-    darkTheme: Boolean
-) {
-    Row(
-        modifier = Modifier.padding(vertical = 16.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp)
-
-    ) {
-        var chunkIndex = i + chunkSize
-        if (chunkIndex > sortedIcons.size) {
-            chunkIndex = i + (sortedIcons.size % chunkSize)
-        }
-
-        sortedIcons.slice(i until chunkIndex).forEach {
-            // Need to check if icon only has a dark variant, which can happen
-            var iconDark = if (darkTheme) it.dark else darkTheme
-            if (it.variants == 1 && it.dark) iconDark = true
-
-            IconTile(modifier = Modifier.weight(1f), set = group.set, icon = it, dark = iconDark)
-        }
-    }
 }
 
 @Composable
