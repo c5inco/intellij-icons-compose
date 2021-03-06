@@ -195,9 +195,21 @@ private fun IconTile(
     val iconSize = 64.dp
     val sectionPath = if (icon.section.isNotBlank()) "${icon.section}/" else ""
     val darkSuffix = if (dark) "_dark" else ""
+    val hovered = remember { mutableStateOf(false) }
 
     Column(
-        modifier = modifier,
+        modifier = modifier
+            .pointerMoveFilter(
+                onEnter = {
+                    hovered.value = true
+                    false
+                },
+                onExit = {
+                    hovered.value = false
+                    false
+                }
+            )
+            .background(color = if (hovered.value) Color.Black.copy(alpha = 0.1f) else Color.Transparent),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         if (icon.kind == "png") {
