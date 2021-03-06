@@ -40,8 +40,7 @@ fun main() {
     Window {
         var isDarkTheme by remember { mutableStateOf(false) }
         var searchFilter by remember { mutableStateOf("")}
-        val filterFlow = MutableStateFlow("")
-        //val allGroups = remember { mutableStateListOf<DataIconGroup>() }
+        val filterFlow = remember { MutableStateFlow("") }
         val allGroupsMap = remember { mutableStateMapOf<DataIconGroup, List<DataIcon>>() }
 
         LaunchedEffect(allGroupsMap) {
@@ -66,17 +65,20 @@ fun main() {
 
                     g.forEachIndexed { index, list ->
                         if (list.isNotEmpty()) {
-                            //allGroups.add(DataIconGroup(set = set, section = sections[index]))
                             allGroupsMap.put(DataIconGroup(set = set, section = sections[index]), list)
                         }
                     }
                 }
                 assert(allGroupsMap.isNotEmpty())
             }
+        }
+
+        LaunchedEffect(isDarkTheme) {
             filterFlow
                 .debounce(timeoutMillis = 300L)
                 .collect {
                     searchFilter = it
+                    println("filter: $it")
                 }
         }
 
