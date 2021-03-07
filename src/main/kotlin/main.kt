@@ -4,6 +4,7 @@ import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.desktop.DesktopMaterialTheme
 import androidx.compose.desktop.Window
+import androidx.compose.desktop.WindowEvents
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -27,6 +28,7 @@ import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.svgResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import com.beust.klaxon.Klaxon
 import intellijicons.models.*
@@ -40,11 +42,25 @@ import java.io.File
 
 @ExperimentalFoundationApi
 fun main() {
-    Window {
+    val defaultWindowSize = IntSize(width = 800, height = 600)
+    var chunkSize = mutableStateOf(6)
+
+    Window(
+        size = defaultWindowSize,
+        events = WindowEvents(
+            onResize = { (width, _) ->
+                when {
+                    width >= 1000 -> chunkSize.value = 8
+                    width >= 800 -> chunkSize.value = 6
+                    width >= 600 -> chunkSize.value = 4
+                    else -> chunkSize.value = 3
+                }
+            }
+        )
+    ) {
         var isDarkTheme by remember { mutableStateOf(false) }
         var searchFilter by remember { mutableStateOf("")}
         val filterFlow = remember { MutableStateFlow("") }
-        var chunkSize by remember { mutableStateOf(6) }
         val allGroupsMap = remember { mutableStateMapOf<DataIconGroup, List<DataIcon>>() }
 
         LaunchedEffect(allGroupsMap) {
@@ -95,7 +111,7 @@ fun main() {
                         isDarkActive = isDarkTheme,
                         onFilterChange = {
                             filterFlow.value = it
-                         },
+                        },
                         onThemeChange = { isDarkTheme = it }
                     )
                     if (allGroupsMap.size > 0) {
@@ -109,8 +125,8 @@ fun main() {
                                         IconGroupHeader(group, icons)
                                     }
 
-                                    items(chunk(filteredList, chunkSize)) { iconsChunk ->
-                                        IconsRow(iconsChunk, chunkSize, isDarkTheme, group)
+                                    items(chunk(filteredList, chunkSize.value)) { iconsChunk ->
+                                        IconsRow(iconsChunk, chunkSize.value, isDarkTheme, group)
                                     }
 
                                     item(group) {
