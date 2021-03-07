@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -24,6 +25,8 @@ import androidx.compose.ui.graphics.imageFromResource
 import androidx.compose.ui.input.pointer.pointerMoveFilter
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.svgResource
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.beust.klaxon.Klaxon
 import intellijicons.models.*
@@ -41,6 +44,7 @@ fun main() {
         var isDarkTheme by remember { mutableStateOf(false) }
         var searchFilter by remember { mutableStateOf("")}
         val filterFlow = remember { MutableStateFlow("") }
+        var chunkSize by remember { mutableStateOf(6) }
         val allGroupsMap = remember { mutableStateMapOf<DataIconGroup, List<DataIcon>>() }
 
         LaunchedEffect(allGroupsMap) {
@@ -78,12 +82,11 @@ fun main() {
                 .debounce(timeoutMillis = 300L)
                 .collect {
                     searchFilter = it
-                    println("filter: $it")
                 }
         }
 
-        DesktopMaterialTheme(colors = if (isDarkTheme) darkColors() else lightThemeColors()) {
-            Surface {
+        DesktopMaterialTheme(colors = if (isDarkTheme) darkThemeColors() else lightThemeColors()) {
+            Surface(color = MaterialTheme.colors.background) {
                 Column(
                     modifier = Modifier.fillMaxSize(),
                     horizontalAlignment = Alignment.CenterHorizontally
@@ -95,9 +98,6 @@ fun main() {
                          },
                         onThemeChange = { isDarkTheme = it }
                     )
-                    Spacer(modifier = Modifier.height(16.dp))
-                    Text(text = "Total groups: ${allGroupsMap.size}")
-                    Spacer(modifier = Modifier.height(16.dp))
                     if (allGroupsMap.size > 0) {
                         LazyColumn {
                             val sortedGroupsMap = allGroupsMap.toSortedMap(compareBy<DataIconGroup> { it.set }.thenBy { it.section })
@@ -106,25 +106,29 @@ fun main() {
 
                                 if (filteredList.isNotEmpty()) {
                                     stickyHeader {
-                                        Text(
-                                            text = removeDash("${group.set} / ${group.section} — ${icons.size}"),
-                                            style = MaterialTheme.typography.subtitle2
-                                        )
+                                        IconGroupHeader(group, icons)
                                     }
 
-                                    items(chunk(filteredList, 6)) { iconsChunk ->
-                                        IconsRow(iconsChunk, isDarkTheme, group)
+                                    items(chunk(filteredList, chunkSize)) { iconsChunk ->
+                                        IconsRow(iconsChunk, chunkSize, isDarkTheme, group)
                                     }
 
                                     item(group) {
+                                        Spacer(modifier = Modifier.height(8.dp))
                                         Divider(thickness = 1.dp)
-                                        Spacer(modifier = Modifier.height(32.dp))
                                     }
                                 }
                             }
                         }
                     } else {
-                        CircularProgressIndicator(modifier = Modifier.size(64.dp))
+                        Column(
+                            modifier = Modifier.fillMaxSize(),
+                            verticalArrangement = Arrangement.Center,
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            CircularProgressIndicator(modifier = Modifier.size(32.dp))
+                            Spacer(modifier = Modifier.fillMaxHeight(0.5f))
+                        }
                     }
                 }
             }
@@ -133,16 +137,41 @@ fun main() {
 }
 
 @Composable
+private fun IconGroupHeader(
+    group: DataIconGroup,
+    icons: List<DataIcon>
+) {
+    Row(
+        horizontalArrangement = Arrangement.SpaceBetween,
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(MaterialTheme.colors.background.copy(alpha = 0.9f))
+            .padding(vertical = 16.dp, horizontal = 20.dp)
+    ) {
+        Text(
+            text = removeDash("${group.set} / ${group.section}"),
+            style = MaterialTheme.typography.subtitle2
+        )
+
+        /*
+        Text(
+            text = "${icons.size}",
+            style = MaterialTheme.typography.subtitle2
+        )
+        */
+    }
+}
+
+@Composable
 private fun IconsRow(
     iconsChunk: List<DataIcon>,
+    chunkSize: Int,
     isDarkTheme: Boolean,
     group: DataIconGroup
 ) {
-    Spacer(modifier = Modifier.height(16.dp))
     Row(
-        modifier = Modifier.padding(vertical = 16.dp),
+        modifier = Modifier.padding(vertical = 8.dp, horizontal = 20.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp)
-
     ) {
         iconsChunk.forEach {
             // Need to check if icon only has a dark variant, which can happen
@@ -156,8 +185,14 @@ private fun IconsRow(
                 dark = iconDark
             )
         }
+
+        // Needed since rows can't have set columns
+        if (iconsChunk.size < chunkSize) {
+            for (i in 0 until chunkSize - iconsChunk.size) {
+                Spacer(modifier = Modifier.weight(1f))
+            }
+        }
     }
-    Spacer(modifier = Modifier.height(16.dp))
 }
 
 private fun filterAndSortIcons(icons: List<DataIcon>, set:String, searchFilter: String): List<DataIcon> {
@@ -187,7 +222,7 @@ private fun IconTile(
     icon: DataIcon,
     dark: Boolean = false
 ) {
-    val iconSize = 64.dp
+    val defaultIconSize = 32.dp
     val sectionPath = if (icon.section.isNotBlank()) "${icon.section}/" else ""
     val darkSuffix = if (dark) "_dark" else ""
     val hovered = remember { mutableStateOf(false) }
@@ -204,40 +239,65 @@ private fun IconTile(
                     false
                 }
             )
-            .background(color = if (hovered.value) Color.Black.copy(alpha = 0.1f) else Color.Transparent),
-        horizontalAlignment = Alignment.CenterHorizontally
+            .clip(RoundedCornerShape(8.dp))
+            .background(color = if (hovered.value) MaterialTheme.colors.onBackground.copy(alpha = 0.1f) else Color.Transparent)
+            .padding(top = 8.dp, bottom = 16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
     ) {
-        if (icon.kind == "png") {
-            val dpiSuffix = if (icon.sizes.getOrNull(1) != null) "@2x" else ""
-            var imageExists = false
-            val imagePath = "icons/$set/${sectionPath}${icon.name}$dpiSuffix$darkSuffix.png"
+        Box(
+            modifier = Modifier.size(64.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            if (icon.kind != "svg") {
+                val dpiSuffix = if (icon.sizes.getOrNull(1) != null) "@2x" else ""
+                var imageExists = false
+                val imagePath = "icons/$set/${sectionPath}${icon.name}$dpiSuffix$darkSuffix.png"
 
-            try {
-                val img = imageFromResource(imagePath)
-                imageExists = true
-            } catch(e: Exception){
-                println(e)
-            }
+                try {
+                    imageFromResource(imagePath)
+                    imageExists = true
+                } catch(e: Exception){
+                    println(e)
+                }
 
-            if (imageExists) {
+                if (imageExists) {
+                    val sizes = icon.sizes
+                    var width = sizes[0][0]
+                    var height = sizes[0][1]
+
+                    if (sizes.elementAtOrNull(1) != null) {
+                        width = sizes[1][0]
+                        height = sizes[1][1]
+                    }
+
+                    width = Math.min(width, 64)
+                    height = Math.min(height, 64)
+
+                    Image(
+                        bitmap = imageResource(imagePath),
+                        contentDescription = icon.name,
+                        modifier = Modifier.size(width = width.dp, height = height.dp).background(Color.LightGray)
+                    )
+                }
+            } else {
                 Image(
-                    bitmap = imageResource(imagePath),
+                    painter = svgResource("icons/$set/${sectionPath}${icon.name}$darkSuffix.svg"),
                     contentDescription = icon.name,
-                    modifier = Modifier.size(iconSize)
+                    modifier = Modifier.size(defaultIconSize)
                 )
             }
-        } else {
-            Image(
-                painter = svgResource("icons/$set/${sectionPath}${icon.name}$darkSuffix.svg"),
-                contentDescription = icon.name,
-                modifier = Modifier.size(iconSize)
-            )
         }
 
         Text(
             text = removeDash(icon.name),
             style = MaterialTheme.typography.caption,
-            modifier = Modifier.padding(vertical = 16.dp)
+            textAlign = TextAlign.Center,
+            modifier = Modifier
+                .padding(top = 12.dp)
+                .fillMaxWidth(0.9f),
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis
         )
     }
 }
@@ -246,55 +306,57 @@ private fun IconTile(
 private fun SearchBox(isDarkActive: Boolean, onFilterChange: (String) -> Unit, onThemeChange: (Boolean) -> Unit) {
     var filter by remember { mutableStateOf("")}
 
-    Column {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            BasicTextField(
-                value = filter,
-                onValueChange = {
-                    filter = it
-                    onFilterChange(it)
-                },
-                singleLine = true,
-                decorationBox = { innerTextField ->
-                    // Because the decorationBox is used, the whole Row gets the same behaviour as the
-                    // internal input field would have otherwise. For example, there is no need to add a
-                    // Modifier.clickable to the Row anymore to bring the text field into focus when user
-                    // taps on a larger text field area which includes paddings and the icon areas.
-                    Row(
-                        modifier = Modifier
-                            .background(MaterialTheme.colors.surface)
-                            .padding(20.dp),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Icon(
-                            imageVector = Icons.Default.Search,
-                            contentDescription = null,
-                            tint = LocalContentColor.current.copy(alpha = ContentAlpha.disabled)
-                        )
-                        Spacer(Modifier.width(12.dp))
-                        Box {
-                            innerTextField()
-                            if (filter.isBlank()) {
-                                Text(
-                                    text = "Search",
-                                    style = MaterialTheme.typography.body1,
-                                    color = LocalContentColor.current.copy(alpha = ContentAlpha.disabled)
-                                )
+    Surface {
+        Column {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                BasicTextField(
+                    value = filter,
+                    onValueChange = {
+                        filter = it
+                        onFilterChange(it)
+                    },
+                    singleLine = true,
+                    decorationBox = { innerTextField ->
+                        // Because the decorationBox is used, the whole Row gets the same behaviour as the
+                        // internal input field would have otherwise. For example, there is no need to add a
+                        // Modifier.clickable to the Row anymore to bring the text field into focus when user
+                        // taps on a larger text field area which includes paddings and the icon areas.
+                        Row(
+                            modifier = Modifier
+                                .background(MaterialTheme.colors.surface)
+                                .padding(20.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.Search,
+                                contentDescription = null,
+                                tint = LocalContentColor.current.copy(alpha = ContentAlpha.disabled)
+                            )
+                            Spacer(Modifier.width(12.dp))
+                            Box {
+                                innerTextField()
+                                if (filter.isBlank()) {
+                                    Text(
+                                        text = "Search",
+                                        style = MaterialTheme.typography.body1,
+                                        color = LocalContentColor.current.copy(alpha = ContentAlpha.disabled)
+                                    )
+                                }
                             }
                         }
-                    }
-                },
-                modifier = Modifier.weight(1f),
-                textStyle = MaterialTheme.typography.body1.copy(color = LocalContentColor.current)
-            )
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                ThemeToggleButton(active = !isDarkActive, onClick = { onThemeChange(false) })
-                Spacer(Modifier.width(12.dp))
-                ThemeToggleButton(active = isDarkActive, darkTheme = true, onClick = { onThemeChange(true) })
+                    },
+                    modifier = Modifier.weight(1f),
+                    textStyle = MaterialTheme.typography.body1.copy(color = LocalContentColor.current)
+                )
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    ThemeToggleButton(active = !isDarkActive, onClick = { onThemeChange(false) })
+                    Spacer(Modifier.width(12.dp))
+                    ThemeToggleButton(active = isDarkActive, darkTheme = true, onClick = { onThemeChange(true) })
+                }
+                Spacer(Modifier.width(20.dp))
             }
-            Spacer(Modifier.width(20.dp))
+            Divider(thickness = 1.dp, modifier = Modifier.fillMaxWidth())
         }
-        Divider(thickness = 1.dp, modifier = Modifier.fillMaxWidth())
     }
 }
 
