@@ -299,6 +299,7 @@ private fun IconTile(
                     )
                 }
             } else {
+                // TODO: May need to figure out a better try/catch her for invalid SVG paths
                 Image(
                     painter = svgResource("icons/$set/${sectionPath}${icon.name}$darkSuffix.svg"),
                     contentDescription = icon.name,
