@@ -46,6 +46,7 @@ fun main() {
     var chunkSize = mutableStateOf(6)
 
     Window(
+        title = "IntelliJ Icons",
         size = defaultWindowSize,
         events = WindowEvents(
             onResize = { (width, _) ->
