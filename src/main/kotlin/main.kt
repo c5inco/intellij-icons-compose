@@ -22,6 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.imageFromResource
 import androidx.compose.ui.input.pointer.pointerMoveFilter
 import androidx.compose.ui.res.imageResource
@@ -363,7 +364,8 @@ private fun SearchBox(isDarkActive: Boolean, onFilterChange: (String) -> Unit, o
                         }
                     },
                     modifier = Modifier.weight(1f),
-                    textStyle = MaterialTheme.typography.body1.copy(color = LocalContentColor.current)
+                    textStyle = MaterialTheme.typography.body1.copy(color = LocalContentColor.current),
+                    cursorBrush = SolidColor(if (isDarkActive) Color.White else Color.Black)
                 )
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     ThemeToggleButton(active = !isDarkActive, onClick = { onThemeChange(false) })
