@@ -9,6 +9,7 @@ import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
@@ -116,17 +117,34 @@ fun main() {
                         onThemeChange = { isDarkTheme = it }
                     )
                     if (allGroupsMap.size > 0) {
-                        LazyColumn {
+                        Box(modifier = Modifier.fillMaxSize()) {
+                            val scrollState = rememberLazyListState()
                             val sortedGroupsMap = allGroupsMap.toSortedMap(compareBy<DataIconGroup> { it.set }.thenBy { it.section })
+                            val chunkedGroupsMap = mutableMapOf<DataIconGroup, List<List<DataIcon>>>()
+                            var totalRows = 0
+
                             sortedGroupsMap.forEach { (group, icons) ->
                                 val filteredList = filterAndSortIcons(icons, group.set, searchFilter)
 
                                 if (filteredList.isNotEmpty()) {
+                                    val chunked = chunk(filteredList, chunkSize.value)
+                                    chunkedGroupsMap.set(group, chunked.toList())
+                                    totalRows += chunked.size
+                                }
+                            }
+
+                            println(totalRows)
+                            LazyColumn(modifier = Modifier
+                                    .fillMaxSize(),
+                                contentPadding = PaddingValues(bottom = 32.dp),
+                                state = scrollState
+                            ) {
+                                chunkedGroupsMap.forEach { (group, chunkedIcons) ->
                                     stickyHeader {
-                                        IconGroupHeader(group, icons)
+                                        IconGroupHeader(group, chunkedIcons)
                                     }
 
-                                    items(chunk(filteredList, chunkSize.value)) { iconsChunk ->
+                                    items(chunkedIcons) { iconsChunk ->
                                         IconsRow(iconsChunk, chunkSize.value, isDarkTheme, group)
                                     }
 
@@ -136,6 +154,16 @@ fun main() {
                                     }
                                 }
                             }
+                            VerticalScrollbar(
+                                modifier = Modifier
+                                    .align(Alignment.CenterEnd)
+                                    .fillMaxHeight(),
+                                adapter = rememberScrollbarAdapter(
+                                    scrollState = scrollState,
+                                    itemCount = totalRows,
+                                    averageItemSize = 120.dp
+                                )
+                            )
                         }
                     } else {
                         Column(
@@ -156,8 +184,9 @@ fun main() {
 @Composable
 private fun IconGroupHeader(
     group: DataIconGroup,
-    icons: List<DataIcon>
+    icons: List<List<DataIcon>>
 ) {
+    val totalIcons = icons.fold(0) { acc, chunkedIcons -> acc + chunkedIcons.size }
     Row(
         horizontalArrangement = Arrangement.SpaceBetween,
         modifier = Modifier
@@ -170,12 +199,10 @@ private fun IconGroupHeader(
             style = MaterialTheme.typography.subtitle2
         )
 
-        /*
         Text(
-            text = "${icons.size}",
+            text = "$totalIcons",
             style = MaterialTheme.typography.subtitle2
         )
-        */
     }
 }
 
