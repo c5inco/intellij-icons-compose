@@ -163,8 +163,8 @@ private fun IconGroupHeader(
         horizontalArrangement = Arrangement.SpaceBetween,
         modifier = Modifier
             .fillMaxWidth()
-            .background(MaterialTheme.colors.background.copy(alpha = 0.9f))
-            .padding(vertical = 16.dp, horizontal = 20.dp)
+            .background(MaterialTheme.colors.onBackground.copy(alpha = 0.15f))
+            .padding(vertical = 12.dp, horizontal = 20.dp)
     ) {
         Text(
             text = removeDash("${group.set} / ${group.section}"),
