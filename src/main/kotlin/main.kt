@@ -44,7 +44,7 @@ import java.io.File
 
 @ExperimentalFoundationApi
 fun main() {
-    val defaultWindowSize = IntSize(width = 800, height = 600)
+    val defaultWindowSize = IntSize(width = 800, height = 700)
     var chunkSize = mutableStateOf(6)
 
     Window(
