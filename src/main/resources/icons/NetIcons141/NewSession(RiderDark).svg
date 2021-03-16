@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>NewSession_dark</title>
+  <g>
+    <rect width="16" height="16" fill="#ffc4ff" opacity="0"/>
+    <g>
+      <polygon points="7.756 5 14 5 14 8 11 8 11 10 9 10 9 13 2 13 2 3 6.6 3 7.756 5" fill="#afb1b3"/>
+      <polygon points="16 11 14 11 14 9 12 9 12 11 10 11 10 13 12 13 12 15 14 15 14 13 16 13 16 11" fill="#499c54"/>
+    </g>
+  </g>
+</svg>

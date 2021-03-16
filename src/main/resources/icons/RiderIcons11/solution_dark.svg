@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>Solution(GrayDark)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffd8ff" opacity="0"/>
+    <g>
+      <g>
+        <rect y="1" width="14" height="12" fill="#252525"/>
+        <rect x="1" y="2" width="12" height="10" fill="#c4c4c4"/>
+        <rect x="1" y="2" width="12" height="3" fill="#c4c4c4"/>
+        <rect x="2" y="5" width="11" height="7" fill="#292929"/>
+      </g>
+      <g>
+        <polygon points="9.465 4 4 12.198 4 13.118 9.764 16 10.236 16 16 13.118 16 12.198 10.535 4 9.465 4" fill="#252525"/>
+        <polygon points="15 12.5 10 5 5 12.5 10 15 15 12.5" fill="#c674d3"/>
+        <polygon points="10 6.803 13.54 12.112 10 13.882 10 6.803" fill="#292929"/>
+      </g>
+    </g>
+  </g>
+</svg>

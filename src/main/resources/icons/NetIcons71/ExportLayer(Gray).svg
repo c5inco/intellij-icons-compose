@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <g>
+        <path d="M2,15V1H9.414L14,5.586V15Z" fill="#f4f4f4" fill-rule="evenodd"/>
+        <path d="M9,2H3V14H13V6Z" fill="#313131" fill-rule="evenodd"/>
+        <path d="M11,12H5V4H9V6h2Z" fill="#ebebeb" fill-rule="evenodd"/>
+      </g>
+      <g>
+        <polygon points="9.586 0 7 2.586 7 4 8.959 4 7 5.959 7 6.787 9.212 9 10 9 10.041 9 12 7.041 12 9 13.414 9 16 6.414 16 0 9.586 0" fill="#f4f4f4"/>
+        <polygon points="10 1 8 3 11.374 3 8 6.374 9.626 8 13 4.626 13 8 15 6 15 1 10 1" fill="#00529c"/>
+      </g>
+    </g>
+  </g>
+</svg>

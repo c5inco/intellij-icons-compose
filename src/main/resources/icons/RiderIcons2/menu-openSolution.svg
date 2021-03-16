@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>Solution</title>
+  <g>
+    <rect width="16" height="16" fill="#ffd8ff" opacity="0"/>
+    <path d="M11,6,6,13.5,11,16l5-2.5Zm0,1.8,3.54,5.309L11,14.882ZM4.6,12H2V2H14V6.894l-1-1.5V5H3v6H5.263Z" fill="#6e6e6e"/>
+  </g>
+</svg>

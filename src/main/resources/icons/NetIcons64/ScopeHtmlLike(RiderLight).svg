@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>ScopeHtmlLike(Gray)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <g>
+      <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+      <g>
+        <polygon points="6 4 3.233 4 0 8.688 0 9.312 3.233 14 6 14 6 12.688 3.457 9 6 5.312 6 4" fill="#f4f4f4"/>
+        <polygon points="5 5 3.758 5 1 9 3.758 13 5 13 2.242 9 5 5" fill="#323232"/>
+        <polygon points="10 14 12.767 14 16 9.312 16 8.688 12.767 4 10 4 10 5.312 12.543 9 10 12.688 10 14" fill="#f4f4f4"/>
+        <polygon points="11 5 12.242 5 15 9 12.242 13 11 13 13.758 9 11 5" fill="#323232"/>
+        <g>
+          <polygon points="11 3 8.113 3 5 13.859 5 15 7.887 15 11 4.141 11 3" fill="#f4f4f4"/>
+          <polygon points="6 14 7.133 14 10 4 8.867 4 6 14" fill="#0095d7"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

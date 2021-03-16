@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="8" y1="1" x2="8" y2="14.958" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7d6833"/>
+      <stop offset="1" stop-color="#54391a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="11.5" y1="1.992" x2="11.5" y2="5.003" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e2d0a0"/>
+      <stop offset="1" stop-color="#e2ccb2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="8" y1="1.97" x2="8" y2="14.011" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="8" y1="3.49" x2="8" y2="12.574" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff1d1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="11.5" y1="0.035" x2="11.5" y2="8.834" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#904d89"/>
+      <stop offset="1" stop-color="#492852"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="11.5" y1="1.076" x2="11.5" y2="7.963" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f7ccff"/>
+      <stop offset="1" stop-color="#ddb3ff"/>
+    </linearGradient>
+  </defs>
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <g>
+        <path d="M2,15V1h8.414L14,4.586V15Z" fill="url(#linear-gradient)"/>
+        <g>
+          <polygon points="13 5 10 2 10 5 13 5" fill="url(#linear-gradient-2)"/>
+          <polygon points="9 2 3 2 3 14 13 14 13 6 9 6 9 2" fill="url(#linear-gradient-3)"/>
+        </g>
+        <polygon points="9 6 9 3.5 4.5 3.5 4.5 12.5 11.5 12.5 11.5 6 9 6" fill="url(#linear-gradient-4)"/>
+      </g>
+      <g>
+        <polygon points="9.586 0 7 2.586 7 4 8.959 4 7 5.959 7 6.787 9.212 9 10 9 10.041 9 12 7.041 12 9 13.414 9 16 6.414 16 0 9.586 0" fill="url(#linear-gradient-5)"/>
+        <polygon points="10 1 8 3 11.374 3 8 6.374 9.626 8 13 4.626 13 8 15 6 15 1 10 1" fill="url(#linear-gradient-6)"/>
+      </g>
+    </g>
+  </g>
+</svg>

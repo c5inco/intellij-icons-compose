@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="8.5" y1="1.116" x2="8.5" y2="14.013" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#108b00"/>
+      <stop offset="1" stop-color="#165e00"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="8.5" y1="2.112" x2="8.5" y2="13.169" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e9ffc6"/>
+      <stop offset="1" stop-color="#20e200"/>
+    </linearGradient>
+  </defs>
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <polygon points="2 5 6 5 6 1 11 1 11 5 15 5 15 10 11 10 11 14 6 14 6 10 2 10 2 5" fill="url(#linear-gradient)"/>
+      <polygon id="Foreground" points="10 6 14 6 14 9 10 9 10 13 7 13 7 9 3 9 3 6 7 6 7 2 10 2 10 6" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>

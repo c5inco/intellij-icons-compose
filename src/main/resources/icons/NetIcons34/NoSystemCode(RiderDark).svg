@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>SystemCode_dark</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect width="16" height="16" fill="#ed1e79" opacity="0"/>
+        <g>
+          <path d="M11,2v9h4V2Zm3,8H12V9h2Zm0-2H12V7h2Zm0-3H12V3h2Z" fill="#b0b1b3"/>
+          <g>
+            <g>
+              <polygon points="9 9 9 10 8 10 8.83 11 10 11 10 8 9 9" fill="#b0b1b3"/>
+              <path d="M7,7h.67L10,5.6V1H6V8l1-.6ZM7,2H9V3H7Z" fill="#b0b1b3"/>
+            </g>
+            <path d="M7,10l4-4h-.56L6,9,4,6.28a1,1,0,0,0-1.39,0,1,1,0,0,0,0,1.41L5,10,1.19,13.31a1,1,0,0,0,0,1.4,1,1,0,0,0,1.38,0L6,11l4.5,4H11Z" fill="#c85451"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

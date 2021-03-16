@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><defs><linearGradient id="a" x1="100%" x2="16.327%" y1="100%" y2="59.996%"><stop offset="0%" stop-color="#01B202"/><stop offset="100%" stop-color="#0FE90F"/></linearGradient><linearGradient id="b" x1="90.095%" x2="0%" y1="5.142%" y2="100%"><stop offset="0%" stop-color="#7777E9"/><stop offset="100%" stop-color="#01009A"/></linearGradient><linearGradient id="c" x1="0%" y1="2.749%" y2="100%"><stop offset="0%" stop-color="#B83535"/><stop offset="100%" stop-color="#FD5B5A"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="#F98B9E" fill-opacity=".6" d="M7.111 14.944A7.001 7.001 0 0 1 8 1a7 7 0 0 1 6.448 9.729L12 6.5l-4.889 8.444z"/><path fill="#231F20" fill-opacity=".7" d="M7 12h1V8h1.5V7H8l-.005-1c-.008-.497.138-.927.437-1.028.488-.164 1.137.05 1.258.092l.295-.838C9.91 4.199 9.455 4 8.811 4c-.644 0-.994.061-1.33.389-.316.31-.465.831-.48 1.611L7 7c0 .018-.333.018-1 0v.972h1V12z"/><path fill="url(#a)" d="M2.967 5.7L8.333 8h-8z" transform="translate(7.6 8)"/><path fill="url(#b)" d="M4.333.333L4.8 4.2.333 8z" transform="translate(7.6 8)"/><path fill="url(#c)" d="M4.333.333l4 7.667L5 6.6z" transform="translate(7.6 8)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="cmake_function-a" x1="100%" x2="16.327%" y1="100%" y2="59.996%">
+      <stop offset="0%" stop-color="#01B202"/>
+      <stop offset="100%" stop-color="#0FE90F"/>
+    </linearGradient>
+    <linearGradient id="cmake_function-b" x1="90.095%" x2="0%" y1="5.142%" y2="100%">
+      <stop offset="0%" stop-color="#7777E9"/>
+      <stop offset="100%" stop-color="#01009A"/>
+    </linearGradient>
+    <linearGradient id="cmake_function-c" x1="0%" y1="2.749%" y2="100%">
+      <stop offset="0%" stop-color="#B83535"/>
+      <stop offset="100%" stop-color="#FD5B5A"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#F98B9E" fill-opacity=".6" d="M7.11129839,14.944121 C3.6649066,14.5074634 1,11.5649492 1,8 C1,4.134 4.134,1 8,1 C11.866,1 15,4.134 15,8 C15,8.96804182 14.8034996,9.89018756 14.4482098,10.7287261 L12,6.5 L7.11129839,14.944121 Z"/>
+    <path fill="#231F20" fill-opacity=".7" d="M1,8 L2,8 L2,4 L3.5,4 L3.5,3 L2,3 C1.99687783,2.36169171 1.99509925,2.02835838 1.99466424,2 C1.98704681,1.50341351 2.13289549,1.0728225 2.43221029,0.972167969 C2.91964141,0.808253079 3.56884985,1.02114795 3.68984985,1.06414795 L3.98519897,0.226043701 C3.90948298,0.198825534 3.4559021,0 2.81140137,0 C2.16690063,1.40512602e-16 1.81677246,0.0614013672 1.4818929,0.388793945 C1.16513106,0.698473875 1.01614114,1.22015248 1.00124609,2 C1.00039414,2.04460465 0.999980878,2.95274463 1,3 C1.00000736,3.01819872 0.666674031,3.01819872 0,3 L0,3.972 L1,3.972 L1,8 Z" transform="translate(6 4)"/>
+    <g transform="translate(7.6 8)">
+      <polygon fill="url(#cmake_function-a)" points="2.967 5.7 8.333 8 .333 8"/>
+      <polygon fill="url(#cmake_function-b)" points="4.333 .333 4.8 4.2 .333 8"/>
+      <polygon fill="url(#cmake_function-c)" points="4.333 .333 8.333 8 5 6.6"/>
+    </g>
+  </g>
+</svg>

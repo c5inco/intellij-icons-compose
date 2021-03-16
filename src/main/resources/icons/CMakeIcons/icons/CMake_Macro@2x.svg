@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><defs><linearGradient id="a" x1="100%" x2="16.327%" y1="100%" y2="59.996%"><stop offset="0%" stop-color="#01B202"/><stop offset="100%" stop-color="#0FE90F"/></linearGradient><linearGradient id="b" x1="90.095%" x2="0%" y1="5.142%" y2="100%"><stop offset="0%" stop-color="#7777E9"/><stop offset="100%" stop-color="#01009A"/></linearGradient><linearGradient id="c" x1="0%" y1="2.749%" y2="100%"><stop offset="0%" stop-color="#B83535"/><stop offset="100%" stop-color="#FD5B5A"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="#F98B9E" fill-opacity=".6" d="M7.111 14.944A7.001 7.001 0 0 1 8 1a7 7 0 0 1 6.448 9.729L12 6.5l-4.889 8.444z"/><path fill="url(#a)" d="M2.967 5.7L8.333 8h-8z" transform="translate(7.6 8)"/><path fill="url(#b)" d="M4.333.333L4.8 4.2.333 8z" transform="translate(7.6 8)"/><path fill="url(#c)" d="M4.333.333l4 7.667L5 6.6z" transform="translate(7.6 8)"/><path fill="#231F20" fill-opacity=".7" d="M11.005 8.22V8c0-.46-.305-1-1.255-1S8.5 7.64 8.5 8v3h-1V8c-.001-.463-.35-1-1.3-1C5.25 7 5 7.64 5 8v3H4V6h1v.4c.465-.267.932-.4 1.4-.4.733 0 1.267.202 1.6.604C8.465 6.202 9.092 6 9.882 6c.987 0 1.558.43 1.854.957l-.731 1.262z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="cmake_macro@2x-a" x1="100%" x2="16.327%" y1="100%" y2="59.996%">
+      <stop offset="0%" stop-color="#01B202"/>
+      <stop offset="100%" stop-color="#0FE90F"/>
+    </linearGradient>
+    <linearGradient id="cmake_macro@2x-b" x1="90.095%" x2="0%" y1="5.142%" y2="100%">
+      <stop offset="0%" stop-color="#7777E9"/>
+      <stop offset="100%" stop-color="#01009A"/>
+    </linearGradient>
+    <linearGradient id="cmake_macro@2x-c" x1="0%" y1="2.749%" y2="100%">
+      <stop offset="0%" stop-color="#B83535"/>
+      <stop offset="100%" stop-color="#FD5B5A"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#F98B9E" fill-opacity=".6" d="M7.11129839,14.944121 C3.6649066,14.5074634 1,11.5649492 1,8 C1,4.134 4.134,1 8,1 C11.866,1 15,4.134 15,8 C15,8.96804182 14.8034996,9.89018756 14.4482098,10.7287261 L12,6.5 L7.11129839,14.944121 Z"/>
+    <g transform="translate(7.6 8)">
+      <polygon fill="url(#cmake_macro@2x-a)" points="2.967 5.7 8.333 8 .333 8"/>
+      <polygon fill="url(#cmake_macro@2x-b)" points="4.333 .333 4.8 4.2 .333 8"/>
+      <polygon fill="url(#cmake_macro@2x-c)" points="4.333 .333 8.333 8 5 6.6"/>
+    </g>
+    <path fill="#231F20" fill-opacity=".7" d="M11.0046997,8.21915505 L11.0046997,8 C11.0041373,7.54 10.7,7 9.75,7 C8.8,7 8.5,7.64 8.5,8 L8.5,11.0003 L7.5,11.0003 L7.5,8 C7.499,7.537 7.15,7 6.2,7 C5.25,7 5,7.64 5,8 C5,8 5,9.0001 5,11.0003 L4,11.0003 L4,6.0003 L5,6.0003 L5,6.399231 C5.46527507,6.133277 5.93194173,6.0003 6.4,6.0003 C7.13333333,6.0003 7.66666667,6.20159567 8,6.60418701 C8.46476237,6.20159567 9.0919717,6.0003 9.881628,6.0003 C10.8692354,6.0003 11.440338,6.42925907 11.7355039,6.95685693 L11.0046997,8.21915505 Z"/>
+  </g>
+</svg>

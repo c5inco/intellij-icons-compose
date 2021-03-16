@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><rect id="frame" width="12" height="12" fill="none"/><g fill="#59A869" fill-rule="evenodd"><path d="M7.844 1.001L5.072 4.003l.983-.004 1.789-1.938 3.177 3.438-3.174 3.437L6.063 7l-.981.002 2.766 2.994L12 5.5z"/><path d="M3 7.998L0 5.501l3-2.5v2h4v1l-4-.003z"/></g></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <g fill="#59A869" fill-rule="evenodd" transform="translate(0 1)">
+    <polygon points="7.844 .001 5.072 3.003 6.055 2.999 7.844 1.061 11.021 4.499 7.847 7.936 6.063 6 5.082 6.002 7.848 8.996 12 4.5"/>
+    <polygon points="3 6.998 0 4.501 3 2.001 3 4.001 7 4.001 7 5.001 3 4.998"/>
+  </g>
+</svg>

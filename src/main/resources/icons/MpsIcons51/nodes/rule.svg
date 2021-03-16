@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#B99BF8" fill-opacity=".6" d="M15,8 C15,11.866 11.866,15 8,15 C4.134,15 1,11.866 1,8 C1,4.134 4.134,1 8,1 C11.866,1 15,4.134 15,8"/>
+    <polygon fill="#231F20" fill-opacity=".7" points="12.19 6.775 9.001 4 9.001 5.391 11.069 7 3.001 7 3.001 8 11.021 8 9.001 9.601 9.001 11 12.194 8.17 13.001 7.492"/>
+  </g>
+</svg>

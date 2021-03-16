@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+  <defs>
+    <linearGradient id="a" x1="12" y1="4" x2="12" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2aa5c3"/>
+      <stop offset="1" stop-color="#01596e"/>
+    </linearGradient>
+    <linearGradient id="b" x1="11.5" y1="5" x2="11.5" y2="11" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#cbf4ff"/>
+    </linearGradient>
+    <linearGradient id="c" x1="3.5" y1="3.021" x2="3.5" y2="12.979" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2fa223"/>
+      <stop offset="1" stop-color="#0a6600"/>
+    </linearGradient>
+    <linearGradient id="d" x1="4" y1="4.2" x2="4" y2="12.003" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dfffdf"/>
+      <stop offset="1" stop-color="#12b712"/>
+    </linearGradient>
+    <linearGradient id="e" x1="4.5" y1="5" x2="4.5" y2="11.094" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4aff36"/>
+      <stop offset="1" stop-color="#36b927"/>
+    </linearGradient>
+    <linearGradient id="f" x1="-1039.5" y1="2.979" x2="-1039.5" y2="12.979" gradientTransform="matrix(-1 0 0 1 -1031 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9b6500"/>
+      <stop offset="1" stop-color="#634700"/>
+    </linearGradient>
+    <linearGradient id="g" x1="-1039" y1="4.2" x2="-1039" y2="12.001" gradientTransform="matrix(-1 0 0 1 -1031 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff2d8"/>
+      <stop offset="1" stop-color="#a26222"/>
+    </linearGradient>
+    <linearGradient id="h" x1="-1038.5" y1="5.188" x2="-1038.5" y2="11.188" gradientTransform="matrix(-1 0 0 1 -1031 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb600"/>
+      <stop offset="1" stop-color="#a76500"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" d="M8 4H16V12H8z"/>
+  <path fill="url(#b)" d="M8 5H15V11H8z"/>
+  <path fill="#323232" d="M12 6H14V7H12zM12 9H14V10H12z"/>
+  <g>
+    <path d="M6,3H5A4,4,0,0,0,1,7V9a4,4,0,0,0,4,4H6Z" fill="url(#c)"/>
+    <path d="M6,4H5A3,3,0,0,0,2,7V9a3,3,0,0,0,3,3H6Z" fill="url(#d)"/>
+    <path d="M6,5H5A2,2,0,0,0,3,7V9a2,2,0,0,0,2,2H6Z" fill="url(#e)"/>
+  </g>
+  <g>
+    <path d="M6,3H7a4,4,0,0,1,4,4V9a4,4,0,0,1-4,4H6Z" fill="url(#f)"/>
+    <path d="M6,4H7a3,3,0,0,1,3,3V9a3,3,0,0,1-3,3H6Z" fill="url(#g)"/>
+    <path d="M6,5H7A2,2,0,0,1,9,7V9a2,2,0,0,1-2,2H6Z" fill="url(#h)"/>
+  </g>
+</svg>

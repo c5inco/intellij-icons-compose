@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#F4AF3D" d="M6.33 9.62l-4.618.003L6.765.997h4.93L7.99 5.925h7.404l-.937.937A5.502 5.502 0 0 0 6.33 9.62zm.53 4.835l-1.327 1.327.877-2.194c.125.303.276.593.45.867z"/><circle cx="11.5" cy="11.5" r="4.5" fill="#62B543" fill-opacity=".7"/><path fill="#231F20" fill-opacity=".7" d="M14 11.5l-2 2v-4z"/><path fill="#231F20" fill-opacity=".7" d="M11 11.5l-2 2v-4z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#F4AF3D" d="M6.32971787,9.61993315 L1.71160392,9.62290691 L6.76529509,0.997181508 L11.6957255,0.996699641 L7.99026679,5.9250841 L15.3935483,5.9250841 L14.4567102,6.86152751 C13.6028433,6.31611152 12.5883375,6 11.5,6 C9.12276515,6 7.09778793,7.50819423 6.32971787,9.61993315 Z M6.8602804,14.4547569 L5.53268748,15.7817905 L6.4102046,13.5880356 C6.53482916,13.8914977 6.6858035,14.1813539 6.8602804,14.4547569 Z"/>
+    <circle cx="11.5" cy="11.5" r="4.5" fill="#62B543" fill-opacity=".7"/>
+    <polygon fill="#231F20" fill-opacity=".7" points="13 10.5 15 12.5 11 12.5" transform="rotate(90 13 11.5)"/>
+    <polygon fill="#231F20" fill-opacity=".7" points="10 10.5 12 12.5 8 12.5" transform="rotate(90 10 11.5)"/>
+  </g>
+</svg>

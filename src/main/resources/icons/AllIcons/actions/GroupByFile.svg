@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="#6E6E6E" fill-rule="evenodd"><path d="M1 2h1v12H1z"/><path d="M2 2h2v1H2z"/><path d="M2 13h2v1H2z"/><path d="M14 2h1v12h-1z"/><path d="M12 2h3v1h-3z"/><path d="M12 13h2v1h-2z"/><path d="M4 7h4V3h3v10H4V7zm3-4v3H4l3-3z"/></g></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="1" height="12" x="1" y="2" fill="#6E6E6E"/>
+    <rect width="2" height="1" x="2" y="2" fill="#6E6E6E"/>
+    <rect width="2" height="1" x="2" y="13" fill="#6E6E6E"/>
+    <rect width="1" height="12" x="14" y="2" fill="#6E6E6E"/>
+    <rect width="3" height="1" x="12" y="2" fill="#6E6E6E"/>
+    <rect width="2" height="1" x="12" y="13" fill="#6E6E6E"/>
+    <path fill="#6E6E6E" d="M4,7 L8,7 L8,3 L11,3 L11,13 L4,13 L4,7 Z M7,3 L7,6 L4,6 L7,3 Z"/>
+  </g>
+</svg>

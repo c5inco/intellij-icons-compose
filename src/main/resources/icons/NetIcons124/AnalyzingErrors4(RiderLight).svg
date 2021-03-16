@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="analyzingErrors4" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="Fill-2" fill="#9AA7B0" d="M8,14 C4.686,14 2,11.314 2,8 C2,5.333 3.74,3.076 6.146,2.295 L5.838,1.345 C3.001,2.266 1,4.946 1,8 C1,11.835 4.132,15 8,15 C8.755,15 9.48,14.877 10.162,14.655 L9.854,13.705 C9.27,13.895 8.647,14 8,14" opacity=".7"/>
+    <g id="Group" fill="#E05555" transform="translate(4 1)">
+      <path id="Fill-4" d="M4,-3.73034936e-14 L4,1.5 C7.038,1.5 9.5,3.962 9.5,7 C9.5,8.829 8.604,10.445 7.229,11.445 L8.11,12.657 C9.873,11.375 11,9.296 11,7 C11,3.133 7.836,-3.73034936e-14 4,-3.73034936e-14"/>
+      <polygon id="Fill-6" points="0 8 8 8 8 6 0 6"/>
+    </g>
+  </g>
+</svg>

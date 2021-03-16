@@ -1,1 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><path fill="#9AA7B0" fill-opacity=".8" fill-rule="evenodd" d="M3 13V3h2.2l2.805 4.223L10.8 3H13v10h-1.998V6.51l-2.997 4.231-3.006-4.233V13z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <polygon fill="#9AA7B0" fill-opacity=".8" fill-rule="evenodd" points="3 13 3 3 5.2 3 8.005 7.223 10.8 3 13 3 13 13 11.002 13 11.002 6.51 8.005 10.741 4.999 6.508 4.999 13"/>
+</svg>

@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#9AA7B0" fill-opacity=".8" d="M14 6h1V4h-1z"/><path fill="#9AA7B0" fill-opacity=".8" d="M12 11.414L6.586 6H10V4H7.984L6.696 2.711c-.391-.39-1.164-.71-1.717-.71H1.051A.05.05 0 0 0 1 2.05v10.95h14V8.414l-3 3z"/><path fill="#40B6E0" d="M9 7l3 3 3.001-3H13V2h-2v5z"/></g></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#9AA7B0" fill-opacity=".8" points="14 6 15 6 15 4 14 4"/>
+    <path fill="#9AA7B0" fill-opacity=".8" d="M12,11.4141 L6.586,6.0001 L10,6.0001 L10,4.0001 L7.984,4.0001 L6.696,2.7111 C6.305,2.3201 5.532,2.0001 4.979,2.0001 L1.051,2.0001 C1.023,2.0001 1,2.0221 1,2.0511 L1,13.0001 L15,13.0001 L15,8.4151 L12,11.4141 Z"/>
+    <polygon fill="#40B6E0" points="9 7 12 10 15.001 7 13 7 13 2 11 2 11 7"/>
+  </g>
+</svg>

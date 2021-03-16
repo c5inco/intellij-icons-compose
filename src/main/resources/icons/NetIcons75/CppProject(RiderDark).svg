@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+  <title>CppProject(GrayDark)</title>
+  <g>
+    <g>
+      <rect width="14" height="12" fill="#252525"/>
+      <rect x="1" y="1" width="12" height="10" fill="#c4c4c4"/>
+      <rect x="1" y="1" width="12" height="3" fill="#c4c4c4"/>
+      <rect x="2" y="4" width="11" height="7" fill="#292929"/>
+    </g>
+    <g>
+      <polygon points="4 14 4 12 2 12 2 8 4 8 4 6 8 6 8 8 10 8 10 12 8 12 8 14 4 14" fill="#252525" fill-rule="evenodd"/>
+      <polygon points="10 12 10 10 8 10 8 6 10 6 10 4 14 4 14 6 16 6 16 10 14 10 14 12 10 12" fill="#252525" fill-rule="evenodd"/>
+      <g>
+        <polygon points="9 9 7 9 7 7 5 7 5 9 3 9 3 11 5 11 5 13 7 13 7 11 9 11 9 9" fill="#be72b6" fill-rule="evenodd"/>
+        <polygon points="15 7 13 7 13 5 11 5 11 7 9 7 9 9 11 9 11 11 13 11 13 9 15 9 15 7" fill="#be72b6" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

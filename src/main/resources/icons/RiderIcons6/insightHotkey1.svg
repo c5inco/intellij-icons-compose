@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>insightHotkey1</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <g>
+      <rect x="12" y="2" width="1" height="12" fill="#389fd6"/>
+      <polygon points="9.307 9 4.93 9 4.93 8.136 6.722 8.136 6.722 3.051 5.053 3.957 4.712 3.168 6.93 2 7.75 2 7.75 8.136 9.307 8.136 9.307 9" fill="#389fd6"/>
+    </g>
+  </g>
+</svg>

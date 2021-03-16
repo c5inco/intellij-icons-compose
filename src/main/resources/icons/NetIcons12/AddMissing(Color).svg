@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-416.731" y1="181.991" x2="-416.731" y2="180.999" gradientTransform="matrix(13, 0, 0, -13, 5426, 2367)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#108b00"/>
+      <stop offset="1" stop-color="#165e00"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-410.409" y1="177.081" x2="-410.409" y2="176.076" gradientTransform="matrix(11, 0, 0, -11, 4523, 1950)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e9ffc6"/>
+      <stop offset="1" stop-color="#20e200"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-401.278" y1="169.991" x2="-401.278" y2="168.999" gradientTransform="matrix(9, 0, 0, -9, 3620, 1533)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <path d="M15,5H11V1H6V5H2v5H6v4h5V10h4Z" fill="url(#linear-gradient)"/>
+    <path d="M10,6V2H7V6H3V9H7v4h3V9h4V6Z" fill="url(#linear-gradient-2)"/>
+    <path d="M13,8H9v4H8V8H4V7H8V3H9V7h4Z" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>

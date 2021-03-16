@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>LockSession</title>
+  <g>
+    <rect width="16" height="16" fill="#ffc4ff" opacity="0"/>
+    <path d="M4,6.5V5a4,4,0,0,1,8,0V6.5H10.4V5A2.4,2.4,0,1,0,5.6,5V6.5ZM13,7v7H3V7ZM9,9H7v3H9Z" fill="#6e6e6e"/>
+  </g>
+</svg>

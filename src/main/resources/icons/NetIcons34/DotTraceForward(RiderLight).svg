@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>Forward</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect width="16" height="16" fill="#ed1e79" opacity="0"/>
+        <polygon points="13.73 6.73 10.05 3.05 8.78 4.32 11.46 7 2 7 2 9 11.45 9 8.78 11.68 10.05 12.95 13.73 9.27 15 8 13.73 6.73" fill="#6e6e6e" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

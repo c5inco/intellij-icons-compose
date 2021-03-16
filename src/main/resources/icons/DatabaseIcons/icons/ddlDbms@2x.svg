@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#F4AF3D" fill-opacity=".7" d="M1 12h14V5H1z"/><path fill="#9AA7B0" fill-opacity=".8" d="M2 4h12V2H2z"/><path fill="#9AA7B0" fill-opacity=".8" d="M2 14h12v-1H2z"/><path fill="#231F20" fill-opacity=".7" d="M3 7v3h.649C4.578 10 5 9.493 5 8.515V8.5C5 7.522 4.578 7 3.649 7H3zM2 6h1.649C5.04 6 6 7.093 6 8.5 6 9.921 5.04 11 3.649 11H2V6z"/><path fill="#231F20" fill-opacity=".7" d="M7.5 7v3h.649C9.078 10 9.5 9.493 9.5 8.515V8.5c0-.978-.422-1.5-1.351-1.5H7.5zm-1-1h1.649C9.54 6 10.5 7.093 10.5 8.5c0 1.421-.96 2.5-2.351 2.5H6.5V6z"/><path fill="#231F20" fill-opacity=".7" d="M11 6h1v4h2.5v1H11z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#F4AF3D" fill-opacity=".7" points="1 12 15 12 15 5 1 5"/>
+    <polygon fill="#9AA7B0" fill-opacity=".8" points="2 4 14 4 14 2 2 2"/>
+    <polygon fill="#9AA7B0" fill-opacity=".8" points="2 14 14 14 14 13 2 13"/>
+    <path fill="#231F20" fill-opacity=".7" d="M1,1 L1,4 L1.649,4 C2.578,4 3,3.493 3,2.515 L3,2.5 C3,1.522 2.578,1 1.649,1 L1,1 Z M0,0 L1.649,0 C3.04,0 4,1.093 4,2.5 C4,3.921 3.04,5 1.649,5 L0,5 L0,0 Z" transform="translate(2 6)"/>
+    <path fill="#231F20" fill-opacity=".7" d="M1,1 L1,4 L1.649,4 C2.578,4 3,3.493 3,2.515 L3,2.5 C3,1.522 2.578,1 1.649,1 L1,1 Z M0,0 L1.649,0 C3.04,0 4,1.093 4,2.5 C4,3.921 3.04,5 1.649,5 L0,5 L0,0 Z" transform="translate(6.5 6)"/>
+    <polygon fill="#231F20" fill-opacity=".7" points="0 0 1 0 1 4 3.5 4 3.5 5 0 5" transform="translate(11 6)"/>
+  </g>
+</svg>

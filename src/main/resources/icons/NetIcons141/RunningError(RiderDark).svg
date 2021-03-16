@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>RunningError_dark</title>
+  <g>
+    <rect width="16" height="16" fill="#ffc4ff" opacity="0"/>
+    <path d="M8,2a6,6,0,1,0,6,6A6,6,0,0,0,8,2ZM8,12.2A4.2,4.2,0,1,1,12.2,8,4.206,4.206,0,0,1,8,12.2Zm3-5.7A1.5,1.5,0,1,1,9.5,5,1.5,1.5,0,0,1,11,6.5Z" fill="#c75450"/>
+  </g>
+</svg>

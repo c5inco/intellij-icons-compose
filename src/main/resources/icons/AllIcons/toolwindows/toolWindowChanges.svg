@@ -1,1 +1,9 @@
-<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><rect id="frame" width="13" height="13" fill="none"/><path d="M8.968 2.367a1.661 1.661 0 1 0-.833 3.103v.231s0 1.667-1.668 1.667c-.69 0-1.232.148-1.667.375v-3.94a1.66 1.66 0 0 0 .834-1.436 1.668 1.668 0 0 0-3.334 0c0 .615.337 1.147.833 1.436v5.463c-.496.29-.833.82-.833 1.436a1.668 1.668 0 0 0 3.334 0c0-.436-.172-.83-.446-1.128.242-.298.637-.54 1.28-.54 3.307 0 3.333-3.333 3.333-3.333v-.23a1.661 1.661 0 0 0-.833-3.104z" fill="#6E6E6E"/></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="2" height="11" x="2" y="1" fill="#6E6E6E"/>
+    <rect width="7" height="2" x="3" y="7" fill="#6E6E6E"/>
+    <rect width="2" height="4" x="8" y="4" fill="#6E6E6E"/>
+    <polygon fill="#6E6E6E" points="9 1 12.5 5 5.5 5"/>
+  </g>
+</svg>

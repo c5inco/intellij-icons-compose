@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>SaveSnapshotAndContinueRecording</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect width="16" height="16" fill="#ed1e79" opacity="0"/>
+        <g>
+          <polygon points="8 1 7 1 7 6.09 5 4.09 5 5.5 7.5 8 10 5.5 10 4.09 8 6.09 8 1" fill="#389ed5"/>
+          <path d="M8.13,12H2V9H8.54A3.89,3.89,0,0,0,8,11,3.66,3.66,0,0,0,8.13,12Z" fill="#6f6e6f"/>
+          <path d="M14.12,8.88A3,3,0,1,0,14.21,13l-.82-.6A2,2,0,1,1,12,9a2,2,0,0,1,1.41.59L12,11h3V8Z" fill="#5aa769"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

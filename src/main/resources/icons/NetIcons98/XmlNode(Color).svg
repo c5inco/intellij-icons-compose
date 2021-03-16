@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="8" y1="3" x2="8" y2="11.968" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6d0000"/>
+      <stop offset="1" stop-color="#490000"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="12.755" y1="3.949" x2="12.755" y2="10.968" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#77eaff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="22.245" y1="3.949" x2="22.245" y2="10.968" gradientTransform="matrix(-1, 0, 0, 1, 25.49, 0)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="-376.167" y1="255.5" x2="-376.167" y2="254.5" gradientTransform="matrix(6, 0, 0, -6, 2265, 1537.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffede3"/>
+      <stop offset="1" stop-color="#ffa6a6"/>
+    </linearGradient>
+  </defs>
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <polygon points="16 7.914 16 7.086 11.914 3 11.086 3 9.5 4.586 8 3.086 6.5 4.586 4.914 3 4.086 3 0 7.086 0 7.914 4.086 12 4.914 12 6.5 10.414 8 11.914 9.5 10.414 11.086 12 11.914 12 16 7.914" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      <polygon points="11.5 4 10.51 4.99 13.021 7.5 10.51 10.01 11.5 11 15 7.5 11.5 4" fill-rule="evenodd" fill="url(#linear-gradient-2)"/>
+      <polygon points="4.5 4 5.49 4.99 2.979 7.5 5.49 10.01 4.5 11 1 7.5 4.5 4" fill-rule="evenodd" fill="url(#linear-gradient-3)"/>
+      <path d="M8,10.5l-3-3,3-3,3,3Z" fill-rule="evenodd" fill="url(#linear-gradient-4)"/>
+    </g>
+  </g>
+</svg>

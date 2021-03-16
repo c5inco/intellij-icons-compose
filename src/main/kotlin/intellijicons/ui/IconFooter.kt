@@ -51,7 +51,11 @@ fun IconFooter(
                     Text(it.java, style = MaterialTheme.typography.caption)
                 }
                 Row {
-
+                    Thumbnail(it)
+                    if (it.variants > 1) {
+                        Spacer(Modifier.width(4.dp))
+                        Thumbnail(it, true)
+                    }
                 }
             }
         }
@@ -60,22 +64,22 @@ fun IconFooter(
 
 @Composable
 private fun Thumbnail(
-    set: String,
-    icon: DataIcon
+    icon: DataIcon,
+    dark: Boolean = false
 ) {
     val sectionPath = if (icon.section.isNotBlank()) "${icon.section}/" else ""
-    val darkSuffix = if (icon.dark) "_dark" else ""
+    val darkSuffix = if (dark) "_dark" else ""
 
     Box(
         modifier = Modifier
             .size(42.dp)
-            .background(if (icon.dark) darkGray300 else Color(0xffececec)),
+            .background(if (dark) darkGray300 else Color(0xffececec)),
         contentAlignment = Alignment.Center
     ) {
         if (icon.kind != "svg") {
             val dpiSuffix = if (icon.sizes.getOrNull(1) != null) "@2x" else ""
             var imageExists = false
-            val imagePath = "icons/$set/${sectionPath}${icon.name}$dpiSuffix$darkSuffix.png"
+            val imagePath = "icons/${icon.set}/${sectionPath}${icon.name}$dpiSuffix$darkSuffix.png"
 
             try {
                 imageFromResource(imagePath)
@@ -111,7 +115,7 @@ private fun Thumbnail(
         } else {
             // TODO: May need to figure out a better try/catch her for invalid SVG paths
             Image(
-                painter = svgResource("icons/$set/${sectionPath}${icon.name}$darkSuffix.svg"),
+                painter = svgResource("icons/${icon.set}/${sectionPath}${icon.name}$darkSuffix.svg"),
                 contentDescription = icon.name,
                 modifier = Modifier.size(16.dp)
             )

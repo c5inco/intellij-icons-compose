@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#F98B9E" fill-opacity=".6" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/><path fill="#231F20" fill-opacity=".7" d="M7 8V6h1.537C9.303 6 10 6.313 10 6.954 10 7.594 9.285 8 8.547 8H7zm2.36.828C10.175 8.59 11 8.109 11 6.913 11 5.716 9.949 5 8.622 5H6v6h1V9H8.328l1.445 2H11L9.36 8.828z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#F98B9E" fill-opacity=".6" d="M15,8 C15,11.866 11.866,15 8,15 C4.134,15 1,11.866 1,8 C1,4.134 4.134,1 8,1 C11.866,1 15,4.134 15,8"/>
+    <path fill="#231F20" fill-opacity=".7" d="M1,3 L1,1 L2.537,1 C3.303,1 4,1.3126 4,1.9536 C4,2.5946 3.285,3 2.547,3 L1,3 Z M3.36,3.8276 C4.175,3.5896 5,3.10946655 5,1.9126 C5,0.715733447 3.94885254,-0.0004 2.622,-0.0004 L0,-0.0004 L0,5.9996 L1,5.9996 L1,4 L1.5,4 L2.328,4 L3.773,5.9996 L5,5.9996 L3.36,3.8276 Z" transform="translate(6 5)"/>
+  </g>
+</svg>

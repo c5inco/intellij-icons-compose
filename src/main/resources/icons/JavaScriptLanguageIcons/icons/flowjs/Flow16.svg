@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#FFCA20" opacity=".7" d="M13.736 7.032L9.082 2.378h4.654z"/><path fill="#FFCA20" opacity=".7" d="M5.822 1H8.46l2.017 2.016H5.822z"/><path fill="#FFCF39" fill-rule="nonzero" d="M5.973 5.655L1.32 1h5.596v4.654h-.942zm4.089 4.654l4.654 4.654h-4.654v-4.654z" opacity=".9"/><path fill="#FFE490" fill-rule="nonzero" d="M6.915 10.31L2.26 5.653h4.654v4.655zm5.012-2.356L8.217 4.24h3.712l-.002 3.713zm.434 6.576l-4.22-4.22h4.22v4.22z" opacity=".7"/><path fill="#FCBC7C" opacity=".9" d="M6.915 4.708L3.207 1h3.708z"/><path fill="#F9A040" opacity=".8" d="M8.159 10.309l4.654 4.654H8.159z"/><path fill="#F9A040" opacity=".7" d="M12.87 12.167L8.221 7.519h4.649z"/><path fill="#FFCF39" opacity=".9" d="M8.217 4.241l4.598 4.598H8.217z"/><path fill="#FFC737" opacity=".7" d="M6.915 14.945L1.3 9.329h5.615z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd" transform="translate(1.3 1)">
+    <polygon fill="#FFCA20" points="12.436 6.032 7.782 1.378 12.436 1.378" opacity=".7"/>
+    <polygon fill="#FFCA20" points="4.522 0 7.16 0 9.177 2.016 4.522 2.016" opacity=".7"/>
+    <path fill="#FFCF39" fill-rule="nonzero" d="M4.67312253,4.65486166 L0.0188142292,0 L5.61494071,0 L5.61494071,4.6543083 L4.67312253,4.65486166 Z M8.76189723,9.3086166 L13.4162055,13.9629249 L8.76189723,13.9629249 L8.76189723,9.3086166 Z" opacity=".9"/>
+    <path fill="#FFE490" fill-rule="nonzero" d="M5.61494071,9.30916996 L0.961185771,4.6543083 L5.61549407,4.6543083 L5.61549407,9.3086166 L5.61494071,9.30916996 Z M10.6272727,6.95351779 L6.91699605,3.24102767 L10.6289328,3.24102767 L10.6272727,6.95351779 Z M11.0611067,13.5296443 L6.84007905,9.30916996 L11.0611067,9.30916996 L11.0611067,13.5296443 Z" opacity=".7"/>
+    <polygon fill="#FCBC7C" points="5.615 3.708 1.907 0 5.615 0" opacity=".9"/>
+    <polygon fill="#F9A040" points="6.859 9.309 11.513 13.963 6.859 13.963" opacity=".8"/>
+    <polygon fill="#F9A040" points="11.57 11.167 6.921 6.519 11.57 6.519" opacity=".7"/>
+    <polygon fill="#FFCF39" points="6.917 3.241 11.515 7.839 6.917 7.839" opacity=".9"/>
+    <polygon fill="#FFC737" points="5.615 13.945 0 8.329 5.615 8.329" opacity=".7"/>
+  </g>
+</svg>

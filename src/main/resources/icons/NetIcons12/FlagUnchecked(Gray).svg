@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <path d="M14,14H2V2H14Z" fill="#f4f4f4" fill-rule="evenodd"/>
+    <path d="M13,13H3V3H13Z" fill="#313131" fill-rule="evenodd"/>
+    <path d="M11,11H5V5h6Z" fill="#ebebeb" fill-rule="evenodd"/>
+  </g>
+</svg>

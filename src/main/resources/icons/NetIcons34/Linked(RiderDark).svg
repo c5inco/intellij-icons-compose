@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>FollowSelection_dark</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect width="16" height="16" fill="#ed1e79" opacity="0"/>
+        <g>
+          <polygon points="11 5 11 8 9 8 9 7 3 7 3 13 9 13 9 12 11 12 11 14 2 14 2 5 11 5" fill="#b0b1b3"/>
+          <polygon points="8 8 8 9 14 9 14 3 8 3 8 4 6 4 6 2 15 2 15 11 6 11 6 8 8 8" fill="#b0b1b3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

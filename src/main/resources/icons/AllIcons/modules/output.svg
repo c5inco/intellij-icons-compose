@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#9AA7B0" d="M1 13h14v2H1z"/><path fill="#9AA7B0" fill-opacity=".6" d="M2 1h12v11H2z"/><path fill="#231F20" fill-opacity=".7" d="M6 5c-.708 0-1 .54-1 1.5S5.285 8 6 8c.715 0 1-.554 1-1.5S6.708 5 6 5zm0-1c1.207 0 2 1.118 2 2.5S7.206 9 6 9 4 7.88 4 6.5C4 4.959 4.793 4 6 4z"/><path fill="#231F20" fill-opacity=".7" d="M10.1 4L9 4.443l.157.782L10 5v4h1V4z"/></g></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="14" height="2" x="1" y="13" fill="#9AA7B0"/>
+    <rect width="12" height="11" x="2" y="1" fill="#9AA7B0" fill-opacity=".6"/>
+    <path fill="#231F20" fill-opacity=".7" d="M2,1 C1.292,1 1,1.54 1,2.5 C1,3.46 1.285,4 2,4 C2.715,4 3,3.446 3,2.5 C3,1.554 2.708,1 2,1 Z M2,-0.0003 C3.207,-0.0003 4,1.1177 4,2.4997 C4,3.8817 3.206,4.9997 2,4.9997 C0.794,4.9997 2.84217094e-14,3.881 2.84217094e-14,2.5 C2.84217094e-14,0.958803662 0.793,-0.0003 2,-0.0003 Z" transform="translate(4 4)"/>
+    <polygon fill="#231F20" fill-opacity=".7" points="1.1 0 0 .443 .157 1.225 1 1 1 5 2 5 2 0" transform="translate(9 4)"/>
+  </g>
+</svg>

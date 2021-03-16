@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none"><path fill="#4F93D1" d="M2.522 3.009l1.826.608v8.826l-1.826.609z"/><path fill="#1C5A9A" d="M2.522 3.009l-1.218.426v9.13l1.218.487z"/><path fill="#1B5A9A" d="M12.869 3.009l-1.826.608v8.826l1.826.609z"/><path fill="#4F93D1" d="M12.869 3.009l1.218.426v9.13l-1.218.487z"/><path fill="#FF6969" d="M6.478 1h2.435v14H6.478z"/><path fill="#1B5A9A" d="M4.348 1.913L6.478 1v14l-2.13-.913z"/><path fill="#4F93D1" d="M11.044 1.913L8.914 1v14l2.13-.913z"/><path fill="#2870BA" d="M6.478 1h2.435v14H6.478z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" transform="translate(1 1)">
+    <g transform="translate(0 1.826)">
+      <polygon fill="#4F93D1" points="1.522 .183 3.348 .791 3.348 9.617 1.522 10.226"/>
+      <polygon fill="#1C5A9A" points=".304 .183 1.522 .609 1.522 9.739 .304 10.226" transform="matrix(-1 0 0 1 1.826 0)"/>
+    </g>
+    <g transform="matrix(-1 0 0 1 13.391 1.826)">
+      <polygon fill="#1B5A9A" points="1.522 .183 3.348 .791 3.348 9.617 1.522 10.226"/>
+      <polygon fill="#4F93D1" points=".304 .183 1.522 .609 1.522 9.739 .304 10.226" transform="matrix(-1 0 0 1 1.826 0)"/>
+    </g>
+    <rect width="2.435" height="14" x="5.478" fill="#FF6969"/>
+    <polygon fill="#1B5A9A" points="3.348 .913 5.478 0 5.478 14 3.348 13.087"/>
+    <polygon fill="#4F93D1" points="7.913 .913 10.043 0 10.043 14 7.913 13.087" transform="matrix(-1 0 0 1 17.957 0)"/>
+    <rect width="2.435" height="14" x="5.478" fill="#2870BA"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>ExportXml(Gray)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <g>
+      <g>
+        <rect x="4" y="5" width="8" height="8" transform="translate(17 1) rotate(90)" fill="#f4f4f4"/>
+        <rect x="5" y="6" width="6" height="6" fill="#900"/>
+      </g>
+      <g>
+        <polygon points="6 4 3.233 4 0 8.688 0 9.312 3.233 14 6 14 6 12.688 3.457 9 6 5.312 6 4" fill="#f4f4f4"/>
+        <polygon points="5 5 3.758 5 1 9 3.758 13 5 13 2.242 9 5 5" fill="#323232"/>
+      </g>
+      <g>
+        <polygon points="10 14 12.767 14 16 9.312 16 8.688 12.767 4 10 4 10 5.312 12.543 9 10 12.688 10 14" fill="#f4f4f4"/>
+        <polygon points="11 5 12.242 5 15 9 12.242 13 11 13 13.758 9 11 5" fill="#323232"/>
+      </g>
+    </g>
+  </g>
+</svg>

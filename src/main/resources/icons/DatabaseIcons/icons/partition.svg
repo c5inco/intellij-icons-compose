@@ -1,1 +1,8 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect id="frame" width="16" height="16" fill="none"/><g fill="#40B6E0" fill-opacity=".6"><path d="M8.5 13A5.5 5.5 0 1 1 14 7.5H8.5V13z"/><path d="M15 9a5 5 0 0 1-5 5V9h5z"/></g></svg>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="idea/dbe/database/api/resources/icons/partition">
+<g id="localScope Copy">
+<path id="Path" d="M8.5 13C5.46243 13 3 10.5376 3 7.5C3 4.46243 5.46243 2 8.5 2C11.5376 2 14 4.46243 14 7.5H8.5V13Z" fill="#40B6E0" fill-opacity="0.6"/>
+<path id="Path Copy 2" d="M15 9C15 11.7614 12.7614 14 10 14V9H15Z" fill="#40B6E0" fill-opacity="0.6"/>
+</g>
+</g>
+</svg>

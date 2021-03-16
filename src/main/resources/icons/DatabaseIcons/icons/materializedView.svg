@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#231F20" fill-opacity=".7" d="M12 9l-1.5 5.251L8.999 9h-1l-1.466 5.133L6 11H5l1 5h1l1.5-5.249L10 16h1l1.499-5.249L14 16h1l1-5.99h-1l-.588 3.932L13 9z"/><path fill="#9AA7B0" d="M2 14H1V2h14v6H2v2h2v1H2v2h2v1H2zm4-7h4V5H6v2zM5 7V5H2v2h3zm9 0V5h-3v2h3z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#231F20" fill-opacity=".7" points="12 9 10.5 14.251 8.999 9 7.999 9 6.533 14.133 6 11 5 11 6 16 7 16 8.5 10.751 10 16 11 16 12.499 10.751 14 16 15 16 16 10.01 15 10.01 14.412 13.942 13 9"/>
+    <path fill="#9AA7B0" d="M2,14 L1,14 L1,5 L1,2 L15,2 L15,5 L15,8 L14,8 L2,8 L2,10 L4,10 L4,11 L2,11 L2,13 L4,13 L4,14 L2,14 Z M6,7 L10,7 L10,5 L6,5 L6,7 Z M5,7 L5,5 L2,5 L2,7 L5,7 Z M14,7 L14,5 L11,5 L11,7 L14,7 Z"/>
+  </g>
+</svg>

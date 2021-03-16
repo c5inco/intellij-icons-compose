@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>csharpInteractive(Gray)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe6ff" opacity="0"/>
+    <g>
+      <g>
+        <rect y="3" width="13" height="13" fill="#f4f4f4"/>
+        <rect x="1" y="4" width="11" height="11" fill="#323232"/>
+        <path d="M10,14H6V13h4ZM2,14H3l3-2.5L3,9H2v.345L4.586,11.5,2,13.655Z" fill="#ebebeb"/>
+      </g>
+      <g>
+        <path d="M7.5,7A2.754,2.754,0,0,1,5,4V3A2.754,2.754,0,0,1,7.5,0H15V1h1V6H15V7Z" fill="#f4f4f4"/>
+        <path d="M7,3.5C7,5.016,8,5,8,5H9V6H7.5C6.672,6,6,5.1,6,4V3c0-1.1.672-2,1.5-2H9V2H8S7,1.984,7,3.5ZM15,3V2H14V1H13V2H12V1H11V2H10V3h1V4H10V5h1V6h1V5h1V6h1V5h1V4H14V3ZM13,4H12V3h1Z" fill="#388a34"/>
+      </g>
+    </g>
+  </g>
+</svg>

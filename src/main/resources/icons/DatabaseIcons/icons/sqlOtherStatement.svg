@@ -1,1 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><path fill="#9AA7B0" fill-opacity=".8" fill-rule="evenodd" d="M8 2.343L13.657 8 8 13.657 2.343 8z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <rect width="8" height="8" x="4" y="4" fill="#9AA7B0" fill-opacity=".8" fill-rule="evenodd" transform="rotate(45 8 8)"/>
+</svg>

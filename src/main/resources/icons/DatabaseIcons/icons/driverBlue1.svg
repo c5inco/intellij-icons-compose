@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="#40B6E0" fill-opacity=".7" fill-rule="evenodd"><path d="M4 6h8v3H4z"/><path d="M6 3h4v3H6z"/><path d="M6 12v3H2v-3h4zm4 0h4v3h-4v-3z"/><path d="M12 1h3v3h-3z"/><path d="M1 1h3v3H1z"/><path d="M2 9h2v3H2z"/><path d="M12 9h2v3h-2z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-opacity=".7" fill-rule="evenodd">
+    <rect width="8" height="3" x="4" y="6" fill="#40B6E0"/>
+    <rect width="4" height="3" x="6" y="3" fill="#40B6E0"/>
+    <path fill="#40B6E0" d="M6,12 L6,15 L2,15 L2,12 L6,12 Z M10,12 L14,12 L14,15 L10,15 L10,12 Z"/>
+    <rect width="3" height="3" x="12" y="1" fill="#40B6E0"/>
+    <rect width="3" height="3" x="1" y="1" fill="#40B6E0"/>
+    <rect width="2" height="3" x="2" y="9" fill="#40B6E0"/>
+    <rect width="2" height="3" x="12" y="9" fill="#40B6E0"/>
+  </g>
+</svg>

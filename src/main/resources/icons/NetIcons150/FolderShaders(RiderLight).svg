@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="FolderShaders" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <polygon id="Fill-2" fill="#F4AF3D" points="10 2 8 4 2 4 2 6 3 6 10 6 14 6 14 13 10 13 10 14 15 14 15 2"/>
+    <g id="Group-20" fill="#40B6E0" transform="translate(1 7)">
+      <polygon id="Fill-4" points="0 2 2 2 2 0 0 0"/>
+      <polygon id="Fill-6" points="4 2 6 2 6 0 4 0"/>
+      <polygon id="Fill-8" points="6 4 8 4 8 2 6 2"/>
+      <polygon id="Fill-10" points="2 4 4 4 4 2 2 2"/>
+      <polygon id="Fill-12" points="0 6 2 6 2 4 0 4"/>
+      <polygon id="Fill-14" points="4 6 6 6 6 4 4 4"/>
+      <polygon id="Fill-16" points="6 8 8 8 8 6 6 6"/>
+      <polygon id="Fill-18" points="2 8 4 8 4 6 2 6"/>
+    </g>
+  </g>
+</svg>

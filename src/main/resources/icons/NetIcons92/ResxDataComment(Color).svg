@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-427.878" y1="-283.515" x2="-427.878" y2="-284.515" gradientTransform="matrix(16, 0, 0, -13, 6854.055, -3684.638)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#566980"/>
+      <stop offset="1" stop-color="#2c3641"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-419.671" y1="-293.071" x2="-419.671" y2="-294.079" gradientTransform="matrix(12, 0, 0, -9, 5044.055, -2634.638)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edf6ff"/>
+      <stop offset="1" stop-color="#dfe8f2"/>
+    </linearGradient>
+  </defs>
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <path d="M0,1V3.914l1,1v.672l-1,1V8.416l1,1v.671l-1,1V14H16V1Z" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      <path d="M1,3.5l1,1V6L1,7V8L2,9v1.5l-1,1V13H15V2H1Z" fill="#fff" fill-rule="evenodd"/>
+      <path d="M2,3v.086l1,1V6.415l-1,1v.171l1,1v2.327l-1,1V12H14V3Z" fill-rule="evenodd" fill="url(#linear-gradient-2)"/>
+      <path d="M13,7.5l-3,3.005L9,9.515,11.016,7.5,9,5.485l.99-.99Zm-8.99,0L7.01,10.505,8,9.515,5.984,7.5,8,5.485,7.01,4.5Z" fill="#414f5f"/>
+    </g>
+  </g>
+</svg>

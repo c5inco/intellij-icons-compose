@@ -1,1 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><defs><linearGradient id="a" x1="89.953%" x2=".072%" y1="97.002%" y2="-1.145%"><stop offset="0%" stop-color="#ACACAC"/><stop offset="100%" stop-color="#E9E9E9"/></linearGradient><radialGradient id="b" cx="51.742%" cy="97.266%" r="582.924%" fx="51.742%" fy="97.266%" gradientTransform="scale(1 .16773) rotate(-85.527 3.127 3.386)"><stop offset="0%" stop-color="#25303B"/><stop offset="100%" stop-color="#25303B" stop-opacity="0"/></radialGradient><linearGradient id="c" x1="50.703%" x2="3.213%" y1="96.514%" y2=".211%"><stop offset="0%" stop-color="#24303A"/><stop offset="100%" stop-color="#394958"/></linearGradient><linearGradient id="d" x1="49.045%" x2="96.292%" y1="96.507%" y2="0%"><stop offset="0%" stop-color="#24303A"/><stop offset="100%" stop-color="#394958"/></linearGradient><linearGradient id="e" x1="84.591%" x2="10.552%" y1="35.578%" y2="55.882%"><stop offset="0%" stop-color="#E5E5E5"/><stop offset="100%" stop-color="#FFF"/></linearGradient><linearGradient id="f" x1="42.1%" x2="42.1%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFF"/><stop offset="50%" stop-color="#FFF" stop-opacity=".532"/><stop offset="100%" stop-color="#FFF" stop-opacity="0"/></linearGradient><linearGradient id="g" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#FFF"/><stop offset="100%" stop-color="#FFF" stop-opacity="0"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="#7F8082" d="M12.356 12.708l-.913 1.957-.63-2.437z"/><path fill="#7F8082" d="M3.943 12.708l.622 1.957.629-2.437z"/><path fill="url(#a)" stroke="#D6D6D6" stroke-linejoin="round" stroke-width=".2" d="M.039 5.239H.038l1.297 8.426h2.23l-.182-1.957h1.143l.146 1.957h4.67l.146-1.957h1.137l-.182 1.957h2.244l1.282-8.426H.039z" transform="translate(1 1)"/><path fill="url(#b)" d="M3.225 10.418l.671-2.576-.047-5.202-1.258 2.599z" transform="translate(1 1)"/><path fill="#293441" d="M9.041 3.13h2.779l-.057 6.298H8.827z"/><path fill="#293441" d="M7.031 3.134l-2.707.002.064 6.269h2.756z"/><path fill="#2D3948" d="M4.604 8.842l-.379 2.576h7.579l-.451-2.557z"/><path fill="url(#c)" d="M10.804 10.418l-.658-2.557.025-5.238 1.273 2.615z" transform="translate(1 1)"/><path fill="url(#d)" d="M3.231 10.418l.665-2.576-.047-5.202-1.258 2.598z" transform="translate(1 1)"/><path fill="#2D3B48" d="M6.747 4.586l.25 5.469h1.949l.314-5.469z"/><path fill="url(#e)" stroke="#D6D6D6" stroke-linejoin="round" stroke-width=".2" d="M13.968 5.239L10.783.014H3.209L.039 5.239h2.552L3.842 2.65h2.057l-.152.936H8.26l-.133-.965h2.049l1.268 2.618z" transform="translate(1 1)"/><path fill="#363F49" opacity=".449" d="M9.127 3.621l2.066.002 1.251 2.616-.64 5.179H6.997l2.485-5.179z"/><path fill="url(#f)" opacity=".3" d="M8.482 5.239l-2.485 5.179H3.225l-.634-5.179z" transform="translate(1 1)"/><path fill="url(#g)" opacity=".2" d="M3.842 2.65h2.057l-.152.936H8.26l.222 1.653H2.591z" transform="translate(1 1)"/><g transform="translate(9.714 7.127)"><ellipse cx=".5" cy="1.306" fill="#05F0FF" opacity=".8" rx="1" ry="1.286"/><ellipse cx=".5" cy="1.325" fill="#FFF" stroke="#06EFFE" stroke-linecap="round" stroke-width=".5" opacity=".9" rx="1" ry="1.139"/><ellipse cx=".5" cy="1.328" fill="#FEFFFF" stroke="#06EFFE" stroke-linecap="round" stroke-width=".5" opacity=".9" rx="1" ry="1.053"/></g><g transform="translate(5.712 7.308)"><ellipse cx=".5" cy="1.306" fill="#05F0FF" opacity=".8" rx="1" ry="1.286"/><ellipse cx=".5" cy="1.325" fill="#FFF" stroke="#06EFFE" stroke-linecap="round" stroke-width=".5" opacity=".9" rx="1" ry="1.139"/><ellipse cx=".5" cy="1.328" fill="#FEFFFF" stroke="#06EFFE" stroke-linecap="round" stroke-width=".5" opacity=".9" rx="1" ry="1.053"/></g><path stroke="#D6D6D6" stroke-linejoin="round" stroke-width=".2" d="M4.842 3.65h2.057l-.152.936H9.26l-.133-.965 2.066.002 1.251 2.616-.64 5.179H4.225l-.634-5.179z"/><path fill="#FFF" stroke="#FFF" stroke-width=".2" d="M12.423 6.268H3.585" opacity=".343"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="phonegapintegration-a" x1="89.953%" x2=".072%" y1="97.002%" y2="-1.145%">
+      <stop offset="0%" stop-color="#ACACAC"/>
+      <stop offset="100%" stop-color="#E9E9E9"/>
+    </linearGradient>
+    <radialGradient id="phonegapintegration-b" cx="51.742%" cy="97.266%" r="582.924%" fx="51.742%" fy="97.266%" gradientTransform="scale(1 .16773) rotate(-85.527 3.127 3.386)">
+      <stop offset="0%" stop-color="#25303B"/>
+      <stop offset="100%" stop-color="#25303B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="phonegapintegration-c" x1="50.703%" x2="3.213%" y1="96.514%" y2=".211%">
+      <stop offset="0%" stop-color="#24303A"/>
+      <stop offset="100%" stop-color="#394958"/>
+    </linearGradient>
+    <linearGradient id="phonegapintegration-d" x1="49.045%" x2="96.292%" y1="96.507%" y2="0%">
+      <stop offset="0%" stop-color="#24303A"/>
+      <stop offset="100%" stop-color="#394958"/>
+    </linearGradient>
+    <linearGradient id="phonegapintegration-e" x1="84.591%" x2="10.552%" y1="35.578%" y2="55.882%">
+      <stop offset="0%" stop-color="#E5E5E5"/>
+      <stop offset="100%" stop-color="#FFF"/>
+    </linearGradient>
+    <linearGradient id="phonegapintegration-f" x1="42.1%" x2="42.1%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="50%" stop-color="#FFF" stop-opacity=".532"/>
+      <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="phonegapintegration-g" x1="50%" x2="50%" y1="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <polygon fill="#7F8082" points="11.356 11.708 10.443 13.665 9.813 11.228"/>
+    <polygon fill="#7F8082" points="2.943 11.708 3.565 13.665 4.194 11.228"/>
+    <polygon fill="url(#phonegapintegration-a)" stroke="#D6D6D6" stroke-linejoin="round" stroke-width=".2" points=".039 5.239 .038 5.239 1.335 13.665 3.565 13.665 3.383 11.708 4.526 11.708 4.672 13.665 9.342 13.665 9.488 11.708 10.625 11.708 10.443 13.665 12.687 13.665 13.969 5.239 13.968 5.239 .039 5.239"/>
+    <polygon fill="url(#phonegapintegration-b)" points="3.225 10.418 3.896 7.842 3.849 2.64 2.591 5.239"/>
+    <polygon fill="#293441" points="8.041 2.13 10.82 2.13 10.763 8.428 7.827 8.428"/>
+    <polygon fill="#293441" points="6.031 2.134 3.324 2.136 3.388 8.405 6.144 8.405"/>
+    <polygon fill="#2D3948" points="3.604 7.842 3.225 10.418 10.804 10.418 10.353 7.861"/>
+    <polygon fill="url(#phonegapintegration-c)" points="10.804 10.418 10.146 7.861 10.171 2.623 11.444 5.238"/>
+    <polygon fill="url(#phonegapintegration-d)" points="3.231 10.418 3.896 7.842 3.849 2.64 2.591 5.238"/>
+    <polygon fill="#2D3B48" points="5.747 3.586 5.997 9.055 7.946 9.055 8.26 3.586"/>
+    <polygon fill="url(#phonegapintegration-e)" stroke="#D6D6D6" stroke-linejoin="round" stroke-width=".2" points="13.968 5.239 10.783 .014 3.209 .014 .039 5.239 2.591 5.239 3.842 2.65 5.899 2.65 5.747 3.586 8.26 3.586 8.127 2.621 10.176 2.621 11.444 5.239"/>
+    <polygon fill="#363F49" points="8.127 2.621 10.193 2.623 11.444 5.239 10.804 10.418 5.997 10.418 8.482 5.239" opacity=".449"/>
+    <polygon fill="url(#phonegapintegration-f)" points="8.482 5.239 5.997 10.418 3.225 10.418 2.591 5.239" opacity=".3"/>
+    <polygon fill="url(#phonegapintegration-g)" points="3.842 2.65 5.899 2.65 5.747 3.586 8.26 3.586 8.482 5.239 2.591 5.239" opacity=".2"/>
+    <g transform="translate(4.712 6.098)">
+      <g transform="translate(4.002 .029)">
+        <ellipse cx=".5" cy="1.306" fill="#05F0FF" opacity=".8" rx="1" ry="1.286"/>
+        <ellipse cx=".5" cy="1.325" fill="#FFF" stroke="#06EFFE" stroke-linecap="round" stroke-width=".5" opacity=".9" rx="1" ry="1.139"/>
+        <ellipse cx=".5" cy="1.328" fill="#FEFFFF" stroke="#06EFFE" stroke-linecap="round" stroke-width=".5" opacity=".9" rx="1" ry="1.053"/>
+      </g>
+      <g transform="translate(0 .21)">
+        <ellipse cx=".5" cy="1.306" fill="#05F0FF" opacity=".8" rx="1" ry="1.286"/>
+        <ellipse cx=".5" cy="1.325" fill="#FFF" stroke="#06EFFE" stroke-linecap="round" stroke-width=".5" opacity=".9" rx="1" ry="1.139"/>
+        <ellipse cx=".5" cy="1.328" fill="#FEFFFF" stroke="#06EFFE" stroke-linecap="round" stroke-width=".5" opacity=".9" rx="1" ry="1.053"/>
+      </g>
+    </g>
+    <polygon stroke="#D6D6D6" stroke-linejoin="round" stroke-width=".2" points="3.842 2.65 5.899 2.65 5.747 3.586 8.26 3.586 8.127 2.621 10.193 2.623 11.444 5.239 10.804 10.418 3.225 10.418 2.591 5.239"/>
+    <path fill="#FFF" stroke="#FFF" stroke-width=".2" d="M11.4229049,5.26828456 L2.58513441,5.26828456" opacity=".343"/>
+  </g>
+</svg>

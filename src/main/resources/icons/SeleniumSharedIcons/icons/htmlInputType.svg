@@ -1,1 +1,4 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect id="frame" width="16" height="16" fill="none"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13.118 8.962l-2.07-2.07-5.038 5.01v2.07h2.07l5.038-5.01zm1.726-1.725c.221-.222.221-.814 0-1.036l-1.035-1.035c-.222-.221-.814-.221-1.036 0l-1.035 1.035 2.07 2.07 1.036-1.034z" fill="#389FD6"/><path fill-rule="evenodd" clip-rule="evenodd" d="M3 2h1.75v3.6h3.5V2H10v5.941l-1.75 1.74V7.4h-3.5V11H3V2z" fill="#9AA7B0" fill-opacity=".8"/></svg>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.1184 8.962L11.048 6.89158L6.01001 11.9014V13.9718H8.08043L13.1184 8.962ZM14.8438 7.23665C15.0654 7.01501 15.0654 6.42309 14.8438 6.20144L13.8086 5.16623C13.587 4.94459 12.995 4.94459 12.7734 5.16623L11.7382 6.20144L13.8086 8.27186L14.8438 7.23665Z" fill="#389FD6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 2H4.75V5.6H8.25V2H10V7.94141L8.25 9.68078V7.4H4.75V11H3V2Z" fill="#9AA7B0" fill-opacity="0.8"/>
+</svg>

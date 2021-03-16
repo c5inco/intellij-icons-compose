@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>TestMethod</title>
+  <g>
+    <rect width="16" height="16" fill="#ffc4ff" opacity="0"/>
+    <path d="M8,3a5,5,0,1,0,5,5A5,5,0,0,0,8,3Zm0,8.375V4.625a3.375,3.375,0,0,1,0,6.75Z" fill="#6e6e6e"/>
+  </g>
+</svg>

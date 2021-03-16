@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#62B543" fill-opacity=".7" d="M15.325 14.877c-1.189 1.583-3.727 1.052-5.355 1.126 0 0-.288.016-.579.064 0 0 .11-.047.25-.095 1.143-.395 1.684-.475 2.379-.832 1.305-.668 2.604-2.124 2.868-3.636-.497 1.455-2.008 2.706-3.384 3.214-.942.347-2.645.686-2.645.686l-.07-.037c-1.158-.563-1.19-3.07.913-3.878.923-.355 1.805-.16 2.801-.398 1.064-.252 2.295-1.051 2.795-2.091.562 1.664 1.236 4.267.027 5.877z"/><path fill="#9AA7B0" fill-opacity=".8" d="M10 1h5v5h-5z"/><path fill="#9AA7B0" fill-opacity=".8" d="M5 2h1v1H5z"/><path fill="#9AA7B0" fill-opacity=".8" d="M7 2h1v1H7z"/><path fill="#9AA7B0" fill-opacity=".8" d="M9 2h1v1H9z"/><path fill="#9AA7B0" fill-opacity=".8" d="M1 1h3v3H1z"/><path fill="#9AA7B0" fill-opacity=".8" d="M1 10h5v5H1z"/><path fill="#9AA7B0" fill-opacity=".8" d="M2 9h1v1H2z"/><path fill="#9AA7B0" fill-opacity=".8" d="M2 7h1v1H2z"/><path fill="#9AA7B0" fill-opacity=".8" d="M12 9h1v1h-1z"/><path fill="#9AA7B0" fill-opacity=".8" d="M12 7h1v1h-1z"/><path fill="#9AA7B0" fill-opacity=".8" d="M2 5h1v1H2z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#62B543" fill-opacity=".7" d="M15.3250988,14.8772067 C14.1360745,16.4601609 11.5978525,15.9290035 9.96981283,16.0026293 C9.96981283,16.0026293 9.68161765,16.0189906 9.39108418,16.0669057 C9.39108418,16.0669057 9.50098417,16.0201592 9.64128202,15.9716597 C10.784125,15.5766516 11.3248563,15.4971825 12.0199152,15.1401559 C13.3246853,14.4716806 14.6241941,13.0161107 14.8878372,11.5038607 C14.3909489,12.9588462 12.8798241,14.2104844 11.5043206,14.7176842 C10.5619867,15.0647771 8.85853691,15.4036894 8.85853691,15.4042738 L8.78955713,15.3674609 C7.63093069,14.8041653 7.5987791,12.2967986 9.70207776,11.4886681 C10.6245361,11.1339788 11.5066589,11.3291456 12.5033582,11.0913226 C13.5666991,10.8388914 14.7978127,10.0395258 15.2982084,9 C15.8599844,10.6641762 16.5339987,13.2673733 15.3250988,14.8772067 Z"/>
+    <rect width="5" height="5" x="10" y="1" fill="#9AA7B0" fill-opacity=".8"/>
+    <rect width="1" height="1" x="5" y="2" fill="#9AA7B0" fill-opacity=".8"/>
+    <rect width="1" height="1" x="7" y="2" fill="#9AA7B0" fill-opacity=".8"/>
+    <rect width="1" height="1" x="9" y="2" fill="#9AA7B0" fill-opacity=".8"/>
+    <rect width="3" height="3" x="1" y="1" fill="#9AA7B0" fill-opacity=".8"/>
+    <rect width="5" height="5" x="1" y="10" fill="#9AA7B0" fill-opacity=".8"/>
+    <rect width="1" height="1" x="2" y="9" fill="#9AA7B0" fill-opacity=".8"/>
+    <rect width="1" height="1" x="2" y="7" fill="#9AA7B0" fill-opacity=".8"/>
+    <rect width="1" height="1" x="12" y="9" fill="#9AA7B0" fill-opacity=".8"/>
+    <rect width="1" height="1" x="12" y="7" fill="#9AA7B0" fill-opacity=".8"/>
+    <rect width="1" height="1" x="2" y="5" fill="#9AA7B0" fill-opacity=".8"/>
+  </g>
+</svg>

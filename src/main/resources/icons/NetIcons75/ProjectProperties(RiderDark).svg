@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="ProjectProperties_dark" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="Fill-2" fill="#AFB1B3" d="M3,2 L3,4 L5.336,4 C5.934,4.214 6.457,4.561 6.878,5 L14,5 L14,12 L6,12 L6,13 L15,13 L15,2 L3,2 Z"/>
+    <path id="Fill-4" fill="#AFB1B3" d="M5,5 L5,8 L3,8 L3,5 C1.838,5.414 1,6.513 1,7.816 C1,9.12 1.838,10.219 3,10.633 L3,14 C3,14.553 3.447,15 4,15 C4.553,15 5,14.553 5,14 L5,10.633 C6.162,10.219 7,9.12 7,7.816 C7,6.513 6.162,5.414 5,5"/>
+  </g>
+</svg>

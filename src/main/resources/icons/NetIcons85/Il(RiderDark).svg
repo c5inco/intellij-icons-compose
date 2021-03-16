@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>Il(GrayDark)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <g>
+      <polygon points="7.586 1 1 7.586 1 8.414 7.586 15 8.414 15 15 8.414 15 7.586 8.414 1 7.586 1" fill="#252525"/>
+      <rect x="6.197" y="2.747" width="3.606" height="3.606" transform="translate(-0.874 6.99) rotate(-45)" fill="#bd1e2d"/>
+      <rect x="2.747" y="6.197" width="3.606" height="3.606" transform="translate(-4.324 5.56) rotate(-45)" fill="#2baae8"/>
+      <rect x="9.647" y="6.197" width="3.606" height="3.606" transform="translate(-2.303 10.44) rotate(-45)" fill="#8dcf8d"/>
+      <rect x="6.197" y="9.647" width="3.606" height="3.606" transform="translate(-5.753 9.01) rotate(-45)" fill="#c27d1a"/>
+    </g>
+  </g>
+</svg>

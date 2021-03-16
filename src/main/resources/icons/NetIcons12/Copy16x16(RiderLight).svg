@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <path d="M11,3H4v8H2V1h9Z" fill="#6e6e6e" fill-rule="evenodd"/>
+      <path d="M5,4h9V14H5ZM7,6V7h5V6Zm0,4v1h5V10ZM7,8V9h5V8Z" fill="#6e6e6e" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#40B6E0" fill-opacity=".6" d="M2 8h5v5H2z"/><path fill="#40B6E0" fill-opacity=".6" d="M6 2h4v4H6z"/><path fill="#40B6E0" fill-opacity=".6" d="M11 10h3v3h-3z"/><path fill="#9AA7B0" d="M7.655 6L6.5 8H5.346L6.5 6h1.155z"/><path fill="#9AA7B0" d="M7 11h4v1H7z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="5" height="5" x="2" y="8" fill="#40B6E0" fill-opacity=".6"/>
+    <rect width="4" height="4" x="6" y="2" fill="#40B6E0" fill-opacity=".6"/>
+    <rect width="3" height="3" x="11" y="10" fill="#40B6E0" fill-opacity=".6"/>
+    <path fill="#9AA7B0" d="M7.6549873,5.99992379 L6.4999873,7.99992379 L5.3459873,7.99992379 L6.4999873,5.99992379 L7.6549873,5.99992379 Z"/>
+    <rect width="4" height="1" x="7" y="11" fill="#9AA7B0"/>
+  </g>
+</svg>

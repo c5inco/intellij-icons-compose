@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>cppHeader(Gray)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <g>
+      <g>
+        <polygon points="2 15 2 1 9.414 1 14 5.586 14 15 2 15" fill="#f4f4f4"/>
+        <polygon points="9 2 3 2 3 14 13 14 13 6 9 2" fill="#323232"/>
+        <polygon points="9 6 9 4 5 4 5 12 11 12 11 6 9 6" fill="#ebebeb"/>
+      </g>
+      <g>
+        <path d="M7.819,9.347A3.22,3.22,0,0,0,7,9.463V7H3v5H1.25A1.253,1.253,0,0,0,0,13.25v1.5A1.253,1.253,0,0,0,1.25,16H10V12C10,10.044,8.873,9.347,7.819,9.347Z" fill="#f4f4f4" fill-rule="evenodd"/>
+        <path d="M9,12v3H7V12c0-1-1,0-1,0v3H4V8H6v3S9,9,9,12Z" fill="#a04898" fill-rule="evenodd"/>
+        <rect x="1" y="13" width="2" height="2" rx="0.75" ry="0.75" fill="#a04898"/>
+      </g>
+    </g>
+  </g>
+</svg>

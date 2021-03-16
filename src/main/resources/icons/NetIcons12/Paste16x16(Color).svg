@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="6" y1="4.047" x2="6" y2="13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4e647a"/>
+      <stop offset="1" stop-color="#27323d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="6" y1="0.016" x2="6" y2="3.969" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="gray"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="6" y1="4.286" x2="6" y2="12.095" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#95cbff"/>
+      <stop offset="1" stop-color="#3b9eff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="6" y1="1.062" x2="6" y2="4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#c9dfdf"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="6" y1="4.217" x2="6" y2="10.501" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edf6ff"/>
+      <stop offset="1" stop-color="#d9ecff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="10.5" y1="6" x2="10.5" y2="15.97" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7d6833"/>
+      <stop offset="1" stop-color="#54391a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="12.75" y1="7.281" x2="12.75" y2="9.266" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e2d7bb"/>
+      <stop offset="1" stop-color="#e2ccb2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="10.5" y1="6.98" x2="10.5" y2="15.007" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e2d0a0"/>
+      <stop offset="1" stop-color="#e2ccb2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-9" x1="10.5" y1="7.993" x2="10.5" y2="14.049" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff1d1"/>
+    </linearGradient>
+  </defs>
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <rect x="1" y="4" width="10" height="9" fill="url(#linear-gradient)"/>
+      <path d="M10,3V2H8.83A3,3,0,0,0,3.172,2H2L2,3H1V4H11V3Z" fill="url(#linear-gradient-2)"/>
+      <rect x="2" y="4" width="8" height="8" fill="url(#linear-gradient-3)"/>
+      <path d="M9,3H8A2,2,0,1,0,4,3H3V4H9Z" fill="url(#linear-gradient-4)"/>
+      <path d="M6,2A1,1,0,1,1,5,3,1,1,0,0,1,6,2Z"/>
+      <rect x="3.5" y="4" width="5" height="6.5" fill="url(#linear-gradient-5)"/>
+      <rect x="3" y="4" width="6" height="0.5" fill="#697d8b"/>
+    </g>
+    <g>
+      <polygon points="6 16 6 6 11.914 6 15 9.086 15 16 6 16" fill="url(#linear-gradient-6)"/>
+      <g>
+        <polygon points="11.75 7.25 11.75 9.25 13.75 9.25 11.75 7.25" fill="url(#linear-gradient-7)"/>
+        <polygon points="11 10 11 7 7 7 7 15 14 15 14 10 11 10" fill="url(#linear-gradient-8)"/>
+      </g>
+      <polygon points="13 14 8 14 8 8 11 8 11 10 13 10 13 14" fill="url(#linear-gradient-9)"/>
+    </g>
+  </g>
+</svg>

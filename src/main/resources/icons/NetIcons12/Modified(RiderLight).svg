@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <polygon points="13.696 5.866 12.696 4.134 9 6.268 9 2 7 2 7 6.268 3.304 4.134 2.304 5.866 6 8 2.304 10.134 3.304 11.866 7 9.732 7 14 9 14 9 9.732 12.696 11.866 13.696 10.134 10 8 13.696 5.866" fill="#6e6e6e"/>
+  </g>
+</svg>

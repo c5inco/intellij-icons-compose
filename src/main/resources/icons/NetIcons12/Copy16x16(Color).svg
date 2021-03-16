@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="10.5" x2="10.5" y2="11.964" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7d6833"/>
+      <stop offset="1" stop-color="#54391a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="13.5" y1="0.992" x2="13.5" y2="4.003" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e2d0a0"/>
+      <stop offset="1" stop-color="#e2ccb2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="10.5" y1="0.975" x2="10.5" y2="11.009" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="10.5" y1="2.492" x2="10.5" y2="9.557" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff1d1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="5.5" y1="4" x2="5.5" y2="15.964" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="8.5" y1="4.992" x2="8.5" y2="8.003" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-7" x1="5.5" y1="4.975" x2="5.5" y2="15.009" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-8" x1="5.5" y1="6.492" x2="5.5" y2="13.557" xlink:href="#linear-gradient-4"/>
+  </defs>
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <g>
+        <path d="M5,12V0h7.414L16,3.586V12Z" fill="url(#linear-gradient)"/>
+        <g>
+          <polygon points="15 4 12 1 12 4 15 4" fill="url(#linear-gradient-2)"/>
+          <polygon points="11 1 6 1 6 11 15 11 15 5 11 5 11 1" fill="url(#linear-gradient-3)"/>
+        </g>
+        <polygon points="11 5 11 2.5 7.5 2.5 7.5 9.5 13.5 9.5 13.5 5 11 5" fill="url(#linear-gradient-4)"/>
+      </g>
+      <g>
+        <path d="M0,16V4H7.414L11,7.586V16Z" fill="url(#linear-gradient-5)"/>
+        <g>
+          <polygon points="10 8 7 5 7 8 10 8" fill="url(#linear-gradient-6)"/>
+          <polygon points="6 5 1 5 1 15 10 15 10 9 6 9 6 5" fill="url(#linear-gradient-7)"/>
+        </g>
+        <polygon points="6 9 6 6.5 2.5 6.5 2.5 13.5 8.5 13.5 8.5 9 6 9" fill="url(#linear-gradient-8)"/>
+      </g>
+    </g>
+  </g>
+</svg>

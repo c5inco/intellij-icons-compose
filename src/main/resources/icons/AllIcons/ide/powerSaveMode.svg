@@ -1,1 +1,5 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect id="frame" width="16" height="16" fill="none"/><path fill-rule="evenodd" clip-rule="evenodd" d="M1 3h13v3h1v4h-1v3H1V3zm11 2H3v6h9V5z" fill="#6E6E6E"/><path fill="#6E6E6E" d="M4 6h4v4H4z"/></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 3H14V6H15V10H14V13H1V3ZM12 5H3V11H12V5Z" fill="#6E6E6E"/>
+<rect x="4" y="6" width="4" height="4" fill="#6E6E6E"/>
+</svg>

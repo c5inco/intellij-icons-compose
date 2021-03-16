@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#40B6E0" fill-opacity=".6" d="M6 14.71A7 7 0 1 1 15 8H6v6.71z"/><path fill="#231F20" fill-opacity=".7" d="M6.01 10.246A2.982 2.982 0 0 1 5 8c0-1.642 1.34-3 3.098-3 1.19 0 1.731.27 2.418.836l-.616.718C9.548 6.184 8.948 6 8.1 6 6.97 6 6 6.712 6 8c0 .073.003.144.01.214v2.032z"/><path fill="#F26522" fill-opacity=".7" d="M7 16h9V9H7z"/><path fill="#231F20" fill-opacity=".7" d="M8 13v-1l3-2v1l-2.2 1.5L11 14v1z"/><path fill="#231F20" fill-opacity=".7" d="M12 14l2.2-1.5L12 11v-1l3 2v1l-3 2z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#40B6E0" fill-opacity=".6" d="M6,14.7101226 C3.1085077,13.8495756 1,11.1710271 1,8 C1,4.134 4.134,1 8,1 C11.866,1 15,4.134 15,8 L6,8 L6,14.7101226 Z"/>
+    <path fill="#231F20" fill-opacity=".7" d="M6.01,10.2459989 C5.39281976,9.70045498 5,8.90264186 5,8 C5,6.358 6.34,5 8.098,5 C9.28806904,5 9.8291999,5.2697752 10.516,5.83633096 L9.8998,6.55386025 C9.54813171,6.18435342 8.94813171,5.9996 8.0998,5.9996 C6.9708,5.9996 5.9998,6.712 5.9998,8 C5.9998,8.07311688 6.00326744,8.14448075 6.01,8.21404898 L6.01,10.2459989 Z"/>
+    <polygon fill="#F26522" fill-opacity=".7" points="7 16 16 16 16 9 7 9"/>
+    <polygon fill="#231F20" fill-opacity=".7" points="0 3 0 2 3 0 3 1 .8 2.5 3 4 3 5" transform="translate(8 10)"/>
+    <polygon fill="#231F20" fill-opacity=".7" points="0 4 2.2 2.5 0 1 0 0 3 2 3 3 0 5" transform="translate(12 10)"/>
+  </g>
+</svg>

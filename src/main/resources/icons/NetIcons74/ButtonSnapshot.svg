@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="33" viewBox="0 0 45 33">
+  <path fill="#eeeff2" d="M0 0h45v33H0z" style="isolation:isolate"/>
+  <path fill="#adb5c2" d="M13 9h28v19H13z" style="isolation:isolate"/>
+  <circle cx="27" cy="18" r="7" fill="#f3f4f5" style="isolation:isolate"/>
+  <path fill="#adb5c2" d="M32 4H22l-3 5h16l-3-5z" style="isolation:isolate"/>
+  <circle cx="27" cy="18" r="6" fill="#8eaef0" style="isolation:isolate"/>
+</svg>

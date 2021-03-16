@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="#9AA7B0" fill-rule="evenodd"><path d="M14 12h2v1h-2v1h-3v-3h3v1zm-4 3h3v1H9v-3H7v3H6v-4h3V9h1v6z"/><path d="M10 10h3V9h-3z"/><path d="M2 14H1V2h14v6H6v3H2v2h3v1H2zm3-4V8H2v2h3zm1-3h4V5H6v2zM5 7V5H2v2h3zm9 0V5h-3v2h3z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#9AA7B0" d="M14,12 L16,12 L16,13 L14,13 L14,14 L11,14 L11,11 L14,11 L14,12 Z M10,15 L13,15 L13,16 L9,16 L9,15 L9,13 L7,13 L7,16 L6,16 L6,13 L6,12 L9,12 L9,9 L10,9 L10,15 Z"/>
+    <polygon fill="#9AA7B0" points="10 10 13 10 13 9 10 9"/>
+    <path fill="#9AA7B0" d="M2,14 L1,14 L1,5 L1,2 L15,2 L15,5 L15,8 L14,8 L6,8 L6,11 L5,11 L2,11 L2,13 L5,13 L5,14 L2,14 Z M5,10 L5,8 L2,8 L2,10 L5,10 Z M6,7 L10,7 L10,5 L6,5 L6,7 Z M5,7 L5,5 L2,5 L2,7 L5,7 Z M14,7 L14,5 L11,5 L11,7 L14,7 Z"/>
+  </g>
+</svg>

@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#6E6E6E" d="M2 10h4v4H2v-4zm1 1v2h2v-2H3z"/><path fill="#59A869" d="M7.662 9.758L6.248 8.344l4.478-4.478L12.14 5.28z"/><path fill="#59A869" d="M13 10L6 3h7z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#6E6E6E" d="M2,10 L6,10 L6,14 L2,14 L2,10 Z M3,11 L3,13 L5,13 L5,11 L3,11 Z"/>
+    <rect width="2" height="6.332" x="8.194" y="3.646" fill="#59A869" transform="rotate(-135 9.194 6.812)"/>
+    <polygon fill="#59A869" points="6 3 13 10 6 10" transform="rotate(180 9.5 6.5)"/>
+  </g>
+</svg>

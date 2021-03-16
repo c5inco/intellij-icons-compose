@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>StatusInconclusive</title>
+  <g>
+    <rect width="16" height="16" fill="#ffc4ff" opacity="0"/>
+    <path d="M9,8.586V14H7V9.414L3.793,6.207,2,8V3H7L5.207,4.793ZM14,3H9l1.793,1.793L8.99,6.6,10.4,8.01l1.8-1.8L14,8Z" fill="#eda200"/>
+  </g>
+</svg>

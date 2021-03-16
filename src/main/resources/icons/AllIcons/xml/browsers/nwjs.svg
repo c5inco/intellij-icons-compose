@@ -1,1 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><defs><linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#ABABAB"/><stop offset="100%" stop-color="#3E3E3E"/></linearGradient><linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#CACACC"/><stop offset="100%" stop-color="#6D6F79"/></linearGradient><radialGradient id="c" cy="48.197%" r="59.046%" fx="50%" fy="48.197%" gradientTransform="matrix(0 .87734 -.99871 0 .981 .043)"><stop offset="0%" stop-color="#5B6376"/><stop offset="100%" stop-color="#181C21"/></radialGradient><path id="d" d="M7.5 2.289l4.196 2.422a1 1 0 0 1 .5.866v4.846a1 1 0 0 1-.5.866L7.5 13.71a1 1 0 0 1-1 0L2.304 11.29a1 1 0 0 1-.5-.866V5.577a1 1 0 0 1 .5-.866L6.5 2.29a1 1 0 0 1 1 0z"/><filter id="e" width="138.5%" height="133.8%" x="-19.2%" y="-16.9%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1.5"/><feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/><feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/><feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/></filter><linearGradient id="f" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#676767" stop-opacity=".387"/><stop offset="100%" stop-opacity=".387"/></linearGradient><filter id="g" width="100%" height="100%" x="0%" y="0%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic"/></filter><path id="h" d="M.729.922l.729 4.986H0z"/><path id="j" d="M.729.922l.729 4.986H0z"/></defs><g fill="none" fill-rule="evenodd"><path fill="url(#a)" fill-rule="nonzero" d="M7.465 1.07l5.279 3.047a1 1 0 0 1 .5.866v6.095a1 1 0 0 1-.5.866l-5.279 3.048a1 1 0 0 1-1 0l-5.278-3.048a1 1 0 0 1-.5-.866V4.983a1 1 0 0 1 .5-.866L6.465 1.07a1 1 0 0 1 1 0z" transform="translate(1)"/><path fill="url(#b)" fill-rule="nonzero" d="M7.5 1.289l5.062 2.922a1 1 0 0 1 .5.866v5.846a1 1 0 0 1-.5.866L7.5 14.71a1 1 0 0 1-1 0L1.438 11.79a1 1 0 0 1-.5-.866V5.077a1 1 0 0 1 .5-.866L6.5 1.29a1 1 0 0 1 1 0z" transform="translate(1)"/><g fill-rule="nonzero" transform="translate(1)"><use fill="url(#c)" xlink:href="#d"/><use fill="#000" filter="url(#e)" xlink:href="#d"/></g><path fill="url(#f)" d="M2.518 5.955l-.662 5.114-.662-5.114L1.856.84l.662 5.115z" filter="url(#g)" transform="rotate(60 3.003 12.389)"/><g transform="rotate(60 2.503 13.255)"><mask id="i" fill="#fff"><use xlink:href="#h"/></mask><use fill="#0082FE" xlink:href="#h"/><path fill="#000" fill-opacity=".25" mask="url(#i)" opacity=".83" style="mix-blend-mode:multiply" d="M.729.664h2.662v10.229H.729z"/></g><g transform="rotate(-120 4.97 4.882)"><mask id="k" fill="#fff"><use xlink:href="#j"/></mask><use fill="#DCDCDC" xlink:href="#j"/><path fill="#000" fill-opacity=".25" mask="url(#k)" opacity=".83" style="mix-blend-mode:multiply" d="M-1.937-2.206H.725V8.023h-2.662z"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="nwjs-a" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#ABABAB"/>
+      <stop offset="100%" stop-color="#3E3E3E"/>
+    </linearGradient>
+    <linearGradient id="nwjs-b" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#CACACC"/>
+      <stop offset="100%" stop-color="#6D6F79"/>
+    </linearGradient>
+    <radialGradient id="nwjs-c" cy="48.197%" r="59.046%" fx="50%" fy="48.197%" gradientTransform="matrix(0 .87734 -.99871 0 .981 .043)">
+      <stop offset="0%" stop-color="#5B6376"/>
+      <stop offset="100%" stop-color="#181C21"/>
+    </radialGradient>
+    <path id="nwjs-d" d="M7.5,2.28867513 L11.6961524,4.71132487 C12.0055535,4.88995766 12.1961524,5.22008468 12.1961524,5.57735027 L12.1961524,10.4226497 C12.1961524,10.7799153 12.0055535,11.1100423 11.6961524,11.2886751 L7.5,13.7113249 C7.19059892,13.8899577 6.80940108,13.8899577 6.5,13.7113249 L2.30384758,11.2886751 C1.9944465,11.1100423 1.80384758,10.7799153 1.80384758,10.4226497 L1.80384758,5.57735027 C1.80384758,5.22008468 1.9944465,4.88995766 2.30384758,4.71132487 L6.5,2.28867513 C6.80940108,2.11004234 7.19059892,2.11004234 7.5,2.28867513 Z"/>
+    <filter id="nwjs-e" width="138.5%" height="133.8%" x="-19.2%" y="-16.9%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1.5"/>
+      <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+    <linearGradient id="nwjs-f" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#676767" stop-opacity=".387"/>
+      <stop offset="100%" stop-opacity=".387"/>
+    </linearGradient>
+    <filter id="nwjs-g" width="100%" height="100%" x="0%" y="0%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <polygon id="nwjs-h" points=".729 .922 1.458 5.908 0 5.908"/>
+    <polygon id="nwjs-j" points=".729 .922 1.458 5.908 0 5.908"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1)">
+    <path fill="url(#nwjs-a)" fill-rule="nonzero" d="M7.46531337,1.06949476 L12.7439975,4.11714449 C13.0533986,4.29577728 13.2439975,4.6259043 13.2439975,4.98316989 L13.2439975,11.0784694 C13.2439975,11.4357349 13.0533986,11.765862 12.7439975,11.9444948 L7.46531337,14.9921445 C7.15591229,15.1707773 6.77471445,15.1707773 6.46531337,14.9921445 L1.18662919,11.9444948 C0.877228116,11.765862 0.686629193,11.4357349 0.686629193,11.0784694 L0.686629193,4.98316989 C0.686629193,4.6259043 0.877228116,4.29577728 1.18662919,4.11714449 L6.46531337,1.06949476 C6.77471445,0.890861964 7.15591229,0.890861964 7.46531337,1.06949476 Z"/>
+    <path fill="url(#nwjs-b)" fill-rule="nonzero" d="M7.5,1.28867513 L12.5621778,4.21132487 C12.8715789,4.38995766 13.0621778,4.72008468 13.0621778,5.07735027 L13.0621778,10.9226497 C13.0621778,11.2799153 12.8715789,11.6100423 12.5621778,11.7886751 L7.5,14.7113249 C7.19059892,14.8899577 6.80940108,14.8899577 6.5,14.7113249 L1.43782217,11.7886751 C1.1284211,11.6100423 0.937822174,11.2799153 0.937822174,10.9226497 L0.937822174,5.07735027 C0.937822174,4.72008468 1.1284211,4.38995766 1.43782217,4.21132487 L6.5,1.28867513 C6.80940108,1.11004234 7.19059892,1.11004234 7.5,1.28867513 Z"/>
+    <g fill-rule="nonzero">
+      <use fill="url(#nwjs-c)" xlink:href="#nwjs-d"/>
+      <use fill="#000" filter="url(#nwjs-e)" xlink:href="#nwjs-d"/>
+    </g>
+    <g transform="rotate(60 2.503 11.523)">
+      <path fill="url(#nwjs-f)" d="M2.51755318,5.95455977 L1.85598296,11.069148 L1.19441274,5.95455977 L1.85598296,0.839971505 L2.51755318,5.95455977 Z" filter="url(#nwjs-g)"/>
+      <g transform="translate(1)">
+        <mask id="nwjs-i" fill="#fff">
+          <use xlink:href="#nwjs-h"/>
+        </mask>
+        <use fill="#0082FE" xlink:href="#nwjs-h"/>
+        <rect width="2.662" height="10.229" x=".729" y=".664" fill="#000" fill-opacity=".25" mask="url(#nwjs-i)" opacity=".83" style="mix-blend-mode:multiply"/>
+      </g>
+      <g transform="rotate(-180 1.227 5.907)">
+        <mask id="nwjs-k" fill="#fff">
+          <use xlink:href="#nwjs-j"/>
+        </mask>
+        <use fill="#DCDCDC" xlink:href="#nwjs-j"/>
+        <rect width="2.662" height="10.229" x="-1.937" y="-2.206" fill="#000" fill-opacity=".25" mask="url(#nwjs-k)" opacity=".83" style="mix-blend-mode:multiply"/>
+      </g>
+    </g>
+  </g>
+</svg>

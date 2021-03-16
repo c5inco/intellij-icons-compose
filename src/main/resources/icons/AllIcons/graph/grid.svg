@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="#6E6E6E" fill-rule="evenodd"><path d="M2 2h12v12H2V2zm1 1v10h10V3H3z"/><path d="M5 3h1v10H5z"/><path d="M10 3h1v10h-1z"/><path d="M3 5h10v1H3z"/><path d="M3 10h10v1H3z"/></g></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#6E6E6E" d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z"/>
+    <rect width="1" height="10" x="5" y="3" fill="#6E6E6E"/>
+    <rect width="1" height="10" x="10" y="3" fill="#6E6E6E"/>
+    <rect width="10" height="1" x="3" y="5" fill="#6E6E6E"/>
+    <rect width="10" height="1" x="3" y="10" fill="#6E6E6E"/>
+  </g>
+</svg>

@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="#9AA7B0" fill-rule="evenodd"><path fill-opacity=".8" d="M9 3v1H2v8h7v1H1V3h8zm3 0h3v10h-3v-1h2V4h-2V3zM6 6v5H5V6H3V5h5v1H6z"/><path d="M8 1h2v1H8V1zm3 0h2v1h-2V1zm-1 1h1v12h-1V2zM8 14h2v1H8v-1zm3 0h2v1h-2v-1z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#9AA7B0" fill-opacity=".8" d="M9,3 L9,4 L2,4 L2,12 L9,12 L9,13 L1,13 L1,3 L9,3 Z M12,3 L15,3 L15,13 L12,13 L12,12 L14,12 L14,4 L12,4 L12,3 Z M6,6 L6,11 L5,11 L5,6 L3,6 L3,5 L8,5 L8,6 L6,6 Z"/>
+    <path fill="#9AA7B0" d="M8,1 L10,1 L10,2 L8,2 L8,1 Z M11,1 L13,1 L13,2 L11,2 L11,1 Z M10,2 L11,2 L11,14 L10,14 L10,2 Z M8,14 L10,14 L10,15 L8,15 L8,14 Z M11,14 L13,14 L13,15 L11,15 L11,14 Z"/>
+  </g>
+</svg>

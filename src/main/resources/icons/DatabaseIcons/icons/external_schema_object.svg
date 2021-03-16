@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#40B6E0" fill-opacity=".7" d="M1 7v7h3.95L5 11l3 .001V7z"/><path fill="#40B6E0" fill-opacity=".7" d="M10 6h5V1h-5z"/><path fill="#9AA7B0" d="M4 3h6v1H4z"/><path fill="#231F20" fill-opacity=".7" d="M14 12h2v1h-2v1h-3v-3h3v1zm-4 3h3v1H9v-3H7v3H6v-4h3V9h1v6z"/><path fill="#231F20" fill-opacity=".7" d="M10 10h3V9h-3z"/><path fill="#9AA7B0" d="M4 3h1v4H4z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#40B6E0" fill-opacity=".7" points="1 7 1 14 4.95 14 5 11 8 11.001 8 7"/>
+    <polygon fill="#40B6E0" fill-opacity=".7" points="10 6 15 6 15 1 10 1"/>
+    <rect width="6" height="1" x="4" y="3" fill="#9AA7B0"/>
+    <path fill="#231F20" fill-opacity=".7" d="M14,12 L16,12 L16,13 L14,13 L14,14 L11,14 L11,11 L14,11 L14,12 Z M10,15 L13,15 L13,16 L9,16 L9,15 L9,13 L7,13 L7,16 L6,16 L6,13 L6,12 L9,12 L9,9 L10,9 L10,15 Z"/>
+    <polygon fill="#231F20" fill-opacity=".7" points="10 10 13 10 13 9 10 9"/>
+    <rect width="1" height="4" x="4" y="3" fill="#9AA7B0"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>insightMore_dark</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <path d="M5.5,8A1.5,1.5,0,1,1,4,6.5,1.5,1.5,0,0,1,5.5,8ZM8,6.5A1.5,1.5,0,1,0,9.5,8,1.5,1.5,0,0,0,8,6.5Zm4,0A1.5,1.5,0,1,0,13.5,8,1.5,1.5,0,0,0,12,6.5Z" fill="#afb1b3"/>
+  </g>
+</svg>

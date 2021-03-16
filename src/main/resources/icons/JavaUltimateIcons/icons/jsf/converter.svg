@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#9AA7B0" d="M1 9h9V8H1z"/><path fill="#9AA7B0" d="M1 11h9V9.999H1z"/><path fill="#9AA7B0" d="M1 13h9v-1H1z"/><path fill="#9AA7B0" d="M1 15h9v-1H1z"/><path fill="#F4AF3D" fill-opacity=".7" d="M5 0L1.073 3.5 5 7V5h3.001V2.001H5z"/><path fill="#F4AF3D" fill-opacity=".7" d="M12 0v2.001H9V5h3v2l3.927-3.5z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#9AA7B0" points="1 9 10 9 10 8 1 8"/>
+    <polygon fill="#9AA7B0" points="1 11 10 11 10 9.999 1 9.999"/>
+    <polygon fill="#9AA7B0" points="1 13 10 13 10 12 1 12"/>
+    <polygon fill="#9AA7B0" points="1 15 10 15 10 14 1 14"/>
+    <polygon fill="#F4AF3D" fill-opacity=".7" points="5 0 1.073 3.5 5 7 5 5 8.001 5 8.001 2.001 5 2.001"/>
+    <polygon fill="#F4AF3D" fill-opacity=".7" points="12 0 12 2.001 9 2.001 9 5 12 5 12 7 15.927 3.5"/>
+  </g>
+</svg>

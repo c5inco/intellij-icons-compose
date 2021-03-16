@@ -1,1 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><path fill="#EDA200" d="M8 9.62l-6.288.003L6.766.997h4.93L7.992 5.926h7.403l-9.86 9.856z"/></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <polygon fill="#EDA200" points="8.745 9.582 3.302 12.728 3.366 2.731 7.636 .266 6.891 6.387 13.302 2.685 9.691 16.152" transform="rotate(30 8.302 8.209)"/>
+</svg>

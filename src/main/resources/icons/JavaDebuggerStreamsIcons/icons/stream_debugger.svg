@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#6E6E6E" d="M2 3h5v2H2z"/><path fill="#389FD6" d="M2 7h5v2H2z"/><path fill="#389FD6" fill-rule="nonzero" d="M7 13l-1-.5L9 3l1 .5z"/><path fill="#389FD6" fill-rule="nonzero" d="M7 9V7l2-4 1 .5z"/><path fill="#389FD6" d="M2 11h5v2H2z"/><path fill="#389FD6" d="M9 3h5v2H9z"/><path fill="#6E6E6E" d="M9 7h5v2H9z"/><path fill="#6E6E6E" d="M9 11h5v2H9z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="5" height="2" x="2" y="3" fill="#6E6E6E"/>
+    <rect width="5" height="2" x="2" y="7" fill="#389FD6"/>
+    <polygon fill="#389FD6" fill-rule="nonzero" points="7 13 6 12.5 9 3 10 3.5"/>
+    <polygon fill="#389FD6" fill-rule="nonzero" points="7 9 7 7 9 3 10 3.5"/>
+    <rect width="5" height="2" x="2" y="11" fill="#389FD6"/>
+    <rect width="5" height="2" x="9" y="3" fill="#389FD6"/>
+    <rect width="5" height="2" x="9" y="7" fill="#6E6E6E"/>
+    <rect width="5" height="2" x="9" y="11" fill="#6E6E6E"/>
+  </g>
+</svg>

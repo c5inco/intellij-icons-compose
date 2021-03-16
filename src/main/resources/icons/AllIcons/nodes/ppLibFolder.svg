@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#9AA7B0" fill-opacity=".8" d="M15 7h-1V5h-4v2H7v6H1V2h4a2.743 2.743 0 0 1 1.696.711L7.985 4H15v3z"/><path fill="#40B6E0" d="M14 8h2v6h-2z"/><path fill="#9AA7B0" d="M11 6h2v8h-2z"/><path fill="#62B543" d="M8 8h2v6H8z"/></g></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#9AA7B0" fill-opacity=".8" d="M15,7 L14,7 L14,5 L10,5 L10,7 L7,7 L7,13 L1,13 L1,2 L4.99983215,2 C5.63665337,2.03457993 6.22161957,2.28559443 6.69633,2.71149 L7.98457,4 L15,4 L15,7 Z"/>
+    <rect width="2" height="6" x="14" y="8" fill="#40B6E0"/>
+    <rect width="2" height="8" x="11" y="6" fill="#9AA7B0"/>
+    <rect width="2" height="6" x="8" y="8" fill="#62B543"/>
+  </g>
+</svg>

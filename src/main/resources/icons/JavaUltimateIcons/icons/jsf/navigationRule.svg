@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#9AA7B0" d="M10.023 7.682L9.625 8H1.023V7h9v.682zM8.375 9l-1.25 1H1.003V9h7.372zm1.25 4l.379.303V14h-9v-1h8.621zm-2.5-2l1.25 1H1.018v-1h6.108z"/><path fill="#40B6E0" d="M12 7l-3.927 3.5L12 14z"/><path fill="#40B6E0" d="M14 1h1v10h-1z"/><path fill="#40B6E0" d="M12 10h3v1h-3z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#9AA7B0" d="M10.0229852,7.68161185 L9.625,8 L1.02298518,8 L1.02298518,7 L10.0229852,7 L10.0229852,7.68161185 Z M8.37525,8.9998 L7.12525,9.9998 L1.00326371,9.9998 L1.00326371,8.9998 L8.37525,8.9998 Z M9.625375,13.0003 L10.0035634,13.3028507 L10.0035634,14.0003 L1.00356342,14.0003 L1.00356342,13.0003 L9.625375,13.0003 Z M7.1245,10.9996 L8.37575,12.0006 L1.01681098,12.0006 L1.01681098,10.9996 L7.1245,10.9996 Z"/>
+    <polygon fill="#40B6E0" points="12 7 8.073 10.5 12 14"/>
+    <rect width="1" height="10" x="14" y="1" fill="#40B6E0"/>
+    <rect width="3" height="1" x="12" y="10" fill="#40B6E0"/>
+  </g>
+</svg>

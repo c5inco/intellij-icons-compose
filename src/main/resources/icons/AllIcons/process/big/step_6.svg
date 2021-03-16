@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect id="frame" width="32" height="32" fill="none"/><g fill="#7F8B91" fill-opacity=".9" fill-rule="evenodd"><path opacity=".78" d="M24.486 27.313l-5.657-5.657 2.829-2.828 5.657 5.657z"/><path opacity=".62" d="M21.658 13.171l-2.829-2.828 5.657-5.657 2.829 2.828z"/><path opacity=".38" d="M10.344 13.171L4.687 7.514l2.829-2.828 5.657 5.657z"/><path d="M7.516 27.313l-2.829-2.828 5.657-5.657 2.829 2.828z"/><path opacity=".93" d="M14.001 30v-8h4v8z"/><path opacity=".69" d="M22.001 18v-4h8v4z"/><path opacity=".48" d="M14.001 10V2h4v8z"/><path opacity=".3" d="M2.001 18v-4h8v4z"/></g></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g fill="#7F8B91" fill-opacity=".9" fill-rule="evenodd" transform="rotate(-135 17.172 18.828)">
+    <rect width="8" height="4" x="6" y="18" opacity=".78"/>
+    <rect width="4" height="8" x="18" y="26" opacity=".62"/>
+    <rect width="8" height="4" x="26" y="18" opacity=".38"/>
+    <rect width="4" height="8" x="18" y="6"/>
+    <g transform="rotate(45 9.757 24.243)">
+      <rect width="8" height="4" y="12" opacity=".93"/>
+      <rect width="4" height="8" x="12" y="20" opacity=".69"/>
+      <rect width="8" height="4" x="20" y="12" opacity=".48"/>
+      <rect width="4" height="8" x="12" opacity=".3"/>
+    </g>
+  </g>
+</svg>

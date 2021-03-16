@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>ProtobufOptionPage(GrayDark)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <g>
+      <polygon points="8 4 4.233 4 1 8.688 1 9.312 4.233 14 8 14 8 12.688 5.457 9 8 5.312 8 4" fill="#252525"/>
+      <polygon points="4.242 9 7 13 4.242 9 4.242 9" fill="#323232"/>
+      <polygon points="4.546 8.56 7 5 4.758 5 3.425 6.934 4.546 8.56" fill="#bd1e2d"/>
+      <polygon points="3.121 7.374 2 9 4.758 13 7 13 3.121 7.374" fill="#2baae8"/>
+      <polygon points="9 14 12.767 14 16 9.312 16 8.688 12.767 4 9 4 9 5.312 11.543 9 9 12.688 9 14" fill="#252525"/>
+      <polygon points="12.758 9 10 5 12.758 9 12.758 9" fill="#323232"/>
+      <polygon points="12.454 9.44 10 13 12.242 13 13.575 11.066 12.454 9.44" fill="#c27d1a"/>
+      <polygon points="13.879 10.626 15 9 12.242 5 10 5 13.879 10.626" fill="#8dcf8d"/>
+    </g>
+  </g>
+</svg>

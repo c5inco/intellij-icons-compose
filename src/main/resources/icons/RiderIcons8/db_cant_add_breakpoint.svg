@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <title>db_cant_add_breakpoint</title>
+  <g>
+    <rect width="12" height="12" fill="#ffe6ff" opacity="0"/>
+    <path d="M6,.5A5.5,5.5,0,1,0,11.5,6,5.5,5.5,0,0,0,6,.5ZM9,7H3V5H9Z" fill="#db5860"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>StartRecording</title>
+  <g  data-name="Layer 2">
+    <g  data-name="Layer 1">
+      <g>
+        <rect width="16" height="16" fill="#ed1e79" opacity="0"/>
+        <g>
+          <circle  cx="8" cy="8" r="3" fill="#da5960"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

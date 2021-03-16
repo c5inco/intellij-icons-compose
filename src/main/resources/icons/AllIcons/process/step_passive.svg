@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="#7F8B91" fill-opacity=".5" fill-rule="evenodd"><path d="M2.35 3.764L3.764 2.35l2.828 2.828-1.414 1.414z"/><path d="M1 7h4v2H1z"/><path d="M5.178 9.41l1.414 1.414-2.828 2.828-1.414-1.414z"/><path d="M7 11h2v4H7z"/><path d="M9.41 10.824l1.414-1.414 2.828 2.828-1.414 1.414z"/><path d="M11 7h4v2h-4z"/><path d="M12.238 2.35l1.414 1.414-2.828 2.828L9.41 5.178z"/><path d="M7 1h2v4H7z"/></g></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="#7F8B91" fill-opacity=".5" fill-rule="evenodd" transform="translate(1 1)">
+    <rect width="2" height="4" x="2.471" y="1.471" transform="rotate(-45 3.471 3.471)"/>
+    <rect width="4" height="2" y="6"/>
+    <rect width="2" height="4" x="2.471" y="8.531" transform="rotate(45 3.471 10.531)"/>
+    <rect width="2" height="4" x="6" y="10"/>
+    <rect width="2" height="4" x="9.531" y="8.531" transform="rotate(-45 10.531 10.531)"/>
+    <rect width="4" height="2" x="10" y="6"/>
+    <rect width="2" height="4" x="9.531" y="1.471" transform="rotate(45 10.531 3.471)"/>
+    <rect width="2" height="4" x="6"/>
+  </g>
+</svg>

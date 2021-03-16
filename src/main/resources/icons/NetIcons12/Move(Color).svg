@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-419.214" y1="146.392" x2="-419.214" y2="145.384" gradientTransform="matrix(14, 0, 0, -10, 5877, 1467)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#006589"/>
+      <stop offset="1" stop-color="#094d5e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-413.833" y1="136.959" x2="-413.833" y2="135.983" gradientTransform="matrix(12, 0, 0, -8, 4974, 1100)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d8ffef"/>
+      <stop offset="1" stop-color="#63dfff"/>
+    </linearGradient>
+  </defs>
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <path d="M15,7.586,10.414,3H6V4.042L7.958,6H1v4H7.958L6,11.958V13h4.414L15,8.414Z" fill="url(#linear-gradient)"/>
+    <path d="M10.372,7H2V9h8.372l-3,3H10l4-4L10,4H7.372Z" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

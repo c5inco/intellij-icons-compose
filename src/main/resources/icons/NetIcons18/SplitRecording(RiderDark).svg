@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>Split_dark</title>
+  <g data-name="Layer 2">
+    <g  data-name="Layer 1">
+      <g>
+        <rect width="16" height="16" fill="#ed1e79" opacity="0"/>
+        <path d="M9,1H8V0H9ZM9,2V3H8V2ZM9,4V5H8V4ZM9,6V7H8V6ZM9,8V9H8V8Zm0,2v1H8V10Zm0,2v1H8V12Zm0,2v1H8V14ZM15,4H12v8h3v2H10V2h5ZM2,4V2H7V14H2V12H5V4Z" fill="#afb0b2" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

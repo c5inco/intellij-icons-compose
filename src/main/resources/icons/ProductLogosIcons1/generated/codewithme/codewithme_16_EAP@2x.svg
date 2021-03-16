@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="a" x1="9.154" y1="29.752" x2="28.524" y2="2.102" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c27d1b"/>
+      <stop offset="1" stop-color="#59bd28"/>
+    </linearGradient>
+    <linearGradient id="b" x1="31.55" y1="20.12" x2="8.989" y2="28.258" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4d75f6"/>
+      <stop offset="1" stop-color="#ff9e00"/>
+    </linearGradient>
+    <linearGradient id="c" x1="1.922" y1="4.398" x2="26.387" y2="21.265" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff4267"/>
+      <stop offset="1" stop-color="#3b67f6"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <polygon points="27.656 1.5 4.406 21.688 9.315 29.93 20.763 28.023 30.844 6.469 27.656 1.5" fill="url(#a)"/>
+    <polygon points="29.831 16.535 17.563 18.219 9.315 29.93 17.875 32 32 21.219 29.831 16.535" fill="url(#b)"/>
+    <polygon points="29.844 16.531 16 4 4.906 0 0 7.514 3.688 15.719 23.313 22.063 29.844 16.531" fill="url(#c)"/>
+  </g>
+  <g>
+    <rect x="3" y="5" width="26" height="22"/>
+    <rect x="5" y="22" width="6" height="2" fill="#fff"/>
+    <path d="M16,7V9.178h.66a2.32,2.32,0,1,1,0,4.639H16v4.336h-.67a2.32,2.32,0,1,0,0,4.639H16V25H27V7Z" fill="#fff"/>
+    <rect x="18" y="22" width="5" height="2"/>
+  </g>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 32H32V22H14V32Z" fill="#D99E2B"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30H19.75V29.0505H16.9V27.45H19.4V26.5H16.9V24.95H19.7V24H16V30Z" fill="black"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.3999 27.65L23.2999 25.25L24.2499 27.65H22.3999ZM20.5 30H21.45L22 28.5505H24.55L25.0995 30H26.0995L23.75 24H22.8495L20.5 30Z" fill="black"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.407 27.1002V24.9502H28.2995C28.9845 24.9502 29.2995 25.3002 29.35 25.8502V26.0502C29.35 26.6442 29.0225 27.1002 28.45 27.1002H27.407ZM27.407 30V28.05H28.25C29.3955 28.071 30.2555 27.174 30.2555 26.152V25.902C30.2555 24.7925 29.4675 24 28.44 24H26.5V30H27.407Z" fill="black"/>
+</svg>

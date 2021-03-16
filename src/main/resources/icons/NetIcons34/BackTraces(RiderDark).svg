@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>BackTraces_dark</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect width="16" height="16" fill="#ed1e79" opacity="0"/>
+        <g>
+          <polygon points="8.46 3 8.46 3.46 6.87 3.46 9.46 6 14 6 14 13 4 13 4 7.46 3.04 7.46 3 7.41 3 14 15 14 15 6 15 3 8.46 3" fill="#b0b1b3"/>
+          <polygon points="7.5 2.5 4.5 2.5 10 8 9 9 3.5 3.5 3.5 6.5 2 5 2 1 6 1 7.5 2.5" fill="#3692c4"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

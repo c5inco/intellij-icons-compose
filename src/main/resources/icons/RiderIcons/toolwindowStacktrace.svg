@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <title>toolwindowStacktrace</title>
+  <g>
+    <g opacity="0">
+      <rect width="13" height="13" fill="#ffdaff"/>
+    </g>
+    <path d="M12,5v6H5V10h6V5ZM9,3V8H3V9h7V3ZM8,1V7H1V1ZM7,2H2V6H7Z" fill="#6e6e6e"/>
+  </g>
+</svg>

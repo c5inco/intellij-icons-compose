@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import intellijicons.IconsGroupHeaderTheme
 import intellijicons.models.DataIcon
 import intellijicons.models.DataIconGroup
 import intellijicons.utils.removeDash
@@ -35,11 +36,12 @@ fun IconsGroupHeader(
                 style = MaterialTheme.typography.subtitle2
             )
 
-        /*
+            /*
         Text(
             text = "$totalIcons",
             style = MaterialTheme.typography.subtitle2
         )
         */
+        }
     }
 }

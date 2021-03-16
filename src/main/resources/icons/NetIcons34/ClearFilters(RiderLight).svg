@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>ClearFilters</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect width="16" height="16" fill="#ed1e79" opacity="0"/>
+        <g>
+          <g>
+            <polygon points="9 6.2 11 5 11.8 5 15 1 5 1 9 6 9 6.2" fill="#6e6e6e"/>
+            <polygon points="9 9 9 11.2 9.36 11.64 11 10 11 7 9 9" fill="#6e6e6e"/>
+          </g>
+          <path d="M7,10l4-4h-.56L6,9,4,6.28a1,1,0,0,0-1.39,0,1,1,0,0,0,0,1.41L5,10,1.19,13.31a1,1,0,0,0,0,1.4,1,1,0,0,0,1.38,0L6,11l4.5,4H11Z" fill="#db5960"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

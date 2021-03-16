@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <g id="toolWindowILViewer_dark" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <polygon id="Fill-2" fill="#AFB1B3" points="6.5 5.675 4.162 3.338 6.5 1 8.838 3.338"/>
+    <polygon id="Fill-3" fill="#AFB1B3" points="3.338 8.837 5.675 6.5 3.338 4.162 1 6.5" opacity=".6"/>
+    <polygon id="Fill-5" fill="#AFB1B3" points="9.662 4.163 7.325 6.5 9.662 8.838 12 6.5" opacity=".8"/>
+    <polygon id="Fill-7" fill="#AFB1B3" points="8.838 9.663 6.5 7.326 4.162 9.663 6.5 12" opacity=".4"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="analysingWarnings3" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="Fill-2" fill="#9AA7B0" d="M8,14 C4.686,14 2,11.314 2,8 C2,5.333 3.74,3.076 6.146,2.295 L5.838,1.344 C3.001,2.266 1,4.947 1,8 C1,11.835 4.132,15 8,15 C10.291,15 12.372,13.877 13.657,12.11 L12.85,11.523 C11.759,13.022 9.996,14 8,14" opacity=".7"/>
+    <g id="Group" fill="#F4AF3D" transform="translate(7 1)">
+      <path id="Fill-4" d="M1,5.32907052e-15 L1,1.5 C4.038,1.5 6.5,3.962 6.5,7 C6.5,7.593 6.403,8.164 6.229,8.699 L7.656,9.163 C7.877,8.481 8,7.755 8,7 C8,3.133 4.836,5.32907052e-15 1,5.32907052e-15"/>
+      <polygon id="Path" points="0 11 2 11 2 9 0 9"/>
+      <polygon id="Path" points="1.5 8 .5 8 0 3 2 3"/>
+    </g>
+  </g>
+</svg>

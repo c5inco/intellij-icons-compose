@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>ShaderHLSL(Gray)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+    <g>
+      <g>
+        <polygon points="2 15 2 1 9.414 1 14 5.586 14 15 2 15" fill="#f4f4f4"/>
+        <polygon points="9 2 3 2 3 14 13 14 13 6 9 2" fill="#323232"/>
+        <polygon points="9 6 9 4 5 4 5 12 11 12 11 6 9 6" fill="#ebebeb"/>
+      </g>
+      <g>
+        <path d="M11,16v-.257A2.088,2.088,0,0,1,10,16H0V9H7v2A1.959,1.959,0,0,1,9,9h5v4h2v3Z" fill="#f4f4f4"/>
+        <path d="M4,10v5H3V13H2v2H1V10H2v2H3V10Zm2,4V10H5v5H7.5V14Zm7,0V10H12v5h3V14ZM9,11v1h1a.979.979,0,0,1,1,1v1a.979.979,0,0,1-1,1H8V14h2V13H9a.979.979,0,0,1-1-1V11a.979.979,0,0,1,1-1h2v1Z" fill="#c7781a"/>
+      </g>
+    </g>
+  </g>
+</svg>

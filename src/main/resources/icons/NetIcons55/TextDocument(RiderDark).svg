@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>TextDocument(GrayDark)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <g>
+      <path d="M1,15V2H15V12H9v3Z" fill="#252525"/>
+      <path d="M8,12H2v2H8Zm6-3H2v2H14Zm0-3H2V8H14Zm0-3H2V5H14Z" fill="#b8b8b8"/>
+    </g>
+  </g>
+</svg>

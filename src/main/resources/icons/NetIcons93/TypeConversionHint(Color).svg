@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+  <defs>
+    <linearGradient id="a" x1="11.5" y1="6.03" x2="11.5" y2="12.871" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9c6b00"/>
+      <stop offset="1" stop-color="#5c4200"/>
+    </linearGradient>
+    <linearGradient id="b" x1="11.5" y1="7.021" x2="11.5" y2="11.908" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd466"/>
+      <stop offset="1" stop-color="#ffaf00"/>
+    </linearGradient>
+    <linearGradient id="c" x1="4.5" y1="6.03" x2="4.5" y2="12.871" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#449c00"/>
+      <stop offset="1" stop-color="#285c00"/>
+    </linearGradient>
+    <linearGradient id="d" x1="4.5" y1="7.021" x2="4.5" y2="11.908" gradientTransform="rotate(45 4.5 9.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a9ff66"/>
+      <stop offset="1" stop-color="#6fff00"/>
+    </linearGradient>
+    <linearGradient id="e" x1="11.5" y1="8.013" x2="11.5" y2="10.945" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5c4200"/>
+      <stop offset="1" stop-color="#9c6b00"/>
+    </linearGradient>
+    <linearGradient id="f" x1="7.5" y1="2.065" x2="7.5" y2="7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4473bd"/>
+      <stop offset="1" stop-color="#05224d"/>
+    </linearGradient>
+    <linearGradient id="g" x1="7.5" y1="3.062" x2="7.5" y2="6.042" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9de4f2"/>
+      <stop offset="1" stop-color="#59a9ff"/>
+    </linearGradient>
+  </defs>
+  <circle cx="11.5" cy="9.5" r="3.5" fill="url(#a)"/>
+  <circle cx="11.5" cy="9.5" r="2.5" fill="url(#b)"/>
+  <path fill="url(#c)" d="M4.086 6L1 9.086 1 9.914 4.086 13 4.914 13 8 9.914 8 9.086 4.914 6 4.086 6z"/>
+  <path transform="rotate(-45 4.5 9.5)" fill="url(#d)" d="M2.732 7.732H6.268000000000001V11.268H2.732z"/>
+  <circle cx="11.5" cy="9.5" r="1.5" fill="url(#e)"/>
+  <path d="M10.586,2l-.718.718A4.36,4.36,0,0,0,7.5,2,4.794,4.794,0,0,0,3.057,5.406L3,5.567v.88L4.584,7h.879L5.7,6.331A2.052,2.052,0,0,1,7.5,4.8a1.437,1.437,0,0,1,.242.047L7,5.586V7h5V2Z" fill="url(#f)"/>
+  <path d="M9.947,4.053A3.467,3.467,0,0,0,7.5,3h0A3.81,3.81,0,0,0,4,5.737L4.754,6A3.026,3.026,0,0,1,7.5,3.8h0a2.673,2.673,0,0,1,1.882.821L8,6h3V3Z" fill="url(#g)"/>
+</svg>

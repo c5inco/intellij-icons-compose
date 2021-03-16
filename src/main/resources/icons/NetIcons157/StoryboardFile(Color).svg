@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="a" x1="8.5" x2="8.5" y1="1" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#755200"/>
+      <stop offset="1" stop-color="#522400"/>
+    </linearGradient>
+    <linearGradient id="b" x1="8.5" x2="8.5" y1="2" y2="15.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6ffbd"/>
+      <stop offset="1" stop-color="#ff9500"/>
+    </linearGradient>
+    <linearGradient id="c" x1="8" x2="8" y1="6.5" y2="9.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#593000"/>
+      <stop offset="1" stop-color="#db6a00"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" d="M13.052 11H11v1a1.49 1.49 0 01-1.108-.5 3.969 3.969 0 00-.6-7.268A4.49 4.49 0 005 1H1v3h4a1.49 1.49 0 011.108.5 3.969 3.969 0 00.6 7.268A4.49 4.49 0 0011 15v1h2.052L16 14.035v-1.07z"/>
+  <path fill="url(#b)" d="M15 13.5l-3-2V13h-1a2.5 2.5 0 01-2.455-2.055 2.99 2.99 0 00-.091-5.9A3.493 3.493 0 005 2H2v1h3a2.5 2.5 0 012.455 2.055 2.99 2.99 0 00.091 5.9A3.493 3.493 0 0011 14h1v1.5z"/>
+  <circle cx="8" cy="8" r="1.5" fill="url(#c)"/>
+</svg>

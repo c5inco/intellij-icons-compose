@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>ProfileSamplingNET3</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="sampling_.NET_3.0" data-name="sampling .NET 3.0">
+      <g>
+        <rect width="16" height="16" fill="#ffd3ff" opacity="0"/>
+        <g>
+          <g>
+            <polygon points="5 5.29 3.4 6.9 4.1 7.6 6 5.71 6 3 5 3 5 5.29" fill="#6e6e6e"/>
+            <path d="M5.5,1A4.5,4.5,0,0,0,2.32,8.68,4.46,4.46,0,0,0,5.5,10a4.38,4.38,0,0,0,2.16-.58l.25-.25L9.5,6H10a4,4,0,0,0,0-.5A4.51,4.51,0,0,0,5.5,1M3,3A3.49,3.49,0,1,1,8,8,3.49,3.49,0,1,1,3,3" fill="#6e6e6e"/>
+          </g>
+          <polygon points="10.89 7.02 10.11 7.02 7.09 13.02 7.61 14 13.38 14 13.86 13 10.89 7.02" fill="#eda200"/>
+          <path d="M11,11H10V9h1Zm0,1H10v1h1Z" fill="#323232"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

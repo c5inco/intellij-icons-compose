@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="CollateIndicator" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1" opacity=".8">
+    <path id="Fill-2" fill="#9AA7B0" d="M2,12 L12,12 L12,3 L2,3 L2,12 Z M1,13 L13,13 L13,2 L1,2 L1,13 Z M15,4 L15,15 L3,15 L3,14 L14,14 L14,4 L15,4 Z"/>
+  </g>
+</svg>

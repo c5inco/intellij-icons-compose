@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <g>
+        <path d="M2,10H14v4H2Z" fill="#252525"/>
+        <path d="M3,11H13v2H3Z" fill="#c4c4c4"/>
+      </g>
+      <g>
+        <path d="M10.586,3.5,10,4.086V1H6V4.086L5.414,3.5H4V7.414L7.586,11h.828L12,7.414V3.5Z" fill="#252525"/>
+        <path d="M11,4.5l-2,2V2H7V6.5l-2-2V7l3,3,3-3Z" fill="#7cbeff"/>
+      </g>
+    </g>
+  </g>
+</svg>

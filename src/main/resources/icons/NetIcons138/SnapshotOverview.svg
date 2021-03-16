@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path fill="#546b8c" d="M2 5h22v16.906H2z" style="isolation:isolate"/>
+  <path fill="#8ea6cb" d="M3 6h20v3H3z" style="isolation:isolate"/>
+  <path fill="#f3fbfe" d="M3 9h20v12H3z" style="isolation:isolate"/>
+  <path fill="#cef0fe" d="M4 10h18v10H4z" style="isolation:isolate"/>
+  <circle cx="7" cy="9" r="7" fill="#126099" style="isolation:isolate"/>
+  <circle cx="7" cy="9" r="6" fill="#8cd1ff" style="isolation:isolate"/>
+  <path fill="#445772" d="M7 6.63a.991.991 0 01-.7-.255.822.822 0 01-.275-.626.793.793 0 01.275-.623 1.024 1.024 0 01.7-.242 1.024 1.024 0 01.706.242.8.8 0 01.271.623.819.819 0 01-.271.634A1.013 1.013 0 017 6.63zM7.839 13h-1.7V7.5h1.7z"/>
+</svg>

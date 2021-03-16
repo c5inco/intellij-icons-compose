@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>FsharpProject(Gray)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <g>
+      <g>
+        <rect y="1" width="14" height="12" fill="#f4f4f4"/>
+        <rect x="1" y="2" width="12" height="10" fill="#323232"/>
+        <rect x="1" y="2" width="12" height="3" fill="#323232"/>
+        <rect x="2" y="5" width="11" height="7" fill="#ebebeb"/>
+      </g>
+      <g>
+        <polygon points="16 8 15.218 8 15.389 6 4 6 4 15 7.6 15 7.6 12 8.996 12 8.91 13 9.782 13 9.611 15 14.618 15 14.79 13 15.661 13 16 9.048 16 8" fill="#f4f4f4"/>
+        <path d="M6.6,8.3V10H9v1H6.6v3H5V7H9.5V8.3ZM14.043,10l-.086,1h.872l-.086,1h-.872L13.7,14h-1l.171-2h-1L11.7,14h-1l.171-2H10l.086-1h.871l.086-1h-.872l.086-1h.872L11.3,7h1l-.171,2h1L13.3,7h1l-.171,2H15l-.086,1Zm-1,0h-1l-.086,1h1Z" fill="#0089a3"/>
+      </g>
+    </g>
+  </g>
+</svg>

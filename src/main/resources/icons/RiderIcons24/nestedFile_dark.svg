@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>nestedFile_dark</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+    <path d="M2,2V14H14V2ZM5,9V8.664L7.664,6H8V9Zm8,4H12V5H7.25L4,8.25V13H3V3H13Z" fill="#afb1b3"/>
+  </g>
+</svg>

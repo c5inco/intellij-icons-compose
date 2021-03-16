@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <rect width="13" height="13" fill="#ffe5ff" opacity="0"/>
+  <g>
+    <polygon points="13 10.521 7.77 0 5.23 0 0 10.521 0 11.112 1.541 13 11.459 13 13 11.112 13 10.521" fill="#252525"/>
+    <polygon points="7.151 1 5.849 1 1 10.756 2.015 12 10.985 12 12 10.756 7.151 1" fill="#ffca01"/>
+    <polygon points="2.49 11 2.183 10.623 6.469 2 6.531 2 10.817 10.623 10.51 11 2.49 11" fill="#292929"/>
+    <path d="M7,8H6V5H7ZM7,9H6v1H7Z" fill="#ffca01"/>
+  </g>
+</svg>

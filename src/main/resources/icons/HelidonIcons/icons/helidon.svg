@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none"><path fill="#2266CF" d="M2 2h5.896v6.731z"/><path fill="#64B8FF" d="M7.896 2l3.417 3.915-.163.188H7.889z"/><path fill="#248BF5" d="M9.965 4.365l.646-.55h2.042v.576l-1.34 1.524z"/><path fill="#2266CF" d="M12.653 3.815l.5.003-.5.573z"/><path fill="#E3F3FF" d="M12.653 4.391L11.15 6.103h1.501z"/><path fill="#91CCFF" d="M12.651 6.103H7.889v3.972z"/><path fill="#248BF5" d="M7.896 8.731v1.346H7.16v-.674l-.801.654V8.872l-1.442 1.185v-.662l-.821.662H3.042l3.503-2.865z"/><path fill="#64B8FF" d="M4.096 10.057l.821-.662v.662l1.442-1.185v1.185l.801-.654v.674z"/><path fill="#64B8FF" d="M9.49 8.734l2.484-2.057 1.787 2.053z"/><path fill="#2266CF" d="M8.561 9.501l.929-.767h4.268v6.713z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" transform="translate(2 2)">
+    <polygon fill="#2266CF" points="0 0 5.896 0 5.896 6.731"/>
+    <polygon fill="#64B8FF" points="5.896 0 9.313 3.915 9.15 4.103 5.889 4.103"/>
+    <polygon fill="#248BF5" points="7.965 2.365 8.611 1.815 10.653 1.815 10.653 2.391 9.313 3.915"/>
+    <polygon fill="#2266CF" points="10.653 1.815 11.153 1.818 10.653 2.391"/>
+    <polygon fill="#E3F3FF" points="10.653 2.391 9.15 4.103 10.651 4.103"/>
+    <polygon fill="#91CCFF" points="10.651 4.103 5.889 4.103 5.889 8.075"/>
+    <polygon fill="#248BF5" points="5.896 6.731 5.896 8.077 5.16 8.077 5.16 7.403 4.359 8.057 4.359 6.872 2.917 8.057 2.917 7.395 2.096 8.057 1.042 8.057 4.545 5.192"/>
+    <polygon fill="#64B8FF" points="2.096 8.057 2.917 7.395 2.917 8.057 4.359 6.872 4.359 8.057 5.16 7.403 5.16 8.077"/>
+    <polygon fill="#64B8FF" points="7.49 6.734 9.974 4.677 11.761 6.73"/>
+    <polygon fill="#2266CF" points="6.561 7.501 7.49 6.734 11.758 6.734 11.758 13.447"/>
+  </g>
+</svg>

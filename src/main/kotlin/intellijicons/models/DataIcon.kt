@@ -2,6 +2,7 @@ package intellijicons.models
 
 data class DataIcon (
     val name: String,
+    val set: String,
     val area: String,
     val section: String,
     val variants: Int,

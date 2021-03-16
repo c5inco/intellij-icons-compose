@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="a" x1="9.154" y1="29.752" x2="28.524" y2="2.102" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c27d1b"/>
+      <stop offset="1" stop-color="#59bd28"/>
+    </linearGradient>
+    <linearGradient id="b" x1="31.55" y1="20.12" x2="8.989" y2="28.258" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4d75f6"/>
+      <stop offset="1" stop-color="#ff9e00"/>
+    </linearGradient>
+    <linearGradient id="c" x1="1.922" y1="4.398" x2="26.387" y2="21.265" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff4267"/>
+      <stop offset="1" stop-color="#3b67f6"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <polygon points="27.656 1.5 4.406 21.688 9.315 29.93 20.763 28.023 30.844 6.469 27.656 1.5" fill="url(#a)"/>
+    <polygon points="29.831 16.535 17.563 18.219 9.315 29.93 17.875 32 32 21.219 29.831 16.535" fill="url(#b)"/>
+    <polygon points="29.844 16.531 16 4 4.906 0 0 7.514 3.688 15.719 23.313 22.063 29.844 16.531" fill="url(#c)"/>
+  </g>
+  <g>
+    <rect x="3" y="5" width="26" height="22"/>
+    <rect x="5" y="22" width="6" height="2" fill="#fff"/>
+    <path d="M16,7V9.178h.66a2.32,2.32,0,1,1,0,4.639H16v4.336h-.67a2.32,2.32,0,1,0,0,4.639H16V25H27V7Z" fill="#fff"/>
+    <rect x="18" y="22" width="5" height="2"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>SaveSnapshotAndStopRecording_dark</title>
+  <g data-name="Layer 2">
+    <g data-name="Layer 1">
+      <g>
+        <rect width="16" height="16" fill="#ed1e79" opacity="0"/>
+        <g>
+          <polygon points="8 1 7 1 7 6.09 5 4.09 5 5.5 7.5 8 10 5.5 10 4.09 8 6.09 8 1" fill="#3591c3" fill-rule="evenodd"/>
+          <path  d="M9,9v3H2V9Z" fill="#afb0b2" fill-rule="evenodd"/>
+          <rect  x="10" y="9" width="5" height="5" fill="#c75551"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill="none" fill-rule="evenodd"><path fill="#9AA7B0" fill-opacity=".8" d="M1 15h14v-3H1z"/><path fill="#9AA7B0" fill-opacity=".8" d="M1 4h14V1H1z"/><path fill="#40B6E0" d="M4.5 4.379L2 7h2v5h1V7h2z"/><path fill="#40B6E0" d="M11.5 4.379L9 7h2v1h1V7h2z"/><path fill="#40B6E0" d="M11 10h1V9h-1z"/><path fill="#40B6E0" d="M11 12h1v-1h-1z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#9AA7B0" fill-opacity=".8" points="1 15 15 15 15 12 1 12"/>
+    <polygon fill="#9AA7B0" fill-opacity=".8" points="1 4 15 4 15 1 1 1"/>
+    <polygon fill="#40B6E0" points="4.5 4.379 2 7 4 7 4 12 5 12 5 7 7 7"/>
+    <polygon fill="#40B6E0" points="11.5 4.379 9 7 11 7 11 8 12 8 12 7 14 7"/>
+    <polygon fill="#40B6E0" points="11 10 12 10 12 9 11 9"/>
+    <polygon fill="#40B6E0" points="11 12 12 12 12 11 11 11"/>
+  </g>
+</svg>

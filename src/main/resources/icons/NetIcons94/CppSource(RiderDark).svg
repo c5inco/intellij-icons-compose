@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>CppSource(GrayDark)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <g>
+      <polygon points="13 7 13 4 7 4 7 1 3 1 3 4 0 4 0 8 3 8 3 11 9 11 9 14 13 14 13 11 16 11 16 7 13 7" fill="#252525" fill-rule="evenodd"/>
+      <polygon points="15 10 12 10 12 13 10 13 10 10 7 10 7 8 10 8 10 5 12 5 12 8 15 8 15 10" fill="#be72b6" fill-rule="evenodd"/>
+      <polygon points="9 5 6 5 6 2 4 2 4 5 1 5 1 7 4 7 4 10 6 10 6 7 9 7 9 5" fill="#be72b6" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

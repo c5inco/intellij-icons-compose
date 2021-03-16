@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>Time</title>
+  <g>
+    <rect width="16" height="16" fill="#ffc4ff" opacity="0"/>
+    <path d="M8,1a7,7,0,1,0,7,7A7,7,0,0,0,8,1ZM8,13.2A5.2,5.2,0,1,1,13.2,8,5.2,5.2,0,0,1,8,13.2Zm3.094-3.306-.917,1.311L6.9,8.911,6.908,8.9H6.9V4.8H8.5V8.078Z" fill="#6e6e6e"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <g>
+        <path d="M5,12V0h7.414L16,3.586V12Z" fill="#f4f4f4"/>
+        <polygon points="12 1 6 1 6 11 15 11 15 4 12 1" fill="#323232"/>
+        <polygon points="11 5 11 2.5 7.5 2.5 7.5 9.5 13.5 9.5 13.5 5 11 5" fill="#ebebeb"/>
+      </g>
+      <g>
+        <path d="M0,16V4H7.414L11,7.586V16Z" fill="#f4f4f4"/>
+        <polygon points="7 5 1 5 1 15 10 15 10 8 7 5" fill="#323232"/>
+        <polygon points="6 9 6 6.5 2.5 6.5 2.5 13.5 8.5 13.5 8.5 9 6 9" fill="#ebebeb"/>
+      </g>
+    </g>
+  </g>
+</svg>

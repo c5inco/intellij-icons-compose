@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="frame" width="16" height="16" fill="none"/><g fill-rule="evenodd"><path fill="#AFB1B3" d="M10.415 14H15v-1h-3.59l-.995 1zM13 2h-3v11l3-3.018V2zm-1 1v6.569l-1 1.006V3h1z"/><path fill="#3592C4" d="M9 7.5L6.04 4.308l-.953.884L7.227 7.5l-2.14 2.308.953.884L9 7.5zm-6.96 3.192l-.953-.884L3.227 7.5l-2.14-2.308.953-.884L5 7.5l-2.96 3.192z"/></g></svg>
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill-rule="evenodd">
+    <path fill="#AFB1B3" d="M10.4155,14 L14.9995,14 L14.9995,13 L11.4095,13 L10.4155,14 Z M12.9995,2 L9.9995,2 L9.9995,13 L12.9995,9.982 L12.9995,2 Z M11.9995,3 L11.9995,9.569 L10.9995,10.575 L10.9995,3 L11.9995,3 Z"/>
+    <path fill="#3592C4" d="M9,7.5 L6.04,4.308 L5.087,5.192 L7.227,7.5 L5.087,9.808 L6.04,10.692 L9,7.5 Z M2.04,10.692 L1.087,9.808 L3.227,7.5 L1.087,5.192 L2.04,4.308 L5,7.5 L2.04,10.692 Z"/>
+  </g>
+</svg>

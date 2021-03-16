@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>insightHotkey4</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <g>
+      <rect x="12" y="2" width="1" height="12" fill="#389fd6"/>
+      <path d="M9.715,7.659H8.527V9H7.578V7.659H4.224V6.844l2.97-4.811H8.527V6.844H9.715ZM7.578,2.929,5.152,6.844H7.578Z" fill="#389fd6"/>
+    </g>
+  </g>
+</svg>

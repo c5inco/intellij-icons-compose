@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <path d="M16,14H0V11.086l1-1V9.415l-1-1V6.588l1-1V4.914l-1-1V1H16Z" fill="#242424" fill-rule="evenodd"/>
+      <path d="M1,3.5l1,1V6L1,7V8L2,9v1.5l-1,1V13H15V2H1Z" fill="#c4c4c4" fill-rule="evenodd"/>
+      <path d="M2,12v-.086l1-1V8.587l-1-1V7.416l1-1V4.086l-1-1V3H14v9Z" fill="#282828" fill-rule="evenodd"/>
+      <path d="M10.391,9c-.115.092-.094.438.078.438C11.313,8.859,12,8.734,12,6a1,1,0,0,0-2,0,.979.979,0,0,0,.4.778l.086.076C11.532,7.386,10.844,8.641,10.391,9ZM6.61,9c.115.092.093.438-.078.438C5.688,8.859,5,8.734,5,6A1,1,0,0,1,7,6a.981.981,0,0,1-.4.778l-.086.076C5.469,7.386,6.157,8.641,6.61,9Z" fill="#c4c4c4" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

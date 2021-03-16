@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" data-name="Layer 1" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="a" x1="119.752" x2="21.087" y1="56.64" y2="113.26" gradientTransform="matrix(1 0 0 -1 0 130)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dd1265"/>
+      <stop offset=".483" stop-color="#dd1265"/>
+      <stop offset=".942" stop-color="#fdb60d"/>
+    </linearGradient>
+    <linearGradient id="b" x1="61.104" x2="100.215" y1="118.824" y2="10.823" gradientTransform="matrix(1 0 0 -1 0 130)" gradientUnits="userSpaceOnUse">
+      <stop offset=".139" stop-color="#087cfa"/>
+      <stop offset=".476" stop-color="#dd1265"/>
+      <stop offset=".958" stop-color="#087cfa"/>
+    </linearGradient>
+    <linearGradient id="c" x1="31.843" x2="60.732" y1="115.502" y2="12.836" gradientTransform="matrix(1 0 0 -1 0 130)" gradientUnits="userSpaceOnUse">
+      <stop offset=".278" stop-color="#dd1265"/>
+      <stop offset=".968" stop-color="#fdb60d"/>
+    </linearGradient>
+    <linearGradient id="d" x1="64" x2="64" y1="123.958" y2="54.007" gradientTransform="matrix(1 0 0 -1 0 130)" gradientUnits="userSpaceOnUse">
+      <stop offset=".084" stop-color="#878585"/>
+      <stop offset=".538"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" d="M128 49.867L38.267 0 98.4 89.333l12.267-8.133z"/>
+  <path fill="url(#b)" d="M92.267 29.467L80.933 2l-24.8 24.533 10.134 88.8L90.4 128l37.6-22z"/>
+  <path fill="url(#c)" d="M38.267 0L0 25.733l14.267 88 36.666 14 47.467-38.4z"/>
+  <path fill="url(#d)" d="M103 25H25v78h78z"/>
+  <path fill="#fff" d="M62.7 89.567H33.667v4.767H62.7zM33.8 34.75h13.372c3.764 0 6.491 1.039 8.568 2.986a8.914 8.914 0 012.466 6.621v.13a9.437 9.437 0 01-1.687 5.842 10.473 10.473 0 01-4.544 3.245l7.14 10.386h-7.53L45.484 55h-5.323v8.96H33.67V34.75zM46.782 48.9a5.1 5.1 0 003.635-1.169 3.758 3.758 0 001.3-2.986v-.129a3.528 3.528 0 00-1.3-3.116 6.19 6.19 0 00-3.765-1.039h-6.361V48.9zM63 34.75h11.4c9.252 0 15.492 6.24 15.492 14.417S83.656 63.8 74.4 63.8l-11.4.213zm6.455 6.025V58.2H74.4c5.164 0 8.822-3.443 8.822-8.607s-3.443-8.822-8.822-8.822z"/>
+  <path fill="#d99e2b" fill-rule="evenodd" d="M56 128h72V88H56z"/>
+  <path fill-rule="evenodd" d="M64 120h15v-3.8H67.6v-6.4h10V106h-10v-6.2h11.2V96H64zM89.6 110.6l3.6-9.6 3.8 9.6zM82 120h3.8l2.2-5.8h10.2l2.2 5.8h4L95 96h-3.6zM109.628 108.4v-8.6h3.57c2.74 0 4 1.4 4.2 3.6v.8c0 2.376-1.31 4.2-3.6 4.2zm0 11.6v-7.8H113a7.734 7.734 0 008.022-7.592v-1A7.237 7.237 0 00113.76 96H106v24z"/>
+</svg>

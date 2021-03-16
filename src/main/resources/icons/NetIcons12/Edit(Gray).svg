@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <g>
+      <polygon points="1 15 5.414 15 13.414 7 9 2.586 1 10.586 1 15" fill="#f4f4f4"/>
+      <path d="M2.707,10.293,9.5,3.5l3,3L5.707,13.293ZM2,11l3,3H2Z" fill="#323232"/>
+      <path d="M8.707,2.879,10,1.586a2,2,0,0,1,2.829,0l1.585,1.586a2,2,0,0,1,0,2.828L13.121,7.293Z" fill="#f4f4f4"/>
+      <path d="M13.121,5.879l.586-.586a1,1,0,0,0,0-1.414L12.121,2.293a1,1,0,0,0-1.414,0l-.586.586Z" fill="#323232"/>
+      <rect x="2.568" y="7.336" width="8.485" height="0.707" transform="translate(-3.443 7.068) rotate(-45)" fill="#ebebeb"/>
+    </g>
+  </g>
+</svg>

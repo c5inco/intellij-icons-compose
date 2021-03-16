@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>DotMemoryUnitRunAll_dark</title>
+  <g>
+    <rect width="16" height="16" fill="#ffc4ff" opacity="0"/>
+    <g>
+      <path d="M9,12,4,16V14.081l2-1.6v-.961l-2-1.6V8ZM0,8v8l5-4Z" fill="#499c54" fill-rule="evenodd"/>
+      <path d="M8,2A6,6,0,0,0,2,8c0,.112.011.222.017.333L3,9.119V7H4.141A3.991,3.991,0,0,1,8,4V8h4a3.984,3.984,0,0,1-2.055,3.475l.055.044v.962L8.108,14A6,6,0,0,0,14,8V2Z" fill="#afb1b3"/>
+    </g>
+  </g>
+</svg>

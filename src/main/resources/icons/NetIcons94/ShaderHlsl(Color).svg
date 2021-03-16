@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="a" x1="8" y1="1.048" x2="8" y2="15.048" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7d6e48"/>
+      <stop offset="1" stop-color="#614a30"/>
+    </linearGradient>
+    <linearGradient id="b" x1="8" y1="2.048" x2="8" y2="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e2d7bb"/>
+      <stop offset="1" stop-color="#e2ccb2"/>
+    </linearGradient>
+    <linearGradient id="c" x1="8" y1="4.096" x2="8" y2="12.051" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff2d3"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="d" x1="8" y1="9" x2="8" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#422d00"/>
+      <stop offset="1" stop-color="#6e4d00"/>
+    </linearGradient>
+    <linearGradient id="e" x1="8" y1="10" x2="8" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6df85"/>
+      <stop offset="1" stop-color="#ecb62b"/>
+    </linearGradient>
+  </defs>
+  <title>ShaderHLSL(Color)</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+    <g>
+      <g>
+        <polygon points="2 15 2 1 9.414 1 14 5.586 14 15 2 15" fill="url(#a)"/>
+        <polygon points="9 2 3 2 3 14 13 14 13 6 9 2" fill="url(#b)"/>
+        <polygon points="9 6 9 4 5 4 5 12 11 12 11 6 9 6" fill="url(#c)"/>
+      </g>
+      <g>
+        <path d="M11,16v-.257A2.088,2.088,0,0,1,10,16H0V9H7v2A1.959,1.959,0,0,1,9,9h5v4h2v3Z" fill="url(#d)"/>
+        <path d="M4,10v5H3V13H2v2H1V10H2v2H3V10Zm2,4V10H5v5H7.5V14Zm7,0V10H12v5h3V14ZM9,11v1h1a.979.979,0,0,1,1,1v1a.979.979,0,0,1-1,1H8V14h2V13H9a.979.979,0,0,1-1-1V11a.979.979,0,0,1,1-1h2v1Z" fill="url(#e)"/>
+      </g>
+    </g>
+  </g>
+</svg>

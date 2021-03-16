@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="areas">
+    <rect width="16" height="16" fill="#ffe5ff" opacity="0"/>
+  </g>
+  <g id="icons">
+    <path d="M5.282,5.912,8.007,8.677,14.731,2,16,3.274,7.993,11.228,4,7.175ZM13,7.664V13H3V3h9.3L13.31,2H2V14H14V6.67Z" fill="#6e6e6e"/>
+  </g>
+</svg>

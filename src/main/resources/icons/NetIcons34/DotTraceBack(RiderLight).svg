@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>Back</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect width="16" height="16" fill="#ed1e79" opacity="0"/>
+        <polygon points="14 7 4.54 7 7.22 4.32 5.95 3.05 2.27 6.73 1 8 2 9 2 9 2 9 2.27 9.27 5.95 12.95 7.22 11.68 4.55 9 14 9 14 7" fill="#6e6e6e" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

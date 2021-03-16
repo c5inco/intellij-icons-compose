@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>TestPending</title>
+  <g>
+    <g>
+      <path d="M0,0H16V16H0Z" fill="#ffc4ff" opacity="0"/>
+      <rect width="16" height="16" fill="#ffc4ff" opacity="0"/>
+    </g>
+    <path d="M12,2H4V5.333h.007L4,5.34,6.667,8,4,10.667l.007.006H4V14h8V10.673h-.007L12,10.667,9.333,8,12,5.34l-.007-.007H12Zm-1.733,9.166v1.1H5.733v-1.1L8,8.9Zm0-6.332L8,7.1,5.733,4.834v-1.1h4.534Z" fill="#6e6e6e"/>
+  </g>
+</svg>

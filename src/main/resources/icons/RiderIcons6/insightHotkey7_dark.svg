@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>insightHotkey7_dark</title>
+  <g>
+    <rect width="16" height="16" fill="#ffe3ff" opacity="0"/>
+    <g>
+      <rect x="12" y="2" width="1" height="12" fill="#3592c4"/>
+      <polygon points="9.329 2.896 6.407 9 5.346 9 8.38 2.896 4.616 2.896 4.616 2.033 9.329 2.033 9.329 2.896" fill="#3592c4"/>
+    </g>
+  </g>
+</svg>

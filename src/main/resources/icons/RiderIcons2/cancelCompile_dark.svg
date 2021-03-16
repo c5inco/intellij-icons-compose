@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>cancelCompile_dark</title>
+  <g>
+    <rect width="16" height="16" fill="#ffd5ff" opacity="0"/>
+    <g>
+      <g>
+        <path d="M4.152,6.425l.107-.582L7.425,9.008l.027.256L9.446,7.27,9.2,7.244,6.04,4.088,7.81,2.364l1.142-.552,0-.8-3.3.143-.026-.011L5.233,1.3,2.4,4.129a.5.5,0,0,0-.127.453l-.5.179L0,6.534,2.121,8.655,4,6.781Z" fill="#499c54"/>
+        <rect x="10.05" y="8.553" width="3.5" height="6.125" transform="translate(-4.757 11.746) rotate(-45)" fill="#499c54"/>
+      </g>
+      <rect x="0.14" y="7.375" width="15.72" height="1.251" transform="translate(-3.314 8) rotate(-45)" fill="#c75450"/>
+    </g>
+  </g>
+</svg>

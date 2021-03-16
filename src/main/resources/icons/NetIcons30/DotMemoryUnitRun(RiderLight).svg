@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>DotMemoryUnitRun</title>
+  <g>
+    <rect width="16" height="16" fill="#ffc4ff" opacity="0"/>
+    <path d="M8,2a6,6,0,1,0,6,6V2ZM8,12A4,4,0,0,1,8,4V8h4A4,4,0,0,1,8,12Z" fill="#6e6e6e"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <title>toolWindowWPFPreview_dark</title>
+  <g>
+    <g opacity="0">
+      <rect width="13" height="13" fill="#ffdaff"/>
+    </g>
+    <path d="M8,10v2H1V5H3A5,5,0,0,0,8,10Zm4-5A4,4,0,1,1,8,1,4,4,0,0,1,12,5ZM11,5A3,3,0,1,0,8,8,3,3,0,0,0,11,5Z" fill="#afb1b3"/>
+  </g>
+</svg>
