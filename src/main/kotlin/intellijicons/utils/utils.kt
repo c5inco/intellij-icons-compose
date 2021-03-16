@@ -1,11 +1,14 @@
 package intellijicons.utils
 
+import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.State
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.svgResource
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
 fun removeDash(str: String): String {
@@ -48,4 +51,9 @@ fun PlaceholderIcon() {
         contentDescription = "Annotate icon",
         modifier = Modifier.size(128.dp)
     )
+}
+
+@Composable
+fun imageScale(active: Boolean, target: Int): State<Dp> {
+    return animateDpAsState(if (active) (target * 1.4).dp else target.dp)
 }
