@@ -15,6 +15,7 @@ import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -352,10 +353,6 @@ private fun SearchBox(isDarkActive: Boolean, onFilterChange: (String) -> Unit, o
                     },
                     singleLine = true,
                     decorationBox = { innerTextField ->
-                        // Because the decorationBox is used, the whole Row gets the same behaviour as the
-                        // internal input field would have otherwise. For example, there is no need to add a
-                        // Modifier.clickable to the Row anymore to bring the text field into focus when user
-                        // taps on a larger text field area which includes paddings and the icon areas.
                         Row(
                             modifier = Modifier
                                 .background(MaterialTheme.colors.surface)
@@ -364,11 +361,11 @@ private fun SearchBox(isDarkActive: Boolean, onFilterChange: (String) -> Unit, o
                         ) {
                             Icon(
                                 imageVector = Icons.Default.Search,
-                                contentDescription = null,
+                                contentDescription = "Search icon decorator",
                                 tint = LocalContentColor.current.copy(alpha = ContentAlpha.disabled)
                             )
                             Spacer(Modifier.width(12.dp))
-                            Box {
+                            Box(modifier = Modifier.weight(1f)) {
                                 innerTextField()
                                 if (filter.isBlank()) {
                                     Text(
@@ -377,6 +374,18 @@ private fun SearchBox(isDarkActive: Boolean, onFilterChange: (String) -> Unit, o
                                         color = LocalContentColor.current.copy(alpha = ContentAlpha.disabled)
                                     )
                                 }
+                            }
+                            if (filter.isNotBlank()) {
+                                Icon(
+                                    imageVector = Icons.Default.Clear,
+                                    contentDescription = "Clear icon",
+                                    tint = LocalContentColor.current.copy(alpha = ContentAlpha.medium),
+                                    modifier = Modifier
+                                        .clickable {
+                                            filter = ""
+                                            onFilterChange("")
+                                        }
+                                )
                             }
                         }
                     },
