@@ -126,7 +126,7 @@ fun main() {
                                 ) {
                                     chunkedGroupsMap.forEach { (group, chunkedIcons) ->
                                         stickyHeader {
-                                            IconsGroupHeader(group, chunkedIcons)
+                                            IconsGroupHeader(group, chunkedIcons, isDarkTheme)
                                         }
 
                                         items(chunkedIcons) { iconsChunk ->

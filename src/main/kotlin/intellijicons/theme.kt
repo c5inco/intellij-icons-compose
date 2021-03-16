@@ -30,14 +30,14 @@ fun darkThemeColors(): Colors {
 }
 
 @Composable
-fun FooterTheme(darkTheme: Boolean, content: @Composable () -> Unit) {
+fun IconsGroupHeaderTheme(darkTheme: Boolean, content: @Composable () -> Unit) {
     val colors = if (darkTheme) {
         darkColors().copy(
-            surface = darkGray500,
-            onSurface = Color.White
+            surface = Color(0xff45494a)
         )
     } else {
         lightColors().copy(
+            surface = Color(0xfff2f2f2)
         )
     }
 

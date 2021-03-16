@@ -17,21 +17,23 @@ import intellijicons.utils.removeDash
 @Composable
 fun IconsGroupHeader(
     group: DataIconGroup,
-    icons: List<List<DataIcon>>
+    icons: List<List<DataIcon>>,
+    isDarkTheme: Boolean
 ) {
     val totalIcons = icons.fold(0) { acc, chunkedIcons -> acc + chunkedIcons.size }
 
-    Row(
-        horizontalArrangement = Arrangement.SpaceBetween,
-        modifier = Modifier
-            .fillMaxWidth()
-            .background(MaterialTheme.colors.onBackground.copy(alpha = 0.15f))
-            .padding(vertical = 12.dp, horizontal = 20.dp)
-    ) {
-        Text(
-            text = removeDash("${group.set} / ${group.section}"),
-            style = MaterialTheme.typography.subtitle2
-        )
+    IconsGroupHeaderTheme(isDarkTheme) {
+        Row(
+            horizontalArrangement = Arrangement.SpaceBetween,
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(MaterialTheme.colors.surface)
+                .padding(vertical = 12.dp, horizontal = 20.dp)
+        ) {
+            Text(
+                text = removeDash("${group.set} / ${group.section}"),
+                style = MaterialTheme.typography.subtitle2
+            )
 
         /*
         Text(
