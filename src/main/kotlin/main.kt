@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import com.beust.klaxon.Klaxon
+import intellijicons.ui.IconFooter
 import intellijicons.ui.IconsGroupHeader
 import intellijicons.ui.IconsRow
 import intellijicons.ui.SearchBox
@@ -50,6 +51,7 @@ fun main() {
         var searchFilter by remember { mutableStateOf("")}
         val filterFlow = remember { MutableStateFlow("") }
         val allGroupsMap = remember { mutableStateMapOf<DataIconGroup, List<DataIcon>>() }
+        var activeIcon: DataIcon? by remember { mutableStateOf(null) }
 
         LaunchedEffect(allGroupsMap) {
             withContext(Dispatchers.IO) {
@@ -79,13 +81,14 @@ fun main() {
                 }
                 assert(allGroupsMap.isNotEmpty())
             }
-        }
 
-        LaunchedEffect(isDarkTheme) {
             filterFlow
                 .debounce(timeoutMillis = 300L)
                 .collect {
-                    searchFilter = it
+                    if (searchFilter != it) {
+                        searchFilter = it
+                        activeIcon = null
+                    }
                 }
         }
 
@@ -116,24 +119,35 @@ fun main() {
                         }
 
                         if (chunkedGroupsMap.isNotEmpty()) {
-                            LazyColumn(
-                                modifier = Modifier.fillMaxSize(),
-                                contentPadding = PaddingValues(bottom = 32.dp)
-                            ) {
-                                chunkedGroupsMap.forEach { (group, chunkedIcons) ->
-                                    stickyHeader {
-                                        IconsGroupHeader(group, chunkedIcons)
-                                    }
+                            Box {
+                                LazyColumn(
+                                    modifier = Modifier.fillMaxSize(),
+                                    contentPadding = PaddingValues(bottom = 32.dp)
+                                ) {
+                                    chunkedGroupsMap.forEach { (group, chunkedIcons) ->
+                                        stickyHeader {
+                                            IconsGroupHeader(group, chunkedIcons)
+                                        }
 
-                                    items(chunkedIcons) { iconsChunk ->
-                                        IconsRow(iconsChunk, chunkSize.value, isDarkTheme, group)
-                                    }
+                                        items(chunkedIcons) { iconsChunk ->
+                                            IconsRow(
+                                                iconsChunk = iconsChunk,
+                                                chunkSize = chunkSize.value,
+                                                isDarkTheme = isDarkTheme,
+                                                group = group,
+                                                onIconSelect = { activeIcon = it },
+                                                activeIcon = activeIcon
+                                            )
+                                        }
 
-                                    item(group) {
-                                        Spacer(modifier = Modifier.height(8.dp))
-                                        Divider(thickness = 1.dp)
+                                        item(group) {
+                                            Spacer(modifier = Modifier.height(8.dp))
+                                            Divider(thickness = 1.dp)
+                                        }
                                     }
                                 }
+
+                                IconFooter(Modifier.align(Alignment.BottomCenter), isDarkTheme, activeIcon)
                             }
                         } else {
                             FeedbackState {

@@ -1,5 +1,6 @@
 package intellijicons.ui
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -15,10 +16,12 @@ fun IconsRow(
     iconsChunk: List<DataIcon>,
     chunkSize: Int,
     isDarkTheme: Boolean,
-    group: DataIconGroup
+    group: DataIconGroup,
+    onIconSelect: (DataIcon?) -> Unit,
+    activeIcon: DataIcon?
 ) {
     Row(
-        modifier = Modifier.padding(vertical = 8.dp, horizontal = 20.dp),
+        modifier = Modifier.padding(top = 8.dp, start = 20.dp, end = 20.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         iconsChunk.forEach {
@@ -27,10 +30,15 @@ fun IconsRow(
             if (it.variants == 1 && it.dark) iconDark = true
 
             IconTile(
-                modifier = Modifier.weight(1f),
+                modifier = Modifier
+                    .weight(1f)
+                    .clickable {
+                        onIconSelect(if (it == activeIcon) null else it)
+                    },
                 set = group.set,
                 icon = it,
-                dark = iconDark
+                dark = iconDark,
+                active = it == activeIcon
             )
         }
 

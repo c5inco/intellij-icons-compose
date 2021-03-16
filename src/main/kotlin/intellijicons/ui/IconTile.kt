@@ -2,6 +2,7 @@ package intellijicons.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -30,7 +31,8 @@ fun IconTile(
     modifier: Modifier = Modifier,
     set: String,
     icon: DataIcon,
-    dark: Boolean = false
+    dark: Boolean = false,
+    active: Boolean = false
 ) {
     val sectionPath = if (icon.section.isNotBlank()) "${icon.section}/" else ""
     val darkSuffix = if (dark) "_dark" else ""
@@ -39,7 +41,6 @@ fun IconTile(
 
     Column(
         modifier = modifier
-            .clickable { }
             .pointerMoveFilter(
                 onEnter = {
                     hovered.value = true
@@ -51,6 +52,7 @@ fun IconTile(
                 }
             )
             .clip(RoundedCornerShape(8.dp))
+            .border(width = 2.dp, color = if (active) MaterialTheme.colors.primary else Color.Transparent, shape = RoundedCornerShape(8.dp))
             .background(color = if (hovered.value) MaterialTheme.colors.onBackground.copy(alpha = 0.1f) else Color.Transparent)
             .padding(top = 8.dp, bottom = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
