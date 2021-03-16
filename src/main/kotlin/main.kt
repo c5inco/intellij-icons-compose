@@ -1,5 +1,6 @@
 package intellijicons
 
+import androidx.compose.animation.*
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.desktop.DesktopMaterialTheme
@@ -9,6 +10,7 @@ import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
@@ -16,6 +18,7 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Clear
+import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -39,12 +42,14 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.debounce
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
 
+@ExperimentalAnimationApi
 @ExperimentalFoundationApi
 fun main() {
-    val defaultWindowSize = IntSize(width = 800, height = 600)
+    val defaultWindowSize = IntSize(width = 800, height = 700)
     var chunkSize = mutableStateOf(6)
 
     Window(
@@ -131,22 +136,59 @@ fun main() {
                         }
 
                         if (chunkedGroupsMap.isNotEmpty()) {
-                            LazyColumn(
-                                modifier = Modifier.fillMaxSize(),
-                                contentPadding = PaddingValues(bottom = 32.dp)
-                            ) {
-                                chunkedGroupsMap.forEach { (group, chunkedIcons) ->
-                                    stickyHeader {
-                                        IconGroupHeader(group, chunkedIcons)
-                                    }
+                            Box {
+                                val listState = rememberLazyListState()
+                                val coroutineScope = rememberCoroutineScope()
 
-                                    items(chunkedIcons) { iconsChunk ->
-                                        IconsRow(iconsChunk, chunkSize.value, isDarkTheme, group)
-                                    }
+                                LazyColumn(
+                                    modifier = Modifier.fillMaxSize(),
+                                    contentPadding = PaddingValues(bottom = 32.dp),
+                                    state = listState
+                                ) {
+                                    chunkedGroupsMap.forEach { (group, chunkedIcons) ->
+                                        stickyHeader     {
+                                            IconGroupHeader(group, chunkedIcons)
+                                        }
 
-                                    item(group) {
-                                        Spacer(modifier = Modifier.height(8.dp))
-                                        Divider(thickness = 1.dp)
+                                        items(chunkedIcons) { iconsChunk ->
+                                            IconsRow(iconsChunk, chunkSize.value, isDarkTheme, group)
+                                        }
+
+                                        item(group) {
+                                            Spacer(modifier = Modifier.height(8.dp))
+                                            Divider(thickness = 1.dp)
+                                        }
+                                    }
+                                }
+
+                                val showButton by remember {
+                                    derivedStateOf {
+                                        listState.firstVisibleItemIndex > 0
+                                    }
+                                }
+
+                                this@Column.AnimatedVisibility(
+                                    modifier = Modifier
+                                        .align(Alignment.BottomCenter)
+                                        .padding(bottom = 20.dp),
+                                    visible = showButton,
+                                    enter = slideInVertically(
+                                        initialOffsetY = { -16 }
+                                    ) + fadeIn(initialAlpha = 0.3f),
+                                    exit = slideOutVertically() + fadeOut()
+                                ) {
+                                    FloatingActionButton(
+                                        backgroundColor = MaterialTheme.colors.primary,
+                                        onClick = {
+                                            coroutineScope.launch {
+                                                // Animate scroll to the first item
+                                                listState.animateScrollToItem(index = 0)
+                                            }
+                                    }) {
+                                        Icon(
+                                            imageVector = Icons.Default.KeyboardArrowUp,
+                                            contentDescription = "Scroll up icon"
+                                        )
                                     }
                                 }
                             }
