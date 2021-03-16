@@ -252,6 +252,11 @@ private fun matchSearchFilter(icon: DataIcon, set: String, searchFilter: String)
 }
 
 @Composable
+private fun imageScale(active: Boolean, target: Int): State<Dp> {
+    return animateDpAsState(if (active) (target * 1.4).dp else target.dp)
+}
+
+@Composable
 private fun IconTile(
     modifier: Modifier = Modifier,
     set: String,
@@ -262,6 +267,7 @@ private fun IconTile(
     val sectionPath = if (icon.section.isNotBlank()) "${icon.section}/" else ""
     val darkSuffix = if (dark) "_dark" else ""
     val hovered = remember { mutableStateOf(false) }
+    val defaultIconSize = 32
 
     Column(
         modifier = modifier
@@ -313,7 +319,9 @@ private fun IconTile(
                     Image(
                         bitmap = imageResource(imagePath),
                         contentDescription = icon.name,
-                        modifier = Modifier.size(width = width.dp, height = height.dp).background(Color.LightGray)
+                        modifier = Modifier.size(
+                                width = imageScale(hovered.value, width).value,
+                                height = imageScale(hovered.value, height).value)
                     )
                 }
             } else {
@@ -321,7 +329,7 @@ private fun IconTile(
                 Image(
                     painter = svgResource("icons/$set/${sectionPath}${icon.name}$darkSuffix.svg"),
                     contentDescription = icon.name,
-                    modifier = Modifier.size(defaultIconSize)
+                    modifier = Modifier.size(imageScale(hovered.value, defaultIconSize).value)
                 )
             }
         }
