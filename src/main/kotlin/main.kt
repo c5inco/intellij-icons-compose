@@ -117,17 +117,29 @@ fun main() {
                         onThemeChange = { isDarkTheme = it }
                     )
                     if (allGroupsMap.size > 0) {
-                        LazyColumn {
-                            val sortedGroupsMap = allGroupsMap.toSortedMap(compareBy<DataIconGroup> { it.set }.thenBy { it.section })
-                            sortedGroupsMap.forEach { (group, icons) ->
-                                val filteredList = filterAndSortIcons(icons, group.set, searchFilter)
+                        val sortedGroupsMap = allGroupsMap.toSortedMap(compareBy<DataIconGroup> { it.set }.thenBy { it.section })
+                        val chunkedGroupsMap = mutableMapOf<DataIconGroup, List<List<DataIcon>>>()
 
-                                if (filteredList.isNotEmpty()) {
+                        sortedGroupsMap.forEach { (group, icons) ->
+                            val filteredList = filterAndSortIcons(icons, group.set, searchFilter)
+
+                            if (filteredList.isNotEmpty()) {
+                                val chunked = chunk(filteredList, chunkSize.value)
+                                chunkedGroupsMap.set(group, chunked.toList())
+                            }
+                        }
+
+                        if (chunkedGroupsMap.isNotEmpty()) {
+                            LazyColumn(
+                                modifier = Modifier.fillMaxSize(),
+                                contentPadding = PaddingValues(bottom = 32.dp)
+                            ) {
+                                chunkedGroupsMap.forEach { (group, chunkedIcons) ->
                                     stickyHeader {
-                                        IconGroupHeader(group, icons)
+                                        IconGroupHeader(group, chunkedIcons)
                                     }
 
-                                    items(chunk(filteredList, chunkSize.value)) { iconsChunk ->
+                                    items(chunkedIcons) { iconsChunk ->
                                         IconsRow(iconsChunk, chunkSize.value, isDarkTheme, group)
                                     }
 
@@ -137,15 +149,17 @@ fun main() {
                                     }
                                 }
                             }
+                        } else {
+                            FeedbackState {
+                                Text(
+                                    text = "No results found.",
+                                    style = MaterialTheme.typography.subtitle2
+                                )
+                            }
                         }
                     } else {
-                        Column(
-                            modifier = Modifier.fillMaxSize(),
-                            verticalArrangement = Arrangement.Center,
-                            horizontalAlignment = Alignment.CenterHorizontally
-                        ) {
+                        FeedbackState {
                             CircularProgressIndicator(modifier = Modifier.size(32.dp))
-                            Spacer(modifier = Modifier.fillMaxHeight(0.5f))
                         }
                     }
                 }
@@ -157,8 +171,10 @@ fun main() {
 @Composable
 private fun IconGroupHeader(
     group: DataIconGroup,
-    icons: List<DataIcon>
+    icons: List<List<DataIcon>>
 ) {
+    val totalIcons = icons.fold(0) { acc, chunkedIcons -> acc + chunkedIcons.size }
+
     Row(
         horizontalArrangement = Arrangement.SpaceBetween,
         modifier = Modifier
@@ -173,7 +189,7 @@ private fun IconGroupHeader(
 
         /*
         Text(
-            text = "${icons.size}",
+            text = "$totalIcons",
             style = MaterialTheme.typography.subtitle2
         )
         */

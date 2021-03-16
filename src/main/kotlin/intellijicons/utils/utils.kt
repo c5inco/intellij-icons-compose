@@ -1,8 +1,9 @@
 package intellijicons.utils
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.svgResource
 import androidx.compose.ui.unit.dp
@@ -26,6 +27,18 @@ fun <T> chunk(list: List<T>, size: Int): List<List<T>> {
     }
 
     return chunkedList.toList()
+}
+
+@Composable
+fun FeedbackState(content: @Composable ColumnScope.() -> Unit) {
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        content()
+        Spacer(modifier = Modifier.fillMaxHeight(0.5f))
+    }
 }
 
 @Composable
