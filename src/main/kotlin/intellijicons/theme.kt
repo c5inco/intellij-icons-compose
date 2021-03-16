@@ -46,3 +46,21 @@ fun FooterTheme(darkTheme: Boolean, content: @Composable () -> Unit) {
         content = content
     )
 }
+
+@Composable
+fun FooterTheme(darkTheme: Boolean, content: @Composable () -> Unit) {
+    val colors = if (darkTheme) {
+        darkColors().copy(
+            surface = darkGray500,
+            onSurface = Color.White
+        )
+    } else {
+        lightColors().copy(
+        )
+    }
+
+    MaterialTheme(
+        colors = colors,
+        content = content
+    )
+}
