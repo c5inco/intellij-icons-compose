@@ -53,6 +53,7 @@ fun main() {
         events = WindowEvents(
             onResize = { (width, _) ->
                 when {
+                    width >= 1200 -> chunkSize.value = 10
                     width >= 1000 -> chunkSize.value = 8
                     width >= 800 -> chunkSize.value = 6
                     width >= 600 -> chunkSize.value = 4
