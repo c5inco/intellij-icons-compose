@@ -3,6 +3,7 @@ package intellijicons.ui
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -18,8 +19,16 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.geometry.CornerRadius
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.graphics.drawscope.clipRect
 import androidx.compose.ui.graphics.imageFromResource
 import androidx.compose.ui.input.pointer.pointerMoveFilter
 import androidx.compose.ui.res.imageResource
@@ -27,6 +36,7 @@ import androidx.compose.ui.res.svgResource
 import androidx.compose.ui.unit.dp
 import intellijicons.models.DataIcon
 import intellijicons.utils.generateIconsSrcPath
+import intellijicons.utils.upperRoundRectStroke
 
 @Composable
 fun IconFooter(
@@ -61,6 +71,7 @@ fun IconFooter(
                     )
                     .height(72.dp)
                     .fillMaxWidth(0.8f)
+                    .upperRoundRectStroke(SolidColor(Color.Black.copy(alpha = 0.2f)), Stroke(width = 1f), CornerRadius(16f))
                     .background(
                         MaterialTheme.colors.surface,
                         RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp)
