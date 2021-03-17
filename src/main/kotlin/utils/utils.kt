@@ -10,11 +10,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.svgResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import intellijicons.models.DataIcon
 
 fun removeDash(str: String): String {
     return str
         .replace("-", " ")
         .replace("/", " / ")
+}
+
+fun generateIconsSrcPath(icon: DataIcon): String {
+    val sectionPath = if (icon.section.isNotBlank()) "${icon.section}/" else ""
+
+    return "icons/${icon.set}/${sectionPath}"
 }
 
 fun <T> chunk(list: List<T>, size: Int): List<List<T>> {
