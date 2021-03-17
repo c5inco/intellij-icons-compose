@@ -3,7 +3,7 @@ package intellijicons
 import androidx.compose.desktop.DesktopMaterialTheme
 import androidx.compose.desktop.Window
 import androidx.compose.desktop.WindowEvents
-import androidx.compose.foundation.*
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -14,9 +14,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import com.beust.klaxon.Klaxon
-import intellijicons.models.*
+import intellijicons.models.DataIcon
+import intellijicons.models.DataIconGroup
+import intellijicons.models.DataIconSet
 import intellijicons.ui.*
-import intellijicons.utils.*
+import intellijicons.utils.FeedbackState
+import intellijicons.utils.chunk
+import intellijicons.utils.removeDash
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collect
@@ -144,7 +148,12 @@ fun main() {
                                     }
                                 }
 
-                                IconFooter(Modifier.align(Alignment.BottomCenter), isDarkTheme, activeIcon)
+                                IconFooter(
+                                    modifier = Modifier.align(Alignment.BottomCenter),
+                                    isDarkTheme = isDarkTheme,
+                                    activeIcon = activeIcon,
+                                    onClose = { activeIcon = null }
+                                )
                             }
                         } else {
                             FeedbackState {
