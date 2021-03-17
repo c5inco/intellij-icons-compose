@@ -17,10 +17,7 @@ import androidx.compose.ui.graphics.imageFromResource
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.svgResource
 import androidx.compose.ui.unit.dp
-import intellijicons.FooterTheme
-import intellijicons.darkGray300
 import intellijicons.models.DataIcon
-import intellijicons.utils.imageScale
 
 @Composable
 fun IconFooter(

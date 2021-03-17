@@ -1,4 +1,4 @@
-package intellijicons
+package intellijicons.ui
 
 import androidx.compose.material.Colors
 import androidx.compose.material.MaterialTheme

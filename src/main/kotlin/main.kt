@@ -14,11 +14,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import com.beust.klaxon.Klaxon
-import intellijicons.ui.IconFooter
-import intellijicons.ui.IconsGroupHeader
-import intellijicons.ui.IconsRow
-import intellijicons.ui.SearchBox
 import intellijicons.models.*
+import intellijicons.ui.*
 import intellijicons.utils.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
